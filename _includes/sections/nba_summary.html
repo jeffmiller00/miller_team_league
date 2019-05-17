@@ -26,7 +26,12 @@
         var ctx = document.getElementById("{{ site.data.index.nba_summary.id }}");
         ctx.style.backgroundColor = 'rgba(255,255,255, 0.85)';
         var data = {
-                labels: ['10.16', '10.25', '10.30','11.6','11.13','11.20','11.27','12.04','12.11','12.18','12.31','1.8','1.15','1.22', '2.1', '2.6', '2.13', 'Reg Sea End', 'Round 1', 'Round 2'],
+                labels: [
+                {% for label in site.data.index.nba_summary.labels %}
+                    '{{ label | escape }}'
+                    {% unless forloop.last %},{% endunless %}
+                {% endfor %}
+                ],
                 datasets: [{
                     label: 'Jeff',
                     backgroundColor: 'rgb(0,130,72)',
