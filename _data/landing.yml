@@ -4,7 +4,7 @@
   i18n: nav.skills
   name: Skills
   tpl: skills.html
-  css: navy-section
+  css: random_bg
 
 - id: projects
   i18n: nav.projects

@@ -2647,6 +2647,13 @@ body {
     font-weight: 600;
     font-size: 14px;
   }
+  .random_bg {
+    background: url(https://source.unsplash.com/random) center repeat-y;
+    background-size: 100% auto;
+  }
+  .random_bg h1 {
+    background: rgba(254, 254, 254, 0.5);
+  }
   .testimonials {
     padding-top: 80px;
     padding-bottom: 90px;
