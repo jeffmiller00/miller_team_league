@@ -1,22 +1,37 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
-- name: Jalpc
-  i18n: jalpc
-  gh_user: jarrekk
-  repo: Jalpc
-  img: /static/assets/img/landing/jekyll.png
-  desc: This project is my project. I use javescript to get repo's information all my repos have only one request.
+- name: Jeff
+  i18n: jeff
+  img: /static/assets/img/landing/jeff.jpg
+  wins:
+    - 1|2016 NBA
+    - 2|2017 NFL
+    - 1|2018 NFL
+    - 2|2018 NBA
+  desc: Is the early favorite every season.
 
-- name: Python
-  i18n: cpython
-  gh_user: python
-  repo: cpython
-  img: /static/assets/img/landing/python.png
-  desc: This project is other's project. I use another request to get repo's information.
+- name: Greg
+  i18n: greg
+  img: /static/assets/img/landing/greg.jpg
+  wins:
+    - 1|2016 NFL
+    - 1|2018 NBA
+  desc: Only responds with gifs
 
-- name: Google
-  i18n: google
+- name: Tim
+  i18n: tim
   url: https://google.com
-  img: /static/assets/img/landing/google.png
-  desc: This is another project.
+  img: /static/assets/img/landing/tim.jpg
+  wins:
+    - 2|2016 NFL
+    - 1|2017 NFL
+  desc: Is the most concerned with what's going on, but rarely wins.
+
+- name: Zach
+  i18n: zach
+  url: https://google.com
+  img: /static/assets/img/landing/zach.jpg
+  wins:
+    - 2|2018 NFL
+  desc: The treasurer for the whole project.
