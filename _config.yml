@@ -23,7 +23,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 keywords: Miller,brothers,fantasy,nfl,nba
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.millerteamleague.com" # the base hostname & protocol for your site, e.g. http://example.com
-img_path: /Jalpc/static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
+# img_path: /Jalpc/static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
 
 # author -- index page "about me" section
 author:  # change following line to your infomation.
@@ -64,7 +64,6 @@ donation: on  # type 'on'/'off' to choice display donation button at post page o
 
 ## carousels
 index_carousel: off  # index page carousel switch
-blog_carousel: on  # blog page carousel switch
 
 # scss
 sass:

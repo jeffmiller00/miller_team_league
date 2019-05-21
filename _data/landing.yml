@@ -6,11 +6,10 @@
   tpl: nba_summary.html
   css: random_bg
 
-- id: blog
-  i18n: nav.blog
-  name: Blog
-  tpl: blog.html
-  page: blog/
+- id: picks
+  i18n: nav.picks
+  name: Picks
+  tpl: picks.html
   css: testimonials navy-section
 
 - id: trophy_room
