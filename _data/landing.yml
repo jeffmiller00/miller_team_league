@@ -6,11 +6,11 @@
   tpl: nba_summary.html
   css: random_bg
 
-- id: projects
-  i18n: nav.projects
-  name: Projects
-  tpl: projects.html
-  css: project
+- id: trophy_room
+  i18n: nav.trophy_room
+  name: Trophy Room
+  tpl: trophy_room.html
+  css: trophy_room
 
 # - id: about-me
 #   i18n: nav.about_me

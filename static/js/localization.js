@@ -12,7 +12,6 @@ $(document).ready(function() {
     $('#i18_nba_summary').i18n();
 
     $('#i18_about_me').i18n();
-    $('#i18_projects').i18n();
     $('#i18_career').i18n();
     $('#i18_blog').i18n();
     $('#i18_link').i18n();

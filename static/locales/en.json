@@ -6,7 +6,7 @@
     "home": "Home",
     "about_me": "About",
     "nba_summary": "NBA Wins Summary",
-    "projects": "Projects",
+    "trophy_room": "Trophy Room",
     "career": "Career",
     "blog": "Blog",
     "link": "Link"
@@ -17,12 +17,6 @@
   },
   "nba_summary":{
     "nba_wins": "NBA Wins"
-  },
-  "projects":{
-    "my_projects": "My Projects",
-    "jalpc": "This project is my project. I use javescript to get repo's information all my repos have only one request.",
-    "cpython": "This project is other's project. I use another request to get repo's information.",
-    "familycode": "This is another project."
   },
   "career":{
     "my_career": "My Career",
