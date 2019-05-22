@@ -2662,7 +2662,7 @@ body {
     padding-top: 80px;
     padding-bottom: 90px;
     background-color: #3385FF;
-    background-image: url(../assets/img/landing/avatar_all.png);
+    background-image: url(../assets/img/landing/square_bg.png);
   }
   .contact {
     background-image: url(../assets/img/landing/word_map.png);
@@ -2670,6 +2670,22 @@ body {
     background-repeat: no-repeat;
     margin-top: 60px;
   }
+
+  .img-logo {
+   max-width: 100%;
+   height: auto;
+  }
+  ol {
+   padding-left: 0;
+   text-align: center;
+  }
+  .out {
+    background-color: #eee;
+  }
+  .out img {
+    opacity: 0.1;
+  }
+
   section {
     &.timeline {
       padding-bottom: 30px;
