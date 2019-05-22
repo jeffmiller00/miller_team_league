@@ -41,7 +41,7 @@
       css:
       wins: 6
     - name: Philadelphia 76ers
-      img: hhttp://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/PHI.svg
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/PHI.svg
       css: out
       wins: 5
     - name: San Antonio Spurs
