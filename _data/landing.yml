@@ -10,7 +10,7 @@
   i18n: nav.picks
   name: Picks
   tpl: picks.html
-  css: testimonials navy-section
+  css: basketball_picks navy-section
 
 - id: trophy_room
   i18n: nav.trophy_room
