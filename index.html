@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: default
 title: index
 permalink: /
 ---
@@ -26,13 +26,6 @@ permalink: /
               <a class="page-scroll" href="{{ section.id | prepend: '#'}} ">
             {% endif %}
               <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
-            </a>
-          </li>
-          {% endfor %}
-          {% for language in site.data.index.language %}
-          <li>
-            <a id="set_lang_{{ language.locale }}" class="btn btn-sm set_{{ language.locale }}" data-locale="{{ language.locale }}">
-              <img src="{{ language.flag | prepend: site.baseurl }}" height="16" width="16">
             </a>
           </li>
           {% endfor %}
