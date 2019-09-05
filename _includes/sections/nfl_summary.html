@@ -1,0 +1,97 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center" id="i18_nba_summary">
+            <div class="navy-line"></div>
+            <h1><span data-i18n="nba_summary.nba_wins">NBA Wins</span></h1>
+        </div>
+    </div>
+    <div class="row features-block">
+        <div class="wow zoomIn col-lg-12">
+            <canvas id="{{ site.data.index.nba_summary.id }}" height="300" width="600" style="padding: 2em;"></canvas>
+        </div>
+        <div class="col-lg-1"></div>
+        <script>
+        window.chartColors = {
+            red: 'rgb(255, 99, 132)',
+            orange: 'rgb(255, 159, 64)',
+            yellow: 'rgb(255, 205, 86)',
+            green: 'rgb(75, 192, 192)',
+            blue: 'rgb(54, 162, 235)',
+            purple: 'rgb(153, 102, 255)',
+            grey: 'rgb(201, 203, 207)',
+            black: 'rgb(0, 0, 0)'
+        };
+        window.allWins = [[0, 16, 25, 35, 42, 51, 64, 76, 88, 99, 120, 132, 142, 156, 173, 183, 192, 284, 296, 304], [0, 12, 19, 38, 52, 71, 80, 92, 104, 118, 142, 156, 167, 178, 194, 206, 221, 326, 338, 344], [0, 15, 25, 35, 50, 62, 76, 89, 104, 114, 130, 145, 156, 168, 184, 187, 199, 276, 287, 294], [0, 16, 21, 32, 44, 51, 66, 77, 87, 96, 121, 136, 151, 164, 181, 188, 199, 286, 292, 296]];
+
+        var ctx = document.getElementById("{{ site.data.index.nba_summary.id }}");
+        ctx.style.backgroundColor = 'rgba(255,255,255, 0.85)';
+        var data = {
+                labels: [
+                {% for label in site.data.index.nba_summary.labels %}
+                    '{{ label | escape }}'
+                    {% unless forloop.last %},{% endunless %}
+                {% endfor %}
+                ],
+                datasets: [{
+                    label: 'Jeff',
+                    backgroundColor: 'rgb(0,130,72)',
+                    borderColor: 'rgb(0,130,72)',
+                    data: window.allWins[0],
+                    fill: false,
+                }, {
+                    label: 'Greg',
+                    backgroundColor: 'rgb(253,185,39)',
+                    borderColor: 'rgb(253,185,39)',
+                    data: window.allWins[1],
+                    fill: false,
+                }, {
+                    label: 'Tim',
+                    backgroundColor: 'rgb(206,17,65)',
+                    borderColor: 'rgb(206,17,65)',
+                    data: window.allWins[2],
+                    fill: false,
+                }, {
+                    label: 'Zach',
+                    backgroundColor: 'rgb(0, 0, 0)',
+                    borderColor: 'rgb(0, 0, 0)',
+                    data: window.allWins[3],
+                    fill: false,
+                }]
+            };
+        var myRadarChart = new Chart(ctx, {
+            type: 'line',
+            data: data,
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                title: { display: false },
+                tooltips: {
+                    mode: 'index',
+                    intersect: false,
+                },
+                hover: {
+                    mode: 'nearest',
+                    intersect: true
+                },
+                scales: {
+                    xAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Date'
+                        }
+                    }],
+                    yAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Wins'
+                        }
+                    }]
+                },
+                legend: {display: true},
+            }
+        });
+        </script>
+    </div>
+</div>

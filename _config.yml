@@ -25,6 +25,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.millerteamleague.com" # the base hostname & protocol for your site, e.g. http://example.com
 # img_path: /Jalpc/static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
 
+current_sport: nba
+
 # author -- index page "about me" section
 author:  # change following line to your infomation.
   name: Jeff Miller  # Be used at blog posts' author.
@@ -61,9 +63,6 @@ gio:  # if you wanna this feature, go to https://www.growingio.com/ to get your 
 
 ## donation
 donation: on  # type 'on'/'off' to choice display donation button at post page or not
-
-## carousels
-index_carousel: off  # index page carousel switch
 
 # scss
 sass:

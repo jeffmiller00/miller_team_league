@@ -19,24 +19,25 @@ permalink: /
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right" id="i18_navbar">
           {% for section in site.data.landing %}
-          <li>
-            {% if section.page %}
-              <a class="page-scroll" href="{{ section.page}} ">
+            {% if section.sport and section.sport != site.current_sport %}
+              {% continue %}
             {% else %}
-              <a class="page-scroll" href="{{ section.id | prepend: '#'}} ">
+              <li>
+                {% if section.page %}
+                  <a class="page-scroll" href="{{ section.page}} ">
+                {% else %}
+                  <a class="page-scroll" href="{{ section.id | prepend: '#'}} ">
+                {% endif %}
+                  <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
+                </a>
+              </li>
             {% endif %}
-              <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
-            </a>
-          </li>
           {% endfor %}
         </ul>
       </div>
     </div>
   </nav>
 </div>
-{% if site.index_carousel %}
-{% include carousel.html %}
-{% endif %}
 
 {% for section in site.data.landing %}
 {% assign loopindex = forloop.index | modulo: 2 %}

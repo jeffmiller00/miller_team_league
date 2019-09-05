@@ -1,16 +1,30 @@
 # index page sections
 # custom following lines to edit your index page
+- id: nfl_summary
+  i18n: nav.nfl_summary
+  name: NFL Wins Summary
+  tpl: nfl_summary.html
+  css: random_bg
+  sport: nfl
 - id: nba_summary
   i18n: nav.nba_summary
   name: NBA Wins Summary
   tpl: nba_summary.html
   css: random_bg
+  sport: nba
 
 - id: picks
   i18n: nav.picks
   name: Picks
-  tpl: picks.html
+  tpl: nfl_picks.html
+  css: football_picks navy-section
+  sport: nfl
+- id: picks
+  i18n: nav.picks
+  name: Picks
+  tpl: nba_picks.html
   css: basketball_picks navy-section
+  sport: nba
 
 - id: trophy_room
   i18n: nav.trophy_room

@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    {% for player in site.data.index.picks %}
+    <div class="col-xs-2">
+      <h1>{{ player.name }}</h1>
+      <h3><em>Pick: {{ player.pick }}</em></h3>
+      <ol>
+        {% for pick in player.teams %}
+          <li class='{{ pick.css }}'><img class='img-fluid img-logo' src="{{ pick.img }}"><h4>{{ pick.name }}</h4><span>{{ pick.wins }}</span></li>
+        {% endfor %}
+      </ol>
+   </div>
+   {% endfor %}
+</div>
