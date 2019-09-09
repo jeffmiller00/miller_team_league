@@ -23,11 +23,11 @@
         };
         window.allWins = [[0], [0], [0], [0], [0]];
 
-        var ctx = document.getElementById("{{ site.data.index.nba_summary.id }}");
+        var ctx = document.getElementById("{{ site.data.index.nfl_summary.id }}");
         ctx.style.backgroundColor = 'rgba(255,255,255, 0.85)';
         var data = {
                 labels: [
-                {% for label in site.data.index.nba_summary.labels %}
+                {% for label in site.data.index.nfl_summary.labels %}
                     '{{ label | escape }}'
                     {% unless forloop.last %},{% endunless %}
                 {% endfor %}
