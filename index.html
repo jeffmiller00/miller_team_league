@@ -40,10 +40,14 @@ permalink: /
 </div>
 
 {% for section in site.data.landing %}
-{% assign loopindex = forloop.index | modulo: 2 %}
-<section id="{{ section.id }}" class="features {% if loopindex != 1 %} gray-section {% endif %} {{ section.css }}" style="margin-top: 0;">
-  {% include sections/{{section.tpl}} %}
-</section>
+  {% if section.sport and section.sport != site.current_sport %}
+    {% continue %}
+  {% else %}
+    {% assign loopindex = forloop.index | modulo: 2 %}
+    <section id="{{ section.id }}" class="features {% if loopindex != 1 %} gray-section {% endif %} {{ section.css }}" style="margin-top: 0;">
+      {% include sections/{{section.tpl}} %}
+    </section>
+  {% endif %}
 {% endfor %}
 <style>
 iframe {
