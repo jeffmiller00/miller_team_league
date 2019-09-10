@@ -20,8 +20,7 @@ module.exports = {
         prefix: 'i18-',
         type: 'js',
         list: [
-            'static/js/i18next.min.js',
-            'static/js/localization.js'
+            'static/js/i18next.min.js'
         ]
     },
     // {
