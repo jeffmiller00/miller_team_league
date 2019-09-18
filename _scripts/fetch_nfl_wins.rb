@@ -30,7 +30,7 @@ CURRENT_NFL_WEEK = 2
 def generate_summary_chart
   all_teams = get_teams
   weeklySummary = []
-  week1begin = Date.parse('2019-09-03')
+  week1begin = Date.parse('2019-09-04')
   week1end   = Date.parse('2019-09-10')
   CURRENT_NFL_WEEK.times do |i|
     weeklySummary[i] = EMPTY_WEEK.dup
