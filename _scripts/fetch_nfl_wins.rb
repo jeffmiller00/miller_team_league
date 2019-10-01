@@ -25,7 +25,7 @@ def generate_team_table
 end
 
 EMPTY_WEEK = {jeff: 0, greg: 0, tim: 0, zach: 0, mike: 0}
-CURRENT_NFL_WEEK = 2
+CURRENT_NFL_WEEK = 4
 
 def generate_summary_chart
   all_teams = get_teams
@@ -62,7 +62,7 @@ def generate_summary_chart
 end
 
 def fetch_wins?; true; end;
-def write_file?; false; end;
+def write_file?; true; end;
 
 if fetch_wins?
   request = HTTPI::Request.new
@@ -92,7 +92,7 @@ if fetch_wins?
   end
 
   if write_file?
-    FileUtils.copy(DATA_FILE, "./archive/nfl_#{Date.today}.json")
+    FileUtils.copy(DATA_FILE, "../_data/archive/nfl_#{Date.today}.json")
     File.open(DATA_FILE,"w") do |f|
       f.write(all_teams.to_json)
     end
