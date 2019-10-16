@@ -19,8 +19,23 @@ permalink: /
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right" id="i18_navbar">
           {% for section in site.data.landing %}
-            {% if section.sport and section.sport != site.current_sport %}
+            {% if section.link == false %}
               {% continue %}
+            {% endif %}
+            {% if section.sport %}
+              {% if section.sport == site.current_sport %}
+                <li>
+                  <a class="page-scroll" href="{{ section.id | prepend: '#'}} ">
+                    <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
+                  </a>
+                </li>
+              {% else %}
+                <li>
+                  <a class="page-scroll" href="{{ section.page}} ">
+                    <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
+                  </a>
+                </li>
+              {% endif %}
             {% else %}
               <li>
                 {% if section.page %}
