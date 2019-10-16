@@ -1,7 +1,7 @@
 ---
 layout: default
-title: index
-permalink: /
+title: other_sport
+permalink: nba/
 ---
 
 <div class="navbar-wrapper">
@@ -25,13 +25,13 @@ permalink: /
             {% if section.sport %}
               {% if section.sport == site.current_sport %}
                 <li>
-                  <a class="page-scroll" href="{{ section.id | prepend: '#'}} ">
+                  <a class="page-scroll" href="{{ '/' | absolute_url }} ">
                     <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
                   </a>
                 </li>
               {% else %}
                 <li>
-                  <a class="page-scroll" href="{{ section.page }} ">
+                  <a class="page-scroll" href="{{ section.page | absolute_url }} ">
                     <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
                   </a>
                 </li>
@@ -55,7 +55,7 @@ permalink: /
 </div>
 
 {% for section in site.data.landing %}
-  {% if section.sport and section.sport != site.current_sport %}
+  {% if section.sport and section.sport == site.current_sport %}
     {% continue %}
   {% else %}
     {% assign loopindex = forloop.index | modulo: 2 %}

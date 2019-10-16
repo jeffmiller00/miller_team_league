@@ -21,7 +21,7 @@
             grey: 'rgb(201, 203, 207)',
             black: 'rgb(0, 0, 0)'
         };
-        window.allWins = [[0, 16, 25, 35, 42, 51, 64, 76, 88, 99, 120, 132, 142, 156, 173, 183, 192, 284, 296, 304], [0, 12, 19, 38, 52, 71, 80, 92, 104, 118, 142, 156, 167, 178, 194, 206, 221, 326, 338, 344], [0, 15, 25, 35, 50, 62, 76, 89, 104, 114, 130, 145, 156, 168, 184, 187, 199, 276, 287, 294], [0, 16, 21, 32, 44, 51, 66, 77, 87, 96, 121, 136, 151, 164, 181, 188, 199, 286, 292, 296]];
+        window.allWins = {{site.data.index.nba_summary.data}};
 
         var ctx = document.getElementById("{{ site.data.index.nba_summary.id }}");
         ctx.style.backgroundColor = 'rgba(255,255,255, 0.85)';
@@ -34,26 +34,26 @@
                 ],
                 datasets: [{
                     label: 'Jeff',
-                    backgroundColor: 'rgb(0,130,72)',
-                    borderColor: 'rgb(0,130,72)',
+                    backgroundColor: 'rgb(0,71,27)',
+                    borderColor: 'rgb(0,71,27)',
                     data: window.allWins[0],
                     fill: false,
                 }, {
                     label: 'Greg',
-                    backgroundColor: 'rgb(253,185,39)',
-                    borderColor: 'rgb(253,185,39)',
+                    backgroundColor: 'rgb(200,16,46)',
+                    borderColor: 'rgb(200,16,46)',
                     data: window.allWins[1],
                     fill: false,
                 }, {
                     label: 'Tim',
-                    backgroundColor: 'rgb(206,17,65)',
-                    borderColor: 'rgb(206,17,65)',
+                    backgroundColor: 'rgb(13,34,64)',
+                    borderColor: 'rgb(13,34,64)',
                     data: window.allWins[2],
                     fill: false,
                 }, {
                     label: 'Zach',
-                    backgroundColor: 'rgb(0, 0, 0)',
-                    borderColor: 'rgb(0, 0, 0)',
+                    backgroundColor: 'rgb(85,37,130)',
+                    borderColor: 'rgb(85,37,130)',
                     data: window.allWins[3],
                     fill: false,
                 }]
