@@ -1,154 +1,142 @@
 # trophy_room section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest trophy_room' img be located at '/static/assets/img/landing', and edit following img items.
-- name: Jeff
+- name: Greg
   pick: 1
   teams:
-    - name: New England Patriots
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/NE/NE_logo-80x90.gif
-      css:
-      wins: 1
-    - name: Pittsburgh Steelers
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/PIT/PIT_logo-80x90.gif
+    - name: LA Clippers
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/LAC.svg
       css:
       wins: 0
-    - name: Jacksonville Jaguars
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/JAX/JAX_logo-80x90.gif
+    - name: Golden State Warriors
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/GSW.svg
       css:
       wins: 0
-    - name: Denver Broncos
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/DEN/DEN_logo-80x90.gif
+    - name: Portland Trail Blazers
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/POR.svg
       css:
       wins: 0
-    - name: New York Jets
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/NYJ/NYJ_logo-80x90.gif
+    - name: New Orleans Pelicans
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/NOP.svg
       css:
       wins: 0
-    - name: Arizona Cardinals
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/ARI/ARI_logo-80x90.gif
+    - name: Detroit Pistons
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/DET.svg
+      css:
+      wins: 0
+    - name: Chicago Bulls
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/CHI.svg
+      css:
+      wins: 0
+    - name: Washington Wizards
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/WAS.svg
+      css:
+      wins: 0
+
+- name: Jeff
+  pick: 2
+  teams:
+    - name: Milwaukee Bucks
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MIL.svg
+      css:
+      wins: 0
+    - name: Utah Jazz
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/UTA.svg
+      css:
+      wins: 0
+    - name: Boston Celtics
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/BOS.svg
+      css:
+      wins: 0
+    - name: Miami Heat
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MIA.svg
+      css:
+      wins: 0
+    - name: Brooklyn Nets
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/BKN.svg
+      css:
+      wins: 0
+    - name: Atlanta Hawks
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/ATL.svg
+      css:
+      wins: 0
+    - name: Phoenix Suns
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/PHX.svg
       css:
       wins: 0
 
 - name: Zach
-  pick: 2
-  teams:
-    - name: New Orleans Saints
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/NO/NO_logo-80x90.gif
-      css:
-      wins: 1
-    - name: Minnesota Vikings
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/MIN/MIN_logo-80x90.gif
-      css:
-      wins: 1
-    - name: Indianapolis Colts
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/IND/IND_logo-80x90.gif
-      css:
-      wins: 0
-    - name: Tampa Bay Buccaneers
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/TB/TB_logo-80x90.gif
-      css:
-      wins: 0
-    - name: San Francisco 49ers
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/SF/SF_logo-80x90.gif
-      css:
-      wins: 1
-    - name: New York Giants
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/NYG/NYG_logo-80x90.gif
-      css:
-      wins: 0
-
-- name: Greg
   pick: 3
   teams:
-    - name: Kansas City Chiefs
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/KC/KC_logo-80x90.gif
-      css:
-      wins: 1
-    - name: Green Bay Packers
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/GB/GB_logo-80x90.gif
-      css:
-      wins: 1
-    - name: Dallas Cowboys
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/DAL/DAL_logo-80x90.gif
-      css:
-      wins: 1
-    - name: Carolina Panthers
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/CAR/CAR_logo-80x90.gif
+    - name: Los Angeles Lakers
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/LAL.svg
       css:
       wins: 0
-    - name: Baltimore Ravens
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/BAL/BAL_logo-80x90.gif
-      css:
-      wins: 1
-    - name: Oakland Raiders
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/OAK/OAK_logo-80x90.gif
-      css:
-      wins: 1
-
-- name: Mike
-  pick: 4
-  teams:
-    - name: Los Angeles Rams
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/LA/LA_logo-80x90.gif
-      css:
-      wins: 1
-    - name: Chicago Bears
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/CHI/CHI_logo-80x90.gif
+    - name: Philadelphia 76ers
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/PHI.svg
       css:
       wins: 0
-    - name: Cleveland Browns
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/CLE/CLE_logo-80x90.gif
+    - name: San Antonio Spurs
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/SAS.svg
       css:
       wins: 0
-    - name: Houston Texans
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/HOU/HOU_logo-80x90.gif
+    - name: Toronto Raptors
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/TOR.svg
       css:
       wins: 0
-    - name: Detroit Lions
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/DET/DET_logo-80x90.gif
+    - name: Orlando Magic
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/ORL.svg
       css:
       wins: 0
-    - name: Washington Redskins
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/WAS/WAS_logo-80x90.gif
+    - name: Oklahoma City Thunder
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/OKC.svg
+      css:
+      wins: 0
+    - name: New York Knicks
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/NYK.svg
       css:
       wins: 0
 
 - name: Tim
-  pick: 5
+  pick: 4
   teams:
-    - name: Philadelphia Eagles
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/PHI/PHI_logo-80x90.gif
-      css:
-      wins: 1
-    - name: Los Angeles Chargers
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/SD/SD_logo-80x90.gif
-      css:
-      wins: 1
-    - name: Atlanta Falcons
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/ATL/ATL_logo-80x90.gif
+    - name: Denver Nuggets
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/DEN.svg
       css:
       wins: 0
-    - name: Seattle Seahawks
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/SEA/SEA_logo-80x90.gif
+    - name: Houston Rockets
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/HOU.svg
       css:
-      wins: 1
-    - name: Tennessee Titans
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/TEN/TEN_logo-80x90.gif
+      wins: 0
+    - name: Indiana Pacers
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/IND.svg
       css:
-      wins: 1
-    - name: Buffalo Bills
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/BUF/BUF_logo-80x90.gif
+      wins: 0
+    - name: Dallas Mavericks
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/DAL.svg
       css:
-      wins: 1
+      wins: 0
+    - name: Sacramento Kings
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/SAC.svg
+      css:
+      wins: 0
+    - name: Minnesota Timberwolves
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MIN.svg
+      css:
+      wins: 0
+    - name: Memphis Grizzlies
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MEM.svg
+      css:
+      wins: 0
 
 - name: Undrafted
   pick: None
   teams:
-    - name: Cincinnati Bengals
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/CIN/CIN_logo-80x90.gif
+    - name: Charlotte Hornets
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/CHA.svg
       css:
       wins: 0
-    - name: Miami Dolphins
-      img: http://i.nflcdn.com/static/site/7.4/img/teams/MIA/MIA_logo-80x90.gif
+    - name: Cleveland Cavaliers
+      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/CLE.svg
       css:
       wins: 0
