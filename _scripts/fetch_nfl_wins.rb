@@ -25,7 +25,7 @@ def generate_team_table
 end
 
 EMPTY_WEEK = {jeff: 0, greg: 0, tim: 0, zach: 0, mike: 0}
-CURRENT_NFL_WEEK = 6
+CURRENT_NFL_WEEK = 7
 
 def generate_summary_chart
   all_teams = get_teams
@@ -80,10 +80,10 @@ if fetch_wins?
   all_teams.each do |team|
     if truth_teams.search("[text()*='#{team['location']}']").first
       wins = truth_teams.search("[text()*='#{team['location']}']").first.parent.parent.parent.parent.parent.parent.children[2].text.to_i
-      puts "#{team['location']} | #{wins}"
+      # puts "#{team['location']} | #{wins}"
     elsif truth_teams.search("[text()*='#{team['name']}']").first
       wins = truth_teams.search("[text()*='#{team['name']}']").first.parent.parent.parent.parent.parent.parent.children[2].text.to_i
-      puts "#{team['location']} | #{wins}"
+      # puts "#{team['location']} | #{wins}"
     else
       binding.pry
     end
