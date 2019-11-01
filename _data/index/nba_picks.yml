@@ -1,142 +1,136 @@
-# trophy_room section data
-# If you don't have language feature(language.yml is empty), ignore "i18n" items
-# Suggest trophy_room' img be located at '/static/assets/img/landing', and edit following img items.
+---
 - name: Greg
   pick: 1
   teams:
-    - name: LA Clippers
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/LAC.svg
-      css:
-      wins: 0
-    - name: Golden State Warriors
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/GSW.svg
-      css:
-      wins: 0
-    - name: Portland Trail Blazers
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/POR.svg
-      css:
-      wins: 0
-    - name: New Orleans Pelicans
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/NOP.svg
-      css:
-      wins: 0
-    - name: Detroit Pistons
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/DET.svg
-      css:
-      wins: 0
-    - name: Chicago Bulls
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/CHI.svg
-      css:
-      wins: 0
-    - name: Washington Wizards
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/WAS.svg
-      css:
-      wins: 0
-
+  - name: LA Clippers
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/LAC.svg
+    css: 
+    wins: 4
+  - name: Golden State Warriors
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/GSW.svg
+    css: 
+    wins: 1
+  - name: Portland Trail Blazers
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/POR.svg
+    css: 
+    wins: 3
+  - name: New Orleans Pelicans
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/NOP.svg
+    css: 
+    wins: 1
+  - name: Detroit Pistons
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/DET.svg
+    css: 
+    wins: 2
+  - name: Chicago Bulls
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/CHI.svg
+    css: 
+    wins: 1
+  - name: Washington Wizards
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/WAS.svg
+    css: 
+    wins: 1
 - name: Jeff
   pick: 2
   teams:
-    - name: Milwaukee Bucks
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MIL.svg
-      css:
-      wins: 0
-    - name: Utah Jazz
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/UTA.svg
-      css:
-      wins: 0
-    - name: Boston Celtics
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/BOS.svg
-      css:
-      wins: 0
-    - name: Miami Heat
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MIA.svg
-      css:
-      wins: 0
-    - name: Brooklyn Nets
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/BKN.svg
-      css:
-      wins: 0
-    - name: Atlanta Hawks
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/ATL.svg
-      css:
-      wins: 0
-    - name: Phoenix Suns
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/PHX.svg
-      css:
-      wins: 0
-
+  - name: Milwaukee Bucks
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MIL.svg
+    css: 
+    wins: 2
+  - name: Utah Jazz
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/UTA.svg
+    css: 
+    wins: 4
+  - name: Boston Celtics
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/BOS.svg
+    css: 
+    wins: 3
+  - name: Miami Heat
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MIA.svg
+    css: 
+    wins: 4
+  - name: Brooklyn Nets
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/BKN.svg
+    css: 
+    wins: 1
+  - name: Atlanta Hawks
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/ATL.svg
+    css: 
+    wins: 2
+  - name: Phoenix Suns
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/PHX.svg
+    css: 
+    wins: 3
 - name: Zach
   pick: 3
   teams:
-    - name: Los Angeles Lakers
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/LAL.svg
-      css:
-      wins: 0
-    - name: Philadelphia 76ers
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/PHI.svg
-      css:
-      wins: 0
-    - name: San Antonio Spurs
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/SAS.svg
-      css:
-      wins: 0
-    - name: Toronto Raptors
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/TOR.svg
-      css:
-      wins: 0
-    - name: Orlando Magic
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/ORL.svg
-      css:
-      wins: 0
-    - name: Oklahoma City Thunder
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/OKC.svg
-      css:
-      wins: 0
-    - name: New York Knicks
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/NYK.svg
-      css:
-      wins: 0
-
+  - name: Los Angeles Lakers
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/LAL.svg
+    css: 
+    wins: 3
+  - name: Philadelphia 76ers
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/PHI.svg
+    css: 
+    wins: 4
+  - name: San Antonio Spurs
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/SAS.svg
+    css: 
+    wins: 3
+  - name: Toronto Raptors
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/TOR.svg
+    css: 
+    wins: 4
+  - name: Orlando Magic
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/ORL.svg
+    css: 
+    wins: 2
+  - name: Oklahoma City Thunder
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/OKC.svg
+    css: 
+    wins: 1
+  - name: New York Knicks
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/NYK.svg
+    css: 
+    wins: 1
 - name: Tim
   pick: 4
   teams:
-    - name: Denver Nuggets
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/DEN.svg
-      css:
-      wins: 0
-    - name: Houston Rockets
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/HOU.svg
-      css:
-      wins: 0
-    - name: Indiana Pacers
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/IND.svg
-      css:
-      wins: 0
-    - name: Dallas Mavericks
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/DAL.svg
-      css:
-      wins: 0
-    - name: Sacramento Kings
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/SAC.svg
-      css:
-      wins: 0
-    - name: Minnesota Timberwolves
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MIN.svg
-      css:
-      wins: 0
-    - name: Memphis Grizzlies
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MEM.svg
-      css:
-      wins: 0
-
+  - name: Denver Nuggets
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/DEN.svg
+    css: 
+    wins: 3
+  - name: Houston Rockets
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/HOU.svg
+    css: 
+    wins: 3
+  - name: Indiana Pacers
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/IND.svg
+    css: 
+    wins: 1
+  - name: Dallas Mavericks
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/DAL.svg
+    css: 
+    wins: 3
+  - name: Sacramento Kings
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/SAC.svg
+    css: 
+    wins: 0
+  - name: Minnesota Timberwolves
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MIN.svg
+    css: 
+    wins: 3
+  - name: Memphis Grizzlies
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MEM.svg
+    css: 
+    wins: 1
 - name: Undrafted
   pick: None
   teams:
-    - name: Charlotte Hornets
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/CHA.svg
-      css:
-      wins: 0
-    - name: Cleveland Cavaliers
-      img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/CLE.svg
-      css:
-      wins: 0
+  - name: Charlotte Hornets
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/CHA.svg
+    css: 
+    wins: 2
+  - name: Cleveland Cavaliers
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/CLE.svg
+    css: 
+    wins: 2
