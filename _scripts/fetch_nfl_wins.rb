@@ -25,7 +25,7 @@ def generate_team_table
 end
 
 EMPTY_WEEK = {jeff: 0, greg: 0, tim: 0, zach: 0, mike: 0}
-CURRENT_NFL_WEEK = 13
+CURRENT_NFL_WEEK = 14
 
 def generate_summary_chart
   all_teams = get_teams
@@ -53,11 +53,11 @@ def generate_summary_chart
   end
 
   allSummaries = []
-  allSummaries << weeklySummary.map{ |summary| summary[:jeff] }
-  allSummaries << weeklySummary.map{ |summary| summary[:greg] }
-  allSummaries << weeklySummary.map{ |summary| summary[:tim] }
-  allSummaries << weeklySummary.map{ |summary| summary[:zach] }
-  allSummaries << weeklySummary.map{ |summary| summary[:mike] }
+  allSummaries << weeklySummary.map{ |summary| summary[:jeff] }.last(10)
+  allSummaries << weeklySummary.map{ |summary| summary[:greg] }.last(10)
+  allSummaries << weeklySummary.map{ |summary| summary[:tim] }.last(10)
+  allSummaries << weeklySummary.map{ |summary| summary[:zach] }.last(10)
+  allSummaries << weeklySummary.map{ |summary| summary[:mike] }.last(10)
   puts allSummaries.to_s
 end
 
