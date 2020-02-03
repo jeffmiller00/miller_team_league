@@ -46,7 +46,7 @@
     wins: 7
   - name: San Francisco 49ers
     img: http://i.nflcdn.com/static/site/7.4/img/teams/SF/SF_logo-80x90.gif
-    css:
+    css: out
     wins: 15
   - name: New York Giants
     img: http://i.nflcdn.com/static/site/7.4/img/teams/NYG/NYG_logo-80x90.gif

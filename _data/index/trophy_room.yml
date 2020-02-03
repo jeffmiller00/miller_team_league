@@ -18,6 +18,7 @@
     - 1|2016 NFL
     - 1|2017 NBA
     - 1|2018 NBA
+    - 1|2019 NFL
   desc: Only responds with gifs
 
 - name: Tim
@@ -36,4 +37,5 @@
   wins:
     - 2|2017 NBA
     - 2|2018 NFL
+    - 2|2019 NFL
   desc: The treasurer for the whole project.
