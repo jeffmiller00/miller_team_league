@@ -25,7 +25,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.millerteamleague.com" # the base hostname & protocol for your site, e.g. http://example.com
 # img_path: /Jalpc/static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
 
-current_sport: nfl
+current_sport: nba
 
 # author -- index page "about me" section
 author:  # change following line to your infomation.
