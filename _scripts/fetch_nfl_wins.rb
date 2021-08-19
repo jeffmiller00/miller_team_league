@@ -4,7 +4,7 @@ require 'json'
 require 'yaml'
 require 'pry'
 
-DATA_FILE = '../_data/nfl_2019.json'
+DATA_FILE = '../_data/nfl.json'
 
 def get_teams
   all_teams = File.read(DATA_FILE)

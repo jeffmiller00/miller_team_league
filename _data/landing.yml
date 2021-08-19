@@ -36,12 +36,6 @@
   tpl: trophy_room.html
   css: trophy_room
 
-# - id: about-me
-#   i18n: nav.about_me
-#   name: About
-#   tpl: about.html
-#   css:
-
 - id: links
   i18n: nav.link
   name: Links
