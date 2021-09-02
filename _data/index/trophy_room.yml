@@ -3,6 +3,7 @@
 # Suggest trophy_room' img be located at '/static/assets/img/landing', and edit following img items.
 - name: Jeff
   i18n: jeff
+  url: https://about.me/jeffmiller00/
   img: /static/assets/img/landing/jeff.jpg
   wins:
     - 1|2016 NBA
@@ -13,6 +14,7 @@
 
 - name: Greg
   i18n: greg
+  url: https://stores.truevalue.com/ia/waverly/10257/
   img: /static/assets/img/landing/greg.jpg
   wins:
     - 1|2016 NFL
@@ -23,7 +25,7 @@
 
 - name: Tim
   i18n: tim
-  url: https://google.com
+  url: https://www.thecentrehall.com/
   img: /static/assets/img/landing/tim.jpg
   wins:
     - 2|2016 NFL
@@ -32,7 +34,7 @@
 
 - name: Zach
   i18n: zach
-  url: https://google.com
+  url: https://stores.truevalue.com/ia/cedar-rapids/20859/
   img: /static/assets/img/landing/zach.jpg
   wins:
     - 2|2017 NBA
