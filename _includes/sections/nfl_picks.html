@@ -1,12 +1,12 @@
 <div class="container">
   <div class="row">
     {% for player in site.data.index.nfl_picks %}
-    <div class="col-xs-2">
+    <div class="col-md-2 col-xs-6">
       <h1>{{ player.name }}</h1>
       <h3><em>Pick: {{ player.pick }}</em></h3>
       <ol>
         {% for pick in player.teams %}
-          <li class='{{ pick.css }}'><img class='img-fluid img-logo' src="{{ pick.img }}" style="width: 90px;"><h4>{{ pick.name }}</h4><span>{{ pick.wins }}</span></li>
+          <li class='{{ pick.css }}'><img class='img-fluid img-logo' src="{{ pick.img }}" style="width: 8em;"><h4>{{ pick.name }}</h4><span>{{ pick.wins }}</span></li>
         {% endfor %}
       </ol>
    </div>
