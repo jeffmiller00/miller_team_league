@@ -9,6 +9,10 @@
     img: http://i.nflcdn.com/static/site/7.4/img/teams/CLE/CLE_logo-80x90.gif
     css:
     wins: 0
+  - name: New England Patriots
+    img: http://i.nflcdn.com/static/site/7.4/img/teams/NE/NE_logo-80x90.gif
+    css:
+    wins: 0
 - name: Greg
   pick: 3
   teams:
@@ -20,6 +24,10 @@
     img: http://i.nflcdn.com/static/site/7.4/img/teams/SEA/SEA_logo-80x90.gif
     css:
     wins: 0
+  - name: Dallas Cowboys
+    img: http://i.nflcdn.com/static/site/7.4/img/teams/DAL/DAL_logo-80x90.gif
+    css:
+    wins: 0
 - name: Tim
   pick: 5
   teams:
@@ -29,6 +37,10 @@
     wins: 0
   - name: Los Angeles Rams
     img: http://i.nflcdn.com/static/site/7.4/img/teams/LA/LA_logo-80x90.gif
+    css:
+    wins: 0
+  - name: Tennessee Titans
+    img: http://i.nflcdn.com/static/site/7.4/img/teams/TEN/TEN_logo-80x90.gif
     css:
     wins: 0
 - name: Zach
@@ -57,6 +69,10 @@
     img: http://i.nflcdn.com/static/site/7.4/img/teams/CHI/CHI_logo-80x90.gif
     css:
     wins: 0
+  - name: New Orleans Saints
+    img: http://i.nflcdn.com/static/site/7.4/img/teams/NO/NO_logo-80x90.gif
+    css:
+    wins: 0
 - name: Undrafted
   pick: None
   teams:
@@ -74,10 +90,6 @@
     wins: 0
   - name: Cincinnati Bengals
     img: http://i.nflcdn.com/static/site/7.4/img/teams/CIN/CIN_logo-80x90.gif
-    css:
-    wins: 0
-  - name: Dallas Cowboys
-    img: http://i.nflcdn.com/static/site/7.4/img/teams/DAL/DAL_logo-80x90.gif
     css:
     wins: 0
   - name: Denver Broncos
@@ -108,14 +120,6 @@
     img: http://i.nflcdn.com/static/site/7.4/img/teams/MIN/MIN_logo-80x90.gif
     css:
     wins: 0
-  - name: New Orleans Saints
-    img: http://i.nflcdn.com/static/site/7.4/img/teams/NO/NO_logo-80x90.gif
-    css:
-    wins: 0
-  - name: New England Patriots
-    img: http://i.nflcdn.com/static/site/7.4/img/teams/NE/NE_logo-80x90.gif
-    css:
-    wins: 0
   - name: New York Giants
     img: http://i.nflcdn.com/static/site/7.4/img/teams/NYG/NYG_logo-80x90.gif
     css:
@@ -134,10 +138,6 @@
     wins: 0
   - name: Pittsburgh Steelers
     img: http://i.nflcdn.com/static/site/7.4/img/teams/PIT/PIT_logo-80x90.gif
-    css:
-    wins: 0
-  - name: Tennessee Titans
-    img: http://i.nflcdn.com/static/site/7.4/img/teams/TEN/TEN_logo-80x90.gif
     css:
     wins: 0
   - name: Washington Redskins
