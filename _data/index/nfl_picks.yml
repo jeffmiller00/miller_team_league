@@ -1,18 +1,42 @@
 - name: Jeff
   pick: 4
   teams:
+  - name: Buffalo Bills
+    img: http://i.nflcdn.com/static/site/7.4/img/teams/BUF/BUF_logo-80x90.gif
+    css:
+    wins: 0
 - name: Greg
   pick: 3
   teams:
+  - name: Green Bay Packers
+    img: http://i.nflcdn.com/static/site/7.4/img/teams/GB/GB_logo-80x90.gif
+    css:
+    wins: 0
 - name: Tim
   pick: 5
   teams:
+  - name: Baltimore Ravens
+    img: http://i.nflcdn.com/static/site/7.4/img/teams/BAL/BAL_logo-80x90.gif
+    css:
+    wins: 0
+  - name: Los Angeles Rams
+    img: http://i.nflcdn.com/static/site/7.4/img/teams/LA/LA_logo-80x90.gif
+    css:
+    wins: 0
 - name: Zach
   pick: 1
   teams:
+  - name: Tampa Bay Buccaneers
+    img: http://i.nflcdn.com/static/site/7.4/img/teams/TB/TB_logo-80x90.gif
+    css:
+    wins: 0
 - name: Mike
   pick: 2
   teams:
+  - name: Kansas City Chiefs
+    img: http://i.nflcdn.com/static/site/7.4/img/teams/KC/KC_logo-80x90.gif
+    css:
+    wins: 0
 - name: Undrafted
   pick: None
   teams:
@@ -24,12 +48,8 @@
     img: http://i.nflcdn.com/static/site/7.4/img/teams/ARI/ARI_logo-80x90.gif
     css:
     wins: 0
-  - name: Baltimore Ravens
-    img: http://i.nflcdn.com/static/site/7.4/img/teams/BAL/BAL_logo-80x90.gif
-    css:
-    wins: 0
-  - name: Buffalo Bills
-    img: http://i.nflcdn.com/static/site/7.4/img/teams/BUF/BUF_logo-80x90.gif
+  - name: Cleveland Browns
+    img: http://i.nflcdn.com/static/site/7.4/img/teams/CLE/CLE_logo-80x90.gif
     css:
     wins: 0
   - name: Carolina Panthers
@@ -44,10 +64,6 @@
     img: http://i.nflcdn.com/static/site/7.4/img/teams/CIN/CIN_logo-80x90.gif
     css:
     wins: 0
-  - name: Cleveland Browns
-    img: http://i.nflcdn.com/static/site/7.4/img/teams/CLE/CLE_logo-80x90.gif
-    css:
-    wins: 0
   - name: Dallas Cowboys
     img: http://i.nflcdn.com/static/site/7.4/img/teams/DAL/DAL_logo-80x90.gif
     css:
@@ -58,10 +74,6 @@
     wins: 0
   - name: Detroit Lions
     img: http://i.nflcdn.com/static/site/7.4/img/teams/DET/DET_logo-80x90.gif
-    css:
-    wins: 0
-  - name: Green Bay Packers
-    img: http://i.nflcdn.com/static/site/7.4/img/teams/GB/GB_logo-80x90.gif
     css:
     wins: 0
   - name: Houston Texans
@@ -76,16 +88,8 @@
     img: http://i.nflcdn.com/static/site/7.4/img/teams/JAX/JAX_logo-80x90.gif
     css:
     wins: 0
-  - name: Kansas City Chiefs
-    img: http://i.nflcdn.com/static/site/7.4/img/teams/KC/KC_logo-80x90.gif
-    css:
-    wins: 0
   - name: Los Angeles Chargers
     img: http://i.nflcdn.com/static/site/7.4/img/teams/SD/SD_logo-80x90.gif
-    css:
-    wins: 0
-  - name: Los Angeles Rams
-    img: http://i.nflcdn.com/static/site/7.4/img/teams/LA/LA_logo-80x90.gif
     css:
     wins: 0
   - name: Miami Dolphins
@@ -130,10 +134,6 @@
     wins: 0
   - name: Seattle Seahawks
     img: http://i.nflcdn.com/static/site/7.4/img/teams/SEA/SEA_logo-80x90.gif
-    css:
-    wins: 0
-  - name: Tampa Bay Buccaneers
-    img: http://i.nflcdn.com/static/site/7.4/img/teams/TB/TB_logo-80x90.gif
     css:
     wins: 0
   - name: Tennessee Titans
