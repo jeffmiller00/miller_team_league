@@ -5,11 +5,19 @@
     img: http://i.nflcdn.com/static/site/7.4/img/teams/BUF/BUF_logo-80x90.gif
     css:
     wins: 0
+  - name: Cleveland Browns
+    img: http://i.nflcdn.com/static/site/7.4/img/teams/CLE/CLE_logo-80x90.gif
+    css:
+    wins: 0
 - name: Greg
   pick: 3
   teams:
   - name: Green Bay Packers
     img: http://i.nflcdn.com/static/site/7.4/img/teams/GB/GB_logo-80x90.gif
+    css:
+    wins: 0
+  - name: Seattle Seahawks
+    img: http://i.nflcdn.com/static/site/7.4/img/teams/SEA/SEA_logo-80x90.gif
     css:
     wins: 0
 - name: Tim
@@ -30,11 +38,23 @@
     img: http://i.nflcdn.com/static/site/7.4/img/teams/TB/TB_logo-80x90.gif
     css:
     wins: 0
+  - name: San Francisco 49ers
+    img: http://i.nflcdn.com/static/site/7.4/img/teams/SF/SF_logo-80x90.gif
+    css:
+    wins: 0
+  - name: Los Angeles Chargers
+    img: http://i.nflcdn.com/static/site/7.4/img/teams/SD/SD_logo-80x90.gif
+    css:
+    wins: 0
 - name: Mike
   pick: 2
   teams:
   - name: Kansas City Chiefs
     img: http://i.nflcdn.com/static/site/7.4/img/teams/KC/KC_logo-80x90.gif
+    css:
+    wins: 0
+  - name: Chicago Bears
+    img: http://i.nflcdn.com/static/site/7.4/img/teams/CHI/CHI_logo-80x90.gif
     css:
     wins: 0
 - name: Undrafted
@@ -48,16 +68,8 @@
     img: http://i.nflcdn.com/static/site/7.4/img/teams/ARI/ARI_logo-80x90.gif
     css:
     wins: 0
-  - name: Cleveland Browns
-    img: http://i.nflcdn.com/static/site/7.4/img/teams/CLE/CLE_logo-80x90.gif
-    css:
-    wins: 0
   - name: Carolina Panthers
     img: http://i.nflcdn.com/static/site/7.4/img/teams/CAR/CAR_logo-80x90.gif
-    css:
-    wins: 0
-  - name: Chicago Bears
-    img: http://i.nflcdn.com/static/site/7.4/img/teams/CHI/CHI_logo-80x90.gif
     css:
     wins: 0
   - name: Cincinnati Bengals
@@ -86,10 +98,6 @@
     wins: 0
   - name: Jacksonville Jaguars
     img: http://i.nflcdn.com/static/site/7.4/img/teams/JAX/JAX_logo-80x90.gif
-    css:
-    wins: 0
-  - name: Los Angeles Chargers
-    img: http://i.nflcdn.com/static/site/7.4/img/teams/SD/SD_logo-80x90.gif
     css:
     wins: 0
   - name: Miami Dolphins
@@ -126,14 +134,6 @@
     wins: 0
   - name: Pittsburgh Steelers
     img: http://i.nflcdn.com/static/site/7.4/img/teams/PIT/PIT_logo-80x90.gif
-    css:
-    wins: 0
-  - name: San Francisco 49ers
-    img: http://i.nflcdn.com/static/site/7.4/img/teams/SF/SF_logo-80x90.gif
-    css:
-    wins: 0
-  - name: Seattle Seahawks
-    img: http://i.nflcdn.com/static/site/7.4/img/teams/SEA/SEA_logo-80x90.gif
     css:
     wins: 0
   - name: Tennessee Titans
