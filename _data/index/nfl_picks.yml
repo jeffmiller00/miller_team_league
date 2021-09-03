@@ -102,6 +102,10 @@
     img: http://i.nflcdn.com/static/site/7.4/img/teams/ARI/ARI_logo-80x90.gif
     css:
     wins: 0
+  - name: Cincinnati Bengals
+    img: http://i.nflcdn.com/static/site/7.4/img/teams/CIN/CIN_logo-80x90.gif
+    css:
+    wins: 0
 - name: Mike
   pick: 2
   teams:
@@ -132,10 +136,6 @@
 - name: Undrafted
   pick: None
   teams:
-  - name: Cincinnati Bengals
-    img: http://i.nflcdn.com/static/site/7.4/img/teams/CIN/CIN_logo-80x90.gif
-    css:
-    wins: 0
   - name: Houston Texans
     img: http://i.nflcdn.com/static/site/7.4/img/teams/HOU/HOU_logo-80x90.gif
     css:
