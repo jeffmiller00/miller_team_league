@@ -18,7 +18,11 @@
     css:
     wins: 0
   - name: Washington Football Team
-    img: http://i.nflcdn.com/static/site/7.4/img/teams/WAS/WAS_logo-80x90.gif
+    img: https://static.www.nfl.com/league/api/clubs/logos/WAS.svg
+    css:
+    wins: 0
+  - name: Carolina Panthers
+    img: http://i.nflcdn.com/static/site/7.4/img/teams/CAR/CAR_logo-80x90.gif
     css:
     wins: 0
 - name: Greg
@@ -44,6 +48,10 @@
     img: http://i.nflcdn.com/static/site/7.4/img/teams/ATL/ATL_logo-80x90.gif
     css:
     wins: 0
+  - name: Jacksonville Jaguars
+    img: http://i.nflcdn.com/static/site/7.4/img/teams/JAX/JAX_logo-80x90.gif
+    css:
+    wins: 0
 - name: Tim
   pick: 5
   teams:
@@ -65,6 +73,10 @@
     wins: 0
   - name: Minnesota Vikings
     img: http://i.nflcdn.com/static/site/7.4/img/teams/MIN/MIN_logo-80x90.gif
+    css:
+    wins: 0
+  - name: New York Giants
+    img: http://i.nflcdn.com/static/site/7.4/img/teams/NYG/NYG_logo-80x90.gif
     css:
     wins: 0
 - name: Zach
@@ -120,24 +132,12 @@
 - name: Undrafted
   pick: None
   teams:
-  - name: Carolina Panthers
-    img: http://i.nflcdn.com/static/site/7.4/img/teams/CAR/CAR_logo-80x90.gif
-    css:
-    wins: 0
   - name: Cincinnati Bengals
     img: http://i.nflcdn.com/static/site/7.4/img/teams/CIN/CIN_logo-80x90.gif
     css:
     wins: 0
   - name: Houston Texans
     img: http://i.nflcdn.com/static/site/7.4/img/teams/HOU/HOU_logo-80x90.gif
-    css:
-    wins: 0
-  - name: Jacksonville Jaguars
-    img: http://i.nflcdn.com/static/site/7.4/img/teams/JAX/JAX_logo-80x90.gif
-    css:
-    wins: 0
-  - name: New York Giants
-    img: http://i.nflcdn.com/static/site/7.4/img/teams/NYG/NYG_logo-80x90.gif
     css:
     wins: 0
   - name: New York Jets
