@@ -97,6 +97,14 @@
     img: http://i.nflcdn.com/static/site/7.4/img/teams/DEN/DEN_logo-80x90.gif
     css:
     wins: 0
+  - name: Philadelphia Eagles
+    img: http://i.nflcdn.com/static/site/7.4/img/teams/PHI/PHI_logo-80x90.gif
+    css:
+    wins: 0
+  - name: Detroit Lions
+    img: http://i.nflcdn.com/static/site/7.4/img/teams/DET/DET_logo-80x90.gif
+    css:
+    wins: 0
 - name: Undrafted
   pick: None
   teams:
@@ -110,10 +118,6 @@
     wins: 0
   - name: Cincinnati Bengals
     img: http://i.nflcdn.com/static/site/7.4/img/teams/CIN/CIN_logo-80x90.gif
-    css:
-    wins: 0
-  - name: Detroit Lions
-    img: http://i.nflcdn.com/static/site/7.4/img/teams/DET/DET_logo-80x90.gif
     css:
     wins: 0
   - name: Houston Texans
@@ -135,10 +139,6 @@
     wins: 0
   - name: New York Jets
     img: http://i.nflcdn.com/static/site/7.4/img/teams/NYJ/NYJ_logo-80x90.gif
-    css:
-    wins: 0
-  - name: Philadelphia Eagles
-    img: http://i.nflcdn.com/static/site/7.4/img/teams/PHI/PHI_logo-80x90.gif
     css:
     wins: 0
   - name: Washington Redskins
