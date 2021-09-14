@@ -6,7 +6,7 @@
       <h3><em>Pick: {{ player.pick }}</em></h3>
       <ol>
         {% for pick in player.teams %}
-          <li class='{{ pick.css }}'><img class='img-fluid img-logo' src="{{ pick.img }}" style="width: 8em;"><h4>{{ pick.name }}</h4><span>{{ pick.wins }}</span></li>
+          <li class='{{ pick.css }}'><img class='img-fluid img-logo' src="{{ pick.img }}" style="width: 8em;"><h4>{{ pick.full_name }}</h4><span>{{ pick.wins }}</span></li>
         {% endfor %}
       </ol>
    </div>

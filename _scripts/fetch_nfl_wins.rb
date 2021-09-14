@@ -1,5 +1,6 @@
-require 'httpi'
+require 'typhoeus'
 require 'nokogiri'
+require 'date'
 require 'json'
 require 'yaml'
 require 'pry'
@@ -11,27 +12,63 @@ def get_teams
   JSON.parse(all_teams)
 end
 
+def parse_team_name(combined_name)
+  if combined_name.include?('Washington')
+    location = combined_name.split(' ').first
+    team_name = combined_name.sub(location, '').strip
+  else
+    team_name = combined_name.split(' ').last
+    location = combined_name.sub(team_name, '').strip
+  end
+  [location, team_name]
+end
+
+def find_team needle, haystack
+  needle['full_name'] ||= needle['name']
+  needle['location'], needle['name'] = parse_team_name(needle['name']) if needle['location'].nil?
+  needle['location'], needle['name'] = parse_team_name(needle['name']) if needle['location'].nil?
+  begin
+  if haystack.first['team'].nil?
+    truth_team = haystack.select{ |t| t['location'] == needle['location'] && t['name'] == needle['name'] }
+    truth_team = haystack.select{ |t| t['name'] == needle['name'] } if (truth_team.nil? || truth_team.empty? || truth_team.size > 1)
+    truth_team = haystack.select{ |t| t['location'] == needle['location'] } if (truth_team.nil? || truth_team.empty? || truth_team.size > 1)
+  else
+    truth_team = haystack.select{ |t| t['team']['location'] == needle['location'] && t['team']['name'] == needle['name'] }
+    truth_team = haystack.select{ |t| t['team']['name'] == needle['name'] } if (truth_team.nil? || truth_team.empty? || truth_team.size > 1)
+    truth_team = haystack.select{ |t| t['team']['location'] == needle['location'] } if (truth_team.nil? || truth_team.empty? || truth_team.size > 1)
+  end
+  rescue
+    binding.pry
+  end
+
+  truth_team.first
+end
+
 def generate_team_table
   all_teams = get_teams
   player_picks = YAML.load(File.read('../_data/index/nfl_picks.yml'))
 
   player_picks.each do |player|
     player['teams'].each do |team|
-      truth_team = all_teams.find{ |team_hash| team_hash['name'] == team['name'].split.last }
-      team['wins'] = truth_team['wins'].map{ |wins_on| wins_on[1] }.max
+      truth_team = find_team team, all_teams
+      begin
+        team['wins'] = truth_team['wins'].map{ |wins_on| wins_on[1] }.max
+      rescue
+      binding.pry
+      end
     end
   end
   puts player_picks.to_yaml
 end
 
 EMPTY_WEEK = {jeff: 0, greg: 0, tim: 0, zach: 0, mike: 0}
-CURRENT_NFL_WEEK = 17
+CURRENT_NFL_WEEK = 1
 
 def generate_summary_chart
   all_teams = get_teams
   weeklySummary = []
-  week1begin = Date.parse('2019-09-04')
-  week1end   = Date.parse('2019-09-10')
+  week1begin = Date.parse('2021-09-09')
+  week1end   = Date.parse('2021-09-13')
   CURRENT_NFL_WEEK.times do |i|
     weeklySummary[i] = EMPTY_WEEK.dup
     weekBegin = week1begin.next_day(7*i)
@@ -62,31 +99,24 @@ def generate_summary_chart
 end
 
 def fetch_wins?; true; end;
-def write_file?; true; end;
+def write_file?; false; end;
 
 if fetch_wins?
-  request = HTTPI::Request.new
-  request.url = 'https://www.cbssports.com/nfl/standings/'
-  # request.query = { Season: '2015-16',
-  #                   SeasonType: 'Regular%20Season'}
-  response = HTTPI.get(request)
-  full_doc = Nokogiri::HTML(response.body)
-  truth_teams = full_doc.xpath('//table[@class="TableBase-table"]/tr')
+  response = Typhoeus.get('http://site.api.espn.com/apis/site/v2/sports/football/nfl/teams', followlocation: true)
+  truth_teams = JSON.parse(response.body)['sports'].first['leagues'].first['teams']
+  response = Typhoeus.get('http://site.api.espn.com/apis/site/v2/sports/football/nfl/teams?page=2', followlocation: true)
+  truth_teams = truth_teams + JSON.parse(response.body)['sports'].first['leagues'].first['teams']
+
+  all_teams = JSON.parse(File.read(DATA_FILE))
 
 
-  all_teams = File.read(DATA_FILE)
-  all_teams = JSON.parse(all_teams)
 
   all_teams.each do |team|
-    if truth_teams.search("[text()*='#{team['location']}']").first
-      wins = truth_teams.search("[text()*='#{team['location']}']").first.parent.parent.parent.parent.parent.parent.children[2].text.to_i
-      # puts "#{team['location']} | #{wins}"
-    elsif truth_teams.search("[text()*='#{team['name']}']").first
-      wins = truth_teams.search("[text()*='#{team['name']}']").first.parent.parent.parent.parent.parent.parent.children[2].text.to_i
-      # puts "#{team['location']} | #{wins}"
-    else
-      binding.pry
-    end
+    truth_team = find_team(team, truth_teams)
+    # binding.pry
+    # May need to adjust this after preseason.
+    wins = truth_team['team']['record']['items'].first['stats'].find{|s| s['name'] == 'wins'}['value'].to_i
+    puts "#{truth_team['team']['displayName']} | #{wins}" unless write_file?
 
     team['wins'][Date.today.prev_day.to_s] = wins
   end
