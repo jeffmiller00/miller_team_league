@@ -62,7 +62,7 @@ def generate_team_table
 end
 
 EMPTY_WEEK = {jeff: 0, greg: 0, tim: 0, zach: 0, mike: 0}
-CURRENT_NFL_WEEK = 1
+CURRENT_NFL_WEEK = 2
 
 def generate_summary_chart
   all_teams = get_teams
@@ -99,7 +99,7 @@ def generate_summary_chart
 end
 
 def fetch_wins?; true; end;
-def write_file?; false; end;
+def write_file?; true; end;
 
 if fetch_wins?
   response = Typhoeus.get('http://site.api.espn.com/apis/site/v2/sports/football/nfl/teams', followlocation: true)
