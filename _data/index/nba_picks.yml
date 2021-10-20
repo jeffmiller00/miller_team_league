@@ -44,6 +44,10 @@
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/PHI.svg
     css:
     wins: 0
+  - name: Indiana Pacers
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/IND.svg
+    css:
+    wins: 0
 - name: Zach
   pick: 4
   teams:
@@ -53,6 +57,14 @@
     wins: 0
   - name: Phoenix Suns
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/PHX.svg
+    css:
+    wins: 0
+  - name: LA Clippers
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/LAC.svg
+    css:
+    wins: 0
+  - name: Boston Celtics
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/BOS.svg
     css:
     wins: 0
 - name: Undrafted
@@ -74,10 +86,6 @@
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/OKC.svg
     css:
     wins: 0
-  - name: Boston Celtics
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/BOS.svg
-    css:
-    wins: 0
   - name: New York Knicks
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/NYK.svg
     css:
@@ -86,8 +94,8 @@
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/HOU.svg
     css:
     wins: 0
-  - name: Indiana Pacers
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/IND.svg
+  - name: Portland Trail Blazers
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/POR.svg
     css:
     wins: 0
   - name: Sacramento Kings
@@ -100,14 +108,6 @@
     wins: 0
   - name: Memphis Grizzlies
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MEM.svg
-    css:
-    wins: 0
-  - name: LA Clippers
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/LAC.svg
-    css:
-    wins: 0
-  - name: Portland Trail Blazers
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/POR.svg
     css:
     wins: 0
   - name: New Orleans Pelicans
