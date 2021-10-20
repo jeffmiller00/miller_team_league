@@ -22,6 +22,14 @@
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/CHA.svg
     css:
     wins: 0
+  - name: Washington Wizards
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/WAS.svg
+    css:
+    wins: 0
+  - name: Sacramento Kings
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/SAC.svg
+    css:
+    wins: 0
 - name: Greg
   pick: 2
   teams:
@@ -43,6 +51,14 @@
     wins: 0
   - name: Memphis Grizzlies
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MEM.svg
+    css:
+    wins: 0
+  - name: San Antonio Spurs
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/SAS.svg
+    css:
+    wins: 0
+  - name: Detroit Pistons
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/DET.svg
     css:
     wins: 0
 - name: Jeff
@@ -70,6 +86,10 @@
     wins: 0
   - name: New Orleans Pelicans
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/NOP.svg
+    css:
+    wins: 0
+  - name: Cleveland Cavaliers
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/CLE.svg
     css:
     wins: 0
 - name: Zach
@@ -102,10 +122,6 @@
 - name: Undrafted
   pick: None
   teams:
-  - name: San Antonio Spurs
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/SAS.svg
-    css:
-    wins: 0
   - name: Orlando Magic
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/ORL.svg
     css:
@@ -117,20 +133,4 @@
   - name: Houston Rockets
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/HOU.svg
     css:
-    wins: 0
-  - name: Sacramento Kings
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/SAC.svg
-    css:
-    wins: 0
-  - name: Detroit Pistons
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/DET.svg
-    css:
-    wins: 0
-  - name: Washington Wizards
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/WAS.svg
-    css:
-    wins: 0
-  - name: Cleveland Cavaliers
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/CLE.svg
-    css: 
     wins: 0
