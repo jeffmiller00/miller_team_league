@@ -25,6 +25,10 @@
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/DEN.svg
     css:
     wins: 0
+  - name: Atlanta Hawks
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/ATL.svg
+    css:
+    wins: 0
 - name: Jeff
   pick: 3
   teams:
@@ -34,6 +38,10 @@
     wins: 0
   - name: Golden State Warriors
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/GSW.svg
+    css:
+    wins: 0
+  - name: Philadelphia 76ers
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/PHI.svg
     css:
     wins: 0
 - name: Zach
@@ -50,18 +58,6 @@
 - name: Undrafted
   pick: None
   teams:
-  - name: Boston Celtics
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/BOS.svg
-    css:
-    wins: 0
-  - name: Atlanta Hawks
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/ATL.svg
-    css:
-    wins: 0
-  - name: Philadelphia 76ers
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/PHI.svg
-    css:
-    wins: 0
   - name: San Antonio Spurs
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/SAS.svg
     css:
@@ -76,6 +72,10 @@
     wins: 0
   - name: Oklahoma City Thunder
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/OKC.svg
+    css:
+    wins: 0
+  - name: Boston Celtics
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/BOS.svg
     css:
     wins: 0
   - name: New York Knicks
