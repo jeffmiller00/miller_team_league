@@ -2,26 +2,42 @@
 - name: Tim
   pick: 1
   teams:
+  - name: Los Angeles Lakers
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/LAL.svg
+    css:
+    wins: 0
 - name: Greg
   pick: 2
-  teams:
-- name: Jeff
-  pick: 3
-  teams:
-- name: Zach
-  pick: 4
-  teams:
-- name: Undrafted
-  pick: None
   teams:
   - name: Milwaukee Bucks
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MIL.svg
     css:
     wins: 0
+- name: Jeff
+  pick: 3
+  teams:
+  - name: Brooklyn Nets
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/BKN.svg
+    css:
+    wins: 0
+  - name: Golden State Warriors
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/GSW.svg
+    css:
+    wins: 0
+- name: Zach
+  pick: 4
+  teams:
   - name: Utah Jazz
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/UTA.svg
     css:
     wins: 0
+  - name: Phoenix Suns
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/PHX.svg
+    css:
+    wins: 0
+- name: Undrafted
+  pick: None
+  teams:
   - name: Boston Celtics
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/BOS.svg
     css:
@@ -30,20 +46,8 @@
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MIA.svg
     css:
     wins: 0
-  - name: Brooklyn Nets
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/BKN.svg
-    css:
-    wins: 0
   - name: Atlanta Hawks
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/ATL.svg
-    css:
-    wins: 0
-  - name: Phoenix Suns
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/PHX.svg
-    css:
-    wins: 0
-  - name: Los Angeles Lakers
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/LAL.svg
     css:
     wins: 0
   - name: Philadelphia 76ers
@@ -100,10 +104,6 @@
     wins: 0
   - name: LA Clippers
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/LAC.svg
-    css:
-    wins: 0
-  - name: Golden State Warriors
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/GSW.svg
     css:
     wins: 0
   - name: Portland Trail Blazers
