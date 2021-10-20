@@ -6,11 +6,23 @@
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/LAL.svg
     css:
     wins: 0
+  - name: Dallas Mavericks
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/DAL.svg
+    css:
+    wins: 0
+  - name: Miami Heat
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MIA.svg
+    css:
+    wins: 0
 - name: Greg
   pick: 2
   teams:
   - name: Milwaukee Bucks
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MIL.svg
+    css:
+    wins: 0
+  - name: Denver Nuggets
+    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/DEN.svg
     css:
     wins: 0
 - name: Jeff
@@ -42,10 +54,6 @@
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/BOS.svg
     css:
     wins: 0
-  - name: Miami Heat
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MIA.svg
-    css:
-    wins: 0
   - name: Atlanta Hawks
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/ATL.svg
     css:
@@ -74,20 +82,12 @@
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/NYK.svg
     css:
     wins: 0
-  - name: Denver Nuggets
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/DEN.svg
-    css:
-    wins: 0
   - name: Houston Rockets
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/HOU.svg
     css:
     wins: 0
   - name: Indiana Pacers
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/IND.svg
-    css:
-    wins: 0
-  - name: Dallas Mavericks
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/DAL.svg
     css:
     wins: 0
   - name: Sacramento Kings
