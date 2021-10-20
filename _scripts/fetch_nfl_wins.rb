@@ -5,7 +5,8 @@ require 'json'
 require 'yaml'
 require 'pry'
 
-DATA_FILE = '../_data/nfl.json'
+DATA_FILE  = '../_data/nfl.json'
+PICKS_FILE ='../_data/index/nfl_picks.yml'
 
 def get_teams
   all_teams = File.read(DATA_FILE)
@@ -46,7 +47,7 @@ end
 
 def generate_team_table
   all_teams = get_teams
-  player_picks = YAML.load(File.read('../_data/index/nfl_picks.yml'))
+  player_picks = YAML.load(File.read(PICKS_FILE))
 
   player_picks.each do |player|
     player['teams'].each do |team|
@@ -58,7 +59,13 @@ def generate_team_table
       end
     end
   end
-  puts player_picks.to_yaml
+  if write_file?
+    File.open(PICKS_FILE,"w") do |f|
+      f.write(player_picks.to_yaml)
+    end
+  else
+    puts player_picks.to_yaml
+  end
 end
 
 EMPTY_WEEK = {jeff: 0, greg: 0, tim: 0, zach: 0, mike: 0}

@@ -119,13 +119,13 @@
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MIN.svg
     css:
     wins: 0
-- name: Undrafted
-  pick: None
-  teams:
   - name: Orlando Magic
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/ORL.svg
     css:
     wins: 0
+- name: Undrafted
+  pick: None
+  teams:
   - name: Oklahoma City Thunder
     img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/OKC.svg
     css:

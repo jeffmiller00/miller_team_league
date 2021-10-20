@@ -4,7 +4,7 @@ require 'json'
 require 'yaml'
 require 'pry'
 
-DATA_FILE  = '../_data/nba_2019.json'
+DATA_FILE  = '../_data/nba.json'
 PICKS_FILE = '../_data/index/nba_picks.yml'
 def fetch_wins?; true; end;
 def write_file?; true; end;
