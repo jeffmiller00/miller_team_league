@@ -11,19 +11,19 @@
   - name: Browns
     img: https://static.www.nfl.com/league/api/clubs/logos/CLE.svg
     css:
-    wins: 3
+    wins: 4
     full_name: Cleveland Browns
     location: Cleveland
   - name: Patriots
     img: https://static.www.nfl.com/league/api/clubs/logos/NE.svg
     css:
-    wins: 2
+    wins: 3
     full_name: New England Patriots
     location: New England
   - name: Colts
     img: https://static.www.nfl.com/league/api/clubs/logos/IND.svg
     css:
-    wins: 2
+    wins: 3
     full_name: Indianapolis Colts
     location: Indianapolis
   - name: Football Team
@@ -44,7 +44,7 @@
   - name: Packers
     img: https://static.www.nfl.com/league/api/clubs/logos/GB.svg
     css:
-    wins: 5
+    wins: 6
     full_name: Green Bay Packers
     location: Green Bay
   - name: Seahawks
@@ -62,13 +62,13 @@
   - name: Raiders
     img: https://static.www.nfl.com/league/api/clubs/logos/LV.svg
     css:
-    wins: 4
+    wins: 5
     full_name: Oakland Raiders
     location: Oakland
   - name: Falcons
     img: https://static.www.nfl.com/league/api/clubs/logos/ATL.svg
     css:
-    wins: 2
+    wins: 3
     full_name: Atlanta Falcons
     location: Atlanta
   - name: Jaguars
@@ -89,13 +89,13 @@
   - name: Rams
     img: https://static.www.nfl.com/league/api/clubs/logos/LA.svg
     css:
-    wins: 5
+    wins: 6
     full_name: Los Angeles Rams
     location: Los Angeles
   - name: Titans
     img: https://static.www.nfl.com/league/api/clubs/logos/TEN.svg
     css:
-    wins: 4
+    wins: 5
     full_name: Tennessee Titans
     location: Tennessee
   - name: Steelers
@@ -113,7 +113,7 @@
   - name: Giants
     img: https://static.www.nfl.com/league/api/clubs/logos/NYG.svg
     css:
-    wins: 1
+    wins: 2
     full_name: New York Giants
     location: New York
 - name: Zach
@@ -122,7 +122,7 @@
   - name: Buccaneers
     img: https://static.www.nfl.com/league/api/clubs/logos/TB.svg
     css:
-    wins: 5
+    wins: 6
     full_name: Tampa Bay Buccaneers
     location: Tampa Bay
   - name: 49ers
@@ -146,13 +146,13 @@
   - name: Cardinals
     img: https://static.www.nfl.com/league/api/clubs/logos/ARI.svg
     css:
-    wins: 6
+    wins: 7
     full_name: Arizona Cardinals
     location: Arizona
   - name: Bengals
     img: https://static.www.nfl.com/league/api/clubs/logos/CIN.svg
     css:
-    wins: 4
+    wins: 5
     full_name: Cincinnati Bengals
     location: Cincinnati
 - name: Mike
@@ -173,7 +173,7 @@
   - name: Saints
     img: https://static.www.nfl.com/league/api/clubs/logos/NO.svg
     css:
-    wins: 3
+    wins: 4
     full_name: New Orleans Saints
     location: New Orleans
   - name: Broncos
