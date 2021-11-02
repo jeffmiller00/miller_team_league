@@ -1,7 +1,8 @@
-require 'httpi'
+require 'typhoeus'
 require 'nokogiri'
 require 'json'
 require 'yaml'
+require 'date'
 require 'pry'
 
 DATA_FILE  = '../_data/nba.json'
@@ -60,11 +61,14 @@ def generate_summary_chart
 end
 
 if fetch_wins?
+=begin
   request = HTTPI::Request.new
-  request.url = 'http://data.nba.net/data/10s/prod/v1/current/standings_all_no_sort_keys.json'
+  request.url = ''
   # request.query = { Season: '2015-16',
   #                   SeasonType: 'Regular%20Season'}
   response = HTTPI.get(request)
+=end
+  response = Typhoeus.get('http://data.nba.net/data/10s/prod/v1/current/standings_all_no_sort_keys.json', followlocation: true)
   truth_teams = JSON.parse(response.body)
   truth_teams = truth_teams['league']['standard']['teams']
 
