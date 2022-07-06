@@ -30,6 +30,7 @@
   wins:
     - 2|2016 NFL
     - 1|2017 NFL
+    - 2|2021 NFL
   desc: Is the most concerned with what's going on, but rarely wins.
 
 - name: Zach
@@ -40,4 +41,5 @@
     - 2|2017 NBA
     - 2|2018 NFL
     - 2|2019 NFL
+    - 1|2021 NFL
   desc: The treasurer for the whole project.
