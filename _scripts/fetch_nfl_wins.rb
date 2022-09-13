@@ -69,13 +69,13 @@ def generate_team_table
 end
 
 EMPTY_WEEK = {jeff: 0, greg: 0, tim: 0, zach: 0, mike: 0}
-CURRENT_NFL_WEEK = 18
+CURRENT_NFL_WEEK = 1
 
 def generate_summary_chart
   all_teams = get_teams
   weeklySummary = []
-  week1begin = Date.parse('2021-09-09')
-  week1end   = Date.parse('2021-09-13')
+  week1begin = Date.parse('2022-09-08')
+  week1end   = Date.parse('2022-09-12')
   CURRENT_NFL_WEEK.times do |i|
     weeklySummary[i] = EMPTY_WEEK.dup
     weekBegin = week1begin.next_day(7*i)
@@ -109,20 +109,16 @@ def fetch_wins?; true; end;
 def write_file?; true; end;
 
 if fetch_wins?
-  response = Typhoeus.get('http://site.api.espn.com/apis/site/v2/sports/football/nfl/teams', followlocation: true)
+  response = Typhoeus.get('http://site.api.espn.com/apis/site/v2/sports/football/nfl/teams?limit=32', followlocation: true)
   truth_teams = JSON.parse(response.body)['sports'].first['leagues'].first['teams']
-  response = Typhoeus.get('http://site.api.espn.com/apis/site/v2/sports/football/nfl/teams?page=2', followlocation: true)
-  truth_teams = truth_teams + JSON.parse(response.body)['sports'].first['leagues'].first['teams']
-
   all_teams = JSON.parse(File.read(DATA_FILE))
-
 
 
   all_teams.each do |team|
     truth_team = find_team(team, truth_teams)
-    # binding.pry
     # May need to adjust this after preseason.
-    wins = truth_team['team']['record']['items'].first['stats'].find{|s| s['name'] == 'wins'}['value'].to_i
+    response = Typhoeus.get("https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2022/types/2/teams/#{truth_team['team']['id']}/odds-records", followlocation: true)
+    wins = JSON.parse(response.body)['items'].first['stats'].find{|s| s['type'] == 'win'}['value'].to_i
     puts "#{truth_team['team']['displayName']} | #{wins}" unless write_file?
 
     team['wins'][Date.today.prev_day.to_s] = wins
