@@ -69,7 +69,6 @@ def generate_team_table
 end
 
 EMPTY_WEEK = {jeff: 0, greg: 0, tim: 0, zach: 0, mike: 0}
-CURRENT_NFL_WEEK = 4
 
 def generate_summary_chart
   all_teams = get_teams
@@ -77,8 +76,8 @@ def generate_summary_chart
   week1begin = Date.parse('2022-09-08')
   week1end   = Date.parse('2022-09-12')
   nfl_week_number = ((Date.today - week1begin)/7).to_i + 1
-  puts "|| ===== #{CURRENT_NFL_WEEK} vs #{nfl_week_number} ===== ||"
-  CURRENT_NFL_WEEK.times do |i|
+
+  nfl_week_number.times do |i|
     weeklySummary[i] = EMPTY_WEEK.dup
     weekBegin = week1begin.next_day(7*i)
     weekEnd   = week1end.next_day(7*i)
