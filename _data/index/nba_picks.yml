@@ -2,135 +2,135 @@
 - name: Tim
   pick: 1
   teams:
-  - name: Los Angeles Lakers
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/LAL.svg
-    css: out
-    wins: 33
-  - name: Dallas Mavericks
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/DAL.svg
-    css:
-    wins: 52 + 9
-  - name: Miami Heat
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MIA.svg
-    css:
-    wins: 53 + 11
-  - name: New York Knicks
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/NYK.svg
-    css: out
-    wins: 37
-  - name: Charlotte Hornets
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/CHA.svg
-    css: out
-    wins: 43
-  - name: Washington Wizards
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/WAS.svg
-    css: out
-    wins: 35
-  - name: Sacramento Kings
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/SAC.svg
-    css: out
-    wins: 30
 - name: Greg
   pick: 2
   teams:
-  - name: Milwaukee Bucks
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MIL.svg
-    css:
-    wins: 51 + 7
-  - name: Denver Nuggets
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/DEN.svg
-    css:
-    wins: 48 + 1
-  - name: Atlanta Hawks
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/ATL.svg
-    css:
-    wins: 43 + 1
-  - name: Portland Trail Blazers
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/POR.svg
-    css: out
-    wins: 27
-  - name: Memphis Grizzlies
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MEM.svg
-    css:
-    wins: 56 + 6
-  - name: San Antonio Spurs
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/SAS.svg
-    css: out
-    wins: 34
-  - name: Detroit Pistons
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/DET.svg
-    css: out
-    wins: 23
 - name: Jeff
   pick: 3
   teams:
-  - name: Brooklyn Nets
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/BKN.svg
-    css:
-    wins: 44 + 0
-  - name: Golden State Warriors
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/GSW.svg
-    css:
-    wins: 53 + 16
-  - name: Philadelphia 76ers
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/PHI.svg
-    css:
-    wins: 51 + 6
-  - name: Indiana Pacers
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/IND.svg
-    css: out
-    wins: 25
-  - name: Chicago Bulls
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/CHI.svg
-    css:
-    wins: 46 + 1
-  - name: New Orleans Pelicans
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/NOP.svg
-    css:
-    wins: 36 + 2
-  - name: Cleveland Cavaliers
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/CLE.svg
-    css: out
-    wins: 44
 - name: Zach
   pick: 4
   teams:
-  - name: Utah Jazz
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/UTA.svg
-    css:
-    wins: 49 + 2
-  - name: Phoenix Suns
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/PHX.svg
-    css:
-    wins: 64 + 7
-  - name: LA Clippers
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/LAC.svg
-    css: out
-    wins: 42
-  - name: Boston Celtics
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/BOS.svg
-    css:
-    wins: 51 + 14
-  - name: Toronto Raptors
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/TOR.svg
-    css:
-    wins: 48 + 2
-  - name: Minnesota Timberwolves
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MIN.svg
-    css:
-    wins: 46 + 2
-  - name: Orlando Magic
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/ORL.svg
-    css: out
-    wins: 22
 - name: Undrafted
   pick: None
   teams:
+  - name: Los Angeles Lakers
+    team_id: 1610612747
+    css:
+    wins: 0
+  - name: Dallas Mavericks
+    team_id: 1610612742
+    css:
+    wins: 0
+  - name: Miami Heat
+    team_id: 1610612748
+    css:
+    wins: 0
+  - name: New York Knicks
+    team_id: 1610612752
+    css:
+    wins: 0
+  - name: Charlotte Hornets
+    team_id: 1610612766
+    css:
+    wins: 0
+  - name: Washington Wizards
+    team_id: 1610612764
+    css:
+    wins: 0
+  - name: Sacramento Kings
+    team_id: 1610612758
+    css:
+    wins: 0
+  - name: Milwaukee Bucks
+    team_id: 1610612749
+    css:
+    wins: 0
+  - name: Denver Nuggets
+    team_id: 1610612743
+    css:
+    wins: 0
+  - name: Atlanta Hawks
+    team_id: 1610612737
+    css:
+    wins: 0
+  - name: Portland Trail Blazers
+    team_id: 1610612757
+    css:
+    wins: 0
+  - name: Memphis Grizzlies
+    team_id: 1610612763
+    css:
+    wins: 0
+  - name: San Antonio Spurs
+    team_id: 1610612759
+    css:
+    wins: 0
+  - name: Detroit Pistons
+    team_id: 1610612765
+    css:
+    wins: 0
+  - name: Brooklyn Nets
+    team_id: 1610612751
+    css:
+    wins: 0
+  - name: Golden State Warriors
+    team_id: 1610612744
+    css:
+    wins: 0
+  - name: Philadelphia 76ers
+    team_id: 1610612755
+    css:
+    wins: 0
+  - name: Indiana Pacers
+    team_id: 1610612754
+    css:
+    wins: 0
+  - name: Chicago Bulls
+    team_id: 1610612741
+    css:
+    wins: 0
+  - name: New Orleans Pelicans
+    team_id: 1610612740
+    css:
+    wins: 0
+  - name: Cleveland Cavaliers
+    team_id: 1610612739
+    css:
+    wins: 0
+  - name: Utah Jazz
+    team_id: 1610612762
+    css:
+    wins: 0
+  - name: Phoenix Suns
+    team_id: 1610612756
+    css:
+    wins: 0
+  - name: LA Clippers
+    team_id: 1610612746
+    css:
+    wins: 0
+  - name: Boston Celtics
+    team_id: 1610612738
+    css:
+    wins: 0
+  - name: Toronto Raptors
+    team_id: 1610612761
+    css:
+    wins: 0
+  - name: Minnesota Timberwolves
+    team_id: 1610612750
+    css:
+    wins: 0
+  - name: Orlando Magic
+    team_id: 1610612753
+    css:
+    wins: 0
   - name: Oklahoma City Thunder
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/OKC.svg
-    css: out
-    wins: 24
+    team_id: 1610612760
+    css:
+    wins: 0
   - name: Houston Rockets
-    img: http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/HOU.svg
-    css: out
-    wins: 20
+    team_id: 1610612745
+    css:
+    wins: 0

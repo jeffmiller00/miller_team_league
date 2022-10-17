@@ -1,1 +1,243 @@
-[{"location":"Atlanta","name":"Hawks","teamId":"1610612737","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/ATL.svg","drafted_by":"greg","wins":{"2021-10-19":0,"2021-11-01":4,"2021-11-15":6,"2021-12-06":13,"2022-01-04":16,"2022-01-17":18,"2022-07-05":43}},{"location":"Boston","name":"Celtics","teamId":"1610612738","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/BOS.svg","drafted_by":"zach","wins":{"2021-10-19":0,"2021-11-01":2,"2021-11-15":7,"2021-12-06":13,"2022-01-04":18,"2022-01-17":23,"2022-07-05":51}},{"location":"Brooklyn","name":"Nets","teamId":"1610612751","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/BKN.svg","drafted_by":"jeff","wins":{"2021-10-19":0,"2021-11-01":4,"2021-11-15":10,"2021-12-06":16,"2022-01-04":23,"2022-01-17":27,"2022-07-05":44}},{"location":"Charlotte","name":"Hornets","teamId":"1610612766","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/CHA.svg","drafted_by":"tim","wins":{"2021-10-19":0,"2021-11-01":5,"2021-11-15":8,"2021-12-06":14,"2022-01-04":19,"2022-01-17":24,"2022-07-05":43}},{"location":"Chicago","name":"Bulls","teamId":"1610612741","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/CHI.svg","drafted_by":"jeff","wins":{"2021-10-19":0,"2021-11-01":6,"2021-11-15":10,"2021-12-06":17,"2022-01-04":25,"2022-01-17":27,"2022-07-05":46}},{"location":"Cleveland","name":"Cavaliers","teamId":"1610612739","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/CLE.svg","drafted_by":"jeff","wins":{"2021-10-19":0,"2021-11-01":4,"2021-11-15":9,"2021-12-06":13,"2022-01-04":21,"2022-01-17":27,"2022-07-05":44}},{"location":"Dallas","name":"Mavericks","teamId":"1610612742","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/DAL.svg","drafted_by":"tim","wins":{"2021-10-19":0,"2021-11-01":4,"2021-11-15":9,"2021-12-06":11,"2022-01-04":19,"2022-01-17":25,"2022-07-05":52}},{"location":"Denver","name":"Nuggets","teamId":"1610612743","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/DEN.svg","drafted_by":"greg","wins":{"2021-10-19":0,"2021-11-01":4,"2021-11-15":9,"2021-12-06":11,"2022-01-04":18,"2022-01-17":22,"2022-07-05":48}},{"location":"Detroit","name":"Pistons","teamId":"1610612765","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/DET.svg","drafted_by":"greg","wins":{"2021-10-19":0,"2021-11-01":1,"2021-11-15":3,"2021-12-06":4,"2022-01-04":7,"2022-01-17":10,"2022-07-05":23}},{"location":"Golden State","alt_location":"Golden St.","name":"Warriors","teamId":"1610612744","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/GSW.svg","drafted_by":"jeff","wins":{"2021-10-19":0,"2021-11-01":5,"2021-11-15":11,"2021-12-06":20,"2022-01-04":29,"2022-01-17":31,"2022-07-05":53}},{"location":"Houston","name":"Rockets","teamId":"1610612745","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/HOU.svg","drafted_by":"","wins":{"2021-10-19":0,"2021-11-01":1,"2021-11-15":1,"2021-12-06":7,"2022-01-04":10,"2022-01-17":13,"2022-07-05":20}},{"location":"Indiana","name":"Pacers","teamId":"1610612754","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/IND.svg","drafted_by":"jeff","wins":{"2021-10-19":0,"2021-11-01":2,"2021-11-15":6,"2021-12-06":10,"2022-01-04":14,"2022-01-17":15,"2022-07-05":25}},{"location":"LA","name":"Clippers","teamId":"1610612746","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/LAC.svg","drafted_by":"zach","wins":{"2021-10-19":0,"2021-11-01":2,"2021-11-15":8,"2021-12-06":13,"2022-01-04":19,"2022-01-17":22,"2022-07-05":42}},{"location":"Los Angeles","name":"Lakers","teamId":"1610612747","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/LAL.svg","drafted_by":"tim","wins":{"2021-10-19":0,"2021-11-01":4,"2021-11-15":8,"2021-12-06":12,"2022-01-04":20,"2022-01-17":22,"2022-07-05":33}},{"location":"Memphis","name":"Grizzlies","teamId":"1610612763","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MEM.svg","drafted_by":"greg","wins":{"2021-10-19":0,"2021-11-01":4,"2021-11-15":7,"2021-12-06":14,"2022-01-04":25,"2022-01-17":31,"2022-07-05":56}},{"location":"Miami","name":"Heat","teamId":"1610612748","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MIA.svg","drafted_by":"tim","wins":{"2021-10-19":0,"2021-11-01":5,"2021-11-15":9,"2021-12-06":14,"2022-01-04":23,"2022-01-17":28,"2022-07-05":53}},{"location":"Milwaukee","name":"Bucks","teamId":"1610612749","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MIL.svg","drafted_by":"greg","wins":{"2021-10-19":0,"2021-11-01":3,"2021-11-15":6,"2021-12-06":16,"2022-01-04":25,"2022-01-17":27,"2022-07-05":51}},{"location":"Minnesota","name":"Timberwolves","teamId":"1610612750","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/MIN.svg","drafted_by":"zach","wins":{"2021-10-19":0,"2021-11-01":3,"2021-11-15":4,"2021-12-06":11,"2022-01-04":17,"2022-01-17":21,"2022-07-05":46}},{"location":"New Orleans","name":"Pelicans","teamId":"1610612740","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/NOP.svg","drafted_by":"jeff","wins":{"2021-10-19":0,"2021-11-01":1,"2021-11-15":2,"2021-12-06":7,"2022-01-04":13,"2022-01-17":16,"2022-07-05":36}},{"location":"New York","name":"Knicks","teamId":"1610612752","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/NYK.svg","drafted_by":"tim","wins":{"2021-10-19":0,"2021-11-01":5,"2021-11-15":8,"2021-12-06":11,"2022-01-04":18,"2022-01-17":22,"2022-07-05":37}},{"location":"Oklahoma City","name":"Thunder","teamId":"1610612760","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/OKC.svg","drafted_by":"","wins":{"2021-10-19":0,"2021-11-01":1,"2021-11-15":5,"2021-12-06":7,"2022-01-04":13,"2022-01-17":14,"2022-07-05":24}},{"location":"Orlando","name":"Magic","teamId":"1610612753","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/ORL.svg","drafted_by":"zach","wins":{"2021-10-19":0,"2021-11-01":2,"2021-11-15":3,"2021-12-06":5,"2022-01-04":7,"2022-01-17":8,"2022-07-05":22}},{"location":"Philadelphia","name":"76ers","teamId":"1610612755","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/PHI.svg","drafted_by":"jeff","wins":{"2021-10-19":0,"2021-11-01":5,"2021-11-15":8,"2021-12-06":13,"2022-01-04":20,"2022-01-17":25,"2022-07-05":51}},{"location":"Phoenix","name":"Suns","teamId":"1610612756","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/PHX.svg","drafted_by":"zach","wins":{"2021-10-19":0,"2021-11-01":2,"2021-11-15":10,"2021-12-06":20,"2022-01-04":29,"2022-01-17":34,"2022-07-05":64}},{"location":"Portland","name":"Trail Blazers","teamId":"1610612757","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/POR.svg","drafted_by":"greg","wins":{"2021-10-19":0,"2021-11-01":3,"2021-11-15":7,"2021-12-06":11,"2022-01-04":14,"2022-01-17":18,"2022-07-05":27}},{"location":"Sacramento","name":"Kings","teamId":"1610612758","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/SAC.svg","drafted_by":"tim","wins":{"2021-10-19":0,"2021-11-01":3,"2021-11-15":6,"2021-12-06":10,"2022-01-04":16,"2022-01-17":18,"2022-07-05":30}},{"location":"San Antonio","name":"Spurs","teamId":"1610612759","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/SAS.svg","drafted_by":"greg","wins":{"2021-10-19":0,"2021-11-01":2,"2021-11-15":4,"2021-12-06":8,"2022-01-04":14,"2022-01-17":16,"2022-07-05":34}},{"location":"Toronto","name":"Raptors","teamId":"1610612761","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/TOR.svg","drafted_by":"zach","wins":{"2021-10-19":0,"2021-11-01":5,"2021-11-15":7,"2021-12-06":11,"2022-01-04":17,"2022-01-17":21,"2022-07-05":48}},{"location":"Utah","name":"Jazz","teamId":"1610612762","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/UTA.svg","drafted_by":"zach","wins":{"2021-10-19":0,"2021-11-01":5,"2021-11-15":8,"2021-12-06":16,"2022-01-04":27,"2022-01-17":29,"2022-07-05":49}},{"location":"Washington","name":"Wizards","teamId":"1610612764","image":"http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/WAS.svg","drafted_by":"tim","wins":{"2021-10-19":0,"2021-11-01":5,"2021-11-15":10,"2021-12-06":14,"2022-01-04":19,"2022-01-17":23,"2022-07-05":35}}]
+[
+  {
+    "location": "Atlanta",
+    "name": "Hawks",
+    "drafted_by": "greg",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "Boston",
+    "name": "Celtics",
+    "drafted_by": "zach",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "Brooklyn",
+    "name": "Nets",
+    "drafted_by": "jeff",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "Charlotte",
+    "name": "Hornets",
+    "drafted_by": "tim",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "Chicago",
+    "name": "Bulls",
+    "drafted_by": "jeff",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "Cleveland",
+    "name": "Cavaliers",
+    "drafted_by": "jeff",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "Dallas",
+    "name": "Mavericks",
+    "drafted_by": "tim",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "Denver",
+    "name": "Nuggets",
+    "drafted_by": "greg",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "Detroit",
+    "name": "Pistons",
+    "drafted_by": "greg",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "Golden State",
+    "alt_location": "Golden St.",
+    "name": "Warriors",
+    "drafted_by": "jeff",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "Houston",
+    "name": "Rockets",
+    "drafted_by": "",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "Indiana",
+    "name": "Pacers",
+    "drafted_by": "jeff",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "LA",
+    "name": "Clippers",
+    "drafted_by": "zach",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "Los Angeles",
+    "name": "Lakers",
+    "drafted_by": "tim",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "Memphis",
+    "name": "Grizzlies",
+    "drafted_by": "greg",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "Miami",
+    "name": "Heat",
+    "drafted_by": "tim",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "Milwaukee",
+    "name": "Bucks",
+    "drafted_by": "greg",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "Minnesota",
+    "name": "Timberwolves",
+    "drafted_by": "zach",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "New Orleans",
+    "name": "Pelicans",
+    "drafted_by": "jeff",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "New York",
+    "name": "Knicks",
+    "drafted_by": "tim",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "Oklahoma City",
+    "name": "Thunder",
+    "drafted_by": "",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "Orlando",
+    "name": "Magic",
+    "drafted_by": "zach",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "Philadelphia",
+    "name": "76ers",
+    "drafted_by": "jeff",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "Phoenix",
+    "name": "Suns",
+    "drafted_by": "zach",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "Portland",
+    "name": "Trail Blazers",
+    "drafted_by": "greg",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "Sacramento",
+    "name": "Kings",
+    "drafted_by": "tim",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "San Antonio",
+    "name": "Spurs",
+    "drafted_by": "greg",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "Toronto",
+    "name": "Raptors",
+    "drafted_by": "zach",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "Utah",
+    "name": "Jazz",
+    "drafted_by": "zach",
+    "wins": {
+      "2022-10-18": 0
+    }
+  },
+  {
+    "location": "Washington",
+    "name": "Wizards",
+    "drafted_by": "tim",
+    "wins": {
+      "2022-10-18": 0
+    }
+  }
+]
