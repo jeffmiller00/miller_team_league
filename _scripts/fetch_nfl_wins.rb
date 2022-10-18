@@ -117,7 +117,6 @@ if fetch_wins?
 
   all_teams.each do |team|
     truth_team = find_team(team, truth_teams)
-    # May need to adjust this after preseason.
     response = Typhoeus.get("https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2022/types/2/teams/#{truth_team['team']['id']}/odds-records", followlocation: true)
     wins = JSON.parse(response.body)['items'].first['stats'].find{|s| s['type'] == 'win'}['value'].to_i
     puts "#{truth_team['team']['displayName']} | #{wins}" unless write_file?
