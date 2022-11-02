@@ -3,13 +3,13 @@
   pick: 1
   teams:
 - name: Greg
-  pick: 2
+  pick: 4
   teams:
 - name: Jeff
-  pick: 3
+  pick: 2
   teams:
 - name: Zach
-  pick: 4
+  pick: 3
   teams:
 - name: Undrafted
   pick: None
