@@ -2,13 +2,13 @@
 - name: Tim
   pick: 1
   teams:
-- name: Greg
+- name: Jeff
   pick: 2
   teams:
-- name: Jeff
+- name: Zach
   pick: 3
   teams:
-- name: Zach
+- name: Greg
   pick: 4
   teams:
 - name: Undrafted
