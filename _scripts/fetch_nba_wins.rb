@@ -1,5 +1,4 @@
 require 'typhoeus'
-require 'nokogiri'
 require 'json'
 require 'yaml'
 require 'date'
@@ -68,17 +67,31 @@ if fetch_wins?
   #                   SeasonType: 'Regular%20Season'}
   response = HTTPI.get(request)
 =end
-  response = Typhoeus.get('http://data.nba.net/data/10s/prod/v1/current/standings_all_no_sort_keys.json', followlocation: true)
+  nba_api_url = 'https://stats.nba.com/stats/leaguestandingsv3?LeagueID=00&Season=2022-23&SeasonType=Regular+Season&SeasonYear='
+  STATS_HEADERS = {
+      'Host' => 'stats.nba.com',
+      'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0',
+      'Accept' => 'application/json, text/plain, */*',
+      'Accept-Language' => 'en-US,en;q=0.5',
+      'Accept-Encoding' => 'json',
+      'x-nba-stats-origin' => 'stats',
+      'x-nba-stats-token' => 'true',
+      'Connection' => 'keep-alive',
+      'Referer' => 'https://stats.nba.com/',
+      'Pragma' => 'no-cache',
+      'Cache-Control' => 'no-cache',
+  }
+  response = Typhoeus.get(nba_api_url, headers: STATS_HEADERS, timeout: 5)
   truth_teams = JSON.parse(response.body)
-  truth_teams = truth_teams['league']['standard']['teams']
+  truth_teams = truth_teams['resultSets'].first['rowSet']
 
   all_teams = JSON.parse(File.read(DATA_FILE))
 
   all_teams.each do |team|
-    truth_team = truth_teams.select{|t| t["teamId"] == team['teamId'] }.first
-    binding.pry if truth_team.empty?
+    truth_team = truth_teams.select{|t| t[3] == team['location'] }.first
+    binding.pry if truth_team.nil? || truth_team.empty?
 
-    team['wins'][Date.today.prev_day.to_s] = truth_team['win'].to_i
+    team['wins'][Date.today.prev_day.to_s] = truth_team[13].to_i
   end
 
   if write_file?
