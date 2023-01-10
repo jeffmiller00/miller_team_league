@@ -52,10 +52,10 @@ def generate_summary_chart
   end
 
   allSummaries = []
-  allSummaries << weeklySummary.map{ |summary| summary[1][:jeff] }
-  allSummaries << weeklySummary.map{ |summary| summary[1][:greg] }
-  allSummaries << weeklySummary.map{ |summary| summary[1][:tim] }
-  allSummaries << weeklySummary.map{ |summary| summary[1][:zach] }
+  allSummaries << weeklySummary.map{ |summary| summary[1][:jeff] }.last(10)
+  allSummaries << weeklySummary.map{ |summary| summary[1][:greg] }.last(10)
+  allSummaries << weeklySummary.map{ |summary| summary[1][:tim] }.last(10)
+  allSummaries << weeklySummary.map{ |summary| summary[1][:zach] }.last(10)
   puts allSummaries.to_s
 end
 
