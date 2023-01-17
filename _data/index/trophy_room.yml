@@ -1,6 +1,8 @@
 # trophy_room section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest trophy_room' img be located at '/static/assets/img/landing', and edit following img items.
+
+# Note: The year is the year of the START of that season...
 - name: Jeff
   i18n: jeff
   url: https://about.me/jeffmiller00/
