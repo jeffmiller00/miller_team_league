@@ -5,19 +5,19 @@
   - name: Chiefs
     img: https://static.www.nfl.com/league/api/clubs/logos/KC.svg
     css:
-    wins: 15
+    wins: 16
     full_name: Kansas City Chiefs
     location: Kansas City
   - name: 49ers
     img: https://static.www.nfl.com/league/api/clubs/logos/SF.svg
-    css:
+    css: out
     wins: 15
     full_name: San Francisco 49ers
     location: San Francisco
   - name: Eagles
     img: https://static.www.nfl.com/league/api/clubs/logos/PHI.svg
     css:
-    wins: 15
+    wins: 16
     full_name: Philadelphia Eagles
     location: Philadelphia
   - name: Vikings
@@ -88,7 +88,7 @@
     location: Green Bay
   - name: Bengals
     img: https://static.www.nfl.com/league/api/clubs/logos/CIN.svg
-    css:
+    css: out
     wins: 14
     full_name: Cincinnati Bengals
     location: Cincinnati
