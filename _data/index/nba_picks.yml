@@ -5,120 +5,120 @@
   - name: Milwaukee Bucks
     team_id: 1610612749
     css:
-    wins: 50
+    wins: 56
   - name: Cleveland Cavaliers
     team_id: 1610612739
     css:
-    wins: 44
+    wins: 49
   - name: New Orleans Pelicans
     team_id: 1610612740
     css:
-    wins: 33
+    wins: 40
   - name: Philadelphia 76ers
     team_id: 1610612755
     css:
-    wins: 45
+    wins: 51
   - name: Miami Heat
     team_id: 1610612748
     css:
-    wins: 37
+    wins: 41
   - name: Los Angeles Lakers
     team_id: 1610612747
     css:
-    wins: 34
+    wins: 40
   - name: Indiana Pacers
     team_id: 1610612754
     css:
-    wins: 31
+    wins: 34
 - name: Jeff
   pick: 2
   teams:
   - name: Boston Celtics
     team_id: 1610612738
     css:
-    wins: 47
+    wins: 54
   - name: Denver Nuggets
     team_id: 1610612743
     css:
-    wins: 46
+    wins: 52
   - name: Minnesota Timberwolves
     team_id: 1610612750
     css:
-    wins: 35
+    wins: 39
   - name: Toronto Raptors
     team_id: 1610612761
     css:
-    wins: 33
+    wins: 39
   - name: New York Knicks
     team_id: 1610612752
     css:
-    wins: 41
+    wins: 46
   - name: Brooklyn Nets
     team_id: 1610612751
     css:
-    wins: 39
+    wins: 43
   - name: Sacramento Kings
     team_id: 1610612758
     css:
-    wins: 40
+    wins: 47
 - name: Zach
   pick: 3
   teams:
   - name: Phoenix Suns
     team_id: 1610612756
     css:
-    wins: 37
+    wins: 43
   - name: Utah Jazz
     team_id: 1610612762
     css:
-    wins: 33
+    wins: 36
   - name: Portland Trail Blazers
     team_id: 1610612757
     css:
-    wins: 31
+    wins: 33
   - name: Atlanta Hawks
     team_id: 1610612737
     css:
-    wins: 34
+    wins: 39
   - name: Chicago Bulls
     team_id: 1610612741
     css:
-    wins: 31
+    wins: 38
   - name: Charlotte Hornets
     team_id: 1610612766
     css:
-    wins: 22
+    wins: 26
   - name: Oklahoma City Thunder
     team_id: 1610612760
     css:
-    wins: 34
+    wins: 38
 - name: Greg
   pick: 4
   teams:
   - name: Memphis Grizzlies
     team_id: 1610612763
     css:
-    wins: 41
+    wins: 49
   - name: Golden State Warriors
     team_id: 1610612744
     css:
-    wins: 36
+    wins: 41
   - name: LA Clippers
     team_id: 1610612746
     css:
-    wins: 36
+    wins: 41
   - name: Dallas Mavericks
     team_id: 1610612742
     css:
-    wins: 34
+    wins: 37
   - name: Washington Wizards
     team_id: 1610612764
     css:
-    wins: 32
+    wins: 34
   - name: San Antonio Spurs
     team_id: 1610612759
     css:
-    wins: 18
+    wins: 20
   - name: Detroit Pistons
     team_id: 1610612765
     css:
@@ -129,8 +129,8 @@
   - name: Orlando Magic
     team_id: 1610612753
     css:
-    wins: 28
+    wins: 34
   - name: Houston Rockets
     team_id: 1610612745
     css:
-    wins: 16
+    wins: 19
