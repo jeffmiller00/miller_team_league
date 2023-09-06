@@ -73,8 +73,8 @@ EMPTY_WEEK = {jeff: 0, greg: 0, tim: 0, zach: 0, mike: 0}
 def generate_summary_chart
   all_teams = get_teams
   weeklySummary = []
-  week1begin = Date.parse('2022-09-08')
-  week1end   = Date.parse('2022-09-12')
+  week1begin = Date.parse('2023-09-07')
+  week1end   = Date.parse('2023-09-11')
   nfl_week_number = ((Date.today - week1begin)/7).to_i + 1
 
   nfl_week_number.times do |i|
@@ -117,7 +117,7 @@ if fetch_wins?
 
   all_teams.each do |team|
     truth_team = find_team(team, truth_teams)
-    response = Typhoeus.get("https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2022/types/2/teams/#{truth_team['team']['id']}/odds-records", followlocation: true)
+    response = Typhoeus.get("https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/types/2/teams/#{truth_team['team']['id']}/odds-records", followlocation: true)
     wins = JSON.parse(response.body)['items'].first['stats'].find{|s| s['type'] == 'win'}['value'].to_i
     puts "#{truth_team['team']['displayName']} | #{wins}" unless write_file?
 

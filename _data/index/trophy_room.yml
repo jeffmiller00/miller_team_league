@@ -14,6 +14,7 @@
     - 2|2018 NBA
     - 2|2021 NBA
     - 1|2022 NFL
+    - 1|2022 NBA
   desc: Is the early favorite every season.
 
 - name: Greg
@@ -36,6 +37,7 @@
     - 1|2017 NFL
     - 2|2021 NFL
     - 2|2022 NFL
+    - 2|2022 NBA
   desc: Is the most concerned with what's going on, but rarely wins.
 
 - name: Zach
