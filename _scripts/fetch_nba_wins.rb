@@ -66,6 +66,8 @@ if fetch_wins?
   # request.query = { Season: '2015-16',
   #                   SeasonType: 'Regular%20Season'}
   response = HTTPI.get(request)
+  nba_api_url = 'https://stats.nba.com/stats/commonallplayers?IsOnlyCurrentSeason=0&LeagueID=00&Season=1975-76'
+  nba_api_url = 'https://stats.nba.com/stats/commonplayerinfo?LeagueID=&PlayerID=77459'
 =end
   nba_api_url = 'https://stats.nba.com/stats/leaguestandingsv3?LeagueID=00&Season=2022-23&SeasonType=Regular+Season&SeasonYear='
   STATS_HEADERS = {
