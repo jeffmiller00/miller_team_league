@@ -69,7 +69,7 @@ if fetch_wins?
   nba_api_url = 'https://stats.nba.com/stats/commonallplayers?IsOnlyCurrentSeason=0&LeagueID=00&Season=1975-76'
   nba_api_url = 'https://stats.nba.com/stats/commonplayerinfo?LeagueID=&PlayerID=77459'
 =end
-  nba_api_url = 'https://stats.nba.com/stats/leaguestandingsv3?LeagueID=00&Season=2022-23&SeasonType=Regular+Season&SeasonYear='
+  nba_api_url = 'https://stats.nba.com/stats/leaguestandingsv3?LeagueID=00&Season=2023-24&SeasonType=Regular+Season&SeasonYear='
   STATS_HEADERS = {
       'Host' => 'stats.nba.com',
       'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0',
