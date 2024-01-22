@@ -34,7 +34,7 @@
     location: Atlanta
   - name: Buccaneers
     img: https://static.www.nfl.com/league/api/clubs/logos/TB.svg
-    css:
+    css: out
     wins: 10
     full_name: Tampa Bay Buccaneers
     location: Tampa Bay
@@ -160,7 +160,7 @@
   teams:
   - name: Bills
     img: https://static.www.nfl.com/league/api/clubs/logos/BUF.svg
-    css:
+    css: out
     wins: 12
     full_name: Buffalo Bills
     location: Buffalo
@@ -184,7 +184,7 @@
     location: Washington
   - name: Packers
     img: https://static.www.nfl.com/league/api/clubs/logos/GB.svg
-    css:
+    css: out
     wins: 10
     full_name: Green Bay Packers
     location: Green Bay
@@ -205,7 +205,7 @@
     location: Arizona
   - name: Texans
     img: https://static.www.nfl.com/league/api/clubs/logos/HOU.svg
-    css:
+    css: out
     wins: 11
     full_name: Houston Texans
     location: Houston
