@@ -16,7 +16,7 @@
     location: New Orleans
   - name: Ravens
     img: https://static.www.nfl.com/t_q-best/league/api/clubs/logos/BAL
-    css:
+    css: out
     wins: 13
     full_name: Baltimore Ravens
     location: Baltimore
@@ -94,7 +94,7 @@
     location: Pittsburgh
   - name: Lions
     img: https://static.www.nfl.com/league/api/clubs/logos/DET.svg
-    css:
+    css: out
     wins: 13
     full_name: Detroit Lions
     location: Detroit
