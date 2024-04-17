@@ -5,132 +5,132 @@
   - name: Milwaukee Bucks
     team_id: 1610612749
     css:
-    wins: 44
+    wins: 49
   - name: Philadelphia 76ers
     team_id: 1610612755
     css:
-    wins: 37
+    wins: 47
   - name: Memphis Grizzlies
     team_id: 1610612763
-    css:
-    wins: 23
+    css: out
+    wins: 27
   - name: New Orleans Pelicans
     team_id: 1610612740
     css:
-    wins: 41
+    wins: 49
   - name: LA Clippers
     team_id: 1610612746
     css:
-    wins: 42
+    wins: 51
   - name: Utah Jazz
     team_id: 1610612762
-    css:
-    wins: 29
+    css: out
+    wins: 31
   - name: Portland Trail Blazers
     team_id: 1610612757
-    css:
-    wins: 19
+    css: out
+    wins: 21
 - name: Tim
   pick: 2
   teams:
   - name: Denver Nuggets
     team_id: 1610612743
     css:
-    wins: 47
+    wins: 57
   - name: Cleveland Cavaliers
     team_id: 1610612739
     css:
-    wins: 42
+    wins: 48
   - name: Sacramento Kings
     team_id: 1610612758
     css:
-    wins: 38
+    wins: 46
   - name: New York Knicks
     team_id: 1610612752
     css:
-    wins: 40
+    wins: 50
   - name: Atlanta Hawks
     team_id: 1610612737
     css:
-    wins: 30
+    wins: 36
   - name: Toronto Raptors
     team_id: 1610612761
-    css:
-    wins: 23
+    css: out
+    wins: 25
   - name: Houston Rockets
     team_id: 1610612745
-    css:
-    wins: 32
+    css: out
+    wins: 41
 - name: Zach
   pick: 3
   teams:
   - name: Boston Celtics
     team_id: 1610612738
     css:
-    wins: 53
+    wins: 64
   - name: Miami Heat
     team_id: 1610612748
     css:
-    wins: 37
+    wins: 46
   - name: Golden State Warriors
     team_id: 1610612744
     css:
-    wins: 35
+    wins: 46
   - name: Dallas Mavericks
     team_id: 1610612742
     css:
-    wins: 39
+    wins: 50
   - name: Indiana Pacers
     team_id: 1610612754
     css:
-    wins: 38
+    wins: 47
   - name: Chicago Bulls
     team_id: 1610612741
     css:
-    wins: 33
+    wins: 39
   - name: Detroit Pistons
     team_id: 1610612765
-    css:
-    wins: 12
+    css: out
+    wins: 14
 - name: Jeff
   pick: 4
   teams:
   - name: Phoenix Suns
     team_id: 1610612756
     css:
-    wins: 39
+    wins: 49
   - name: Los Angeles Lakers
     team_id: 1610612747
     css:
-    wins: 37
+    wins: 48
   - name: Minnesota Timberwolves
     team_id: 1610612750
     css:
-    wins: 46
+    wins: 56
   - name: Oklahoma City Thunder
     team_id: 1610612760
     css:
-    wins: 47
+    wins: 57
   - name: Brooklyn Nets
     team_id: 1610612751
-    css:
-    wins: 26
+    css: out
+    wins: 32
   - name: Orlando Magic
     team_id: 1610612753
     css:
-    wins: 40
+    wins: 47
   - name: Charlotte Hornets
     team_id: 1610612766
-    css:
-    wins: 17
+    css: out
+    wins: 21
 - name: Undrafted
   pick: None
   teams:
   - name: San Antonio Spurs
     team_id: 1610612759
-    css:
-    wins: 15
+    css: out
+    wins: 22
   - name: Washington Wizards
     team_id: 1610612764
-    css:
-    wins: 11
+    css: out
+    wins: 15
