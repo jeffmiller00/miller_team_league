@@ -69,33 +69,37 @@ if fetch_wins?
   nba_api_url = 'https://stats.nba.com/stats/commonallplayers?IsOnlyCurrentSeason=0&LeagueID=00&Season=1975-76'
   nba_api_url = 'https://stats.nba.com/stats/commonplayerinfo?LeagueID=&PlayerID=77459'
 =end
-  nba_api_url = 'https://stats.nba.com/stats/leaguestandingsv3?LeagueID=00&Season=2023-24&SeasonType=Regular+Season&SeasonYear='
-  STATS_HEADERS = {
-      'Host' => 'stats.nba.com',
-      'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0',
-      'Accept' => 'application/json, text/plain, */*',
-      'Accept-Language' => 'en-US,en;q=0.5',
-      'Accept-Encoding' => 'json',
-      'x-nba-stats-origin' => 'stats',
-      'x-nba-stats-token' => 'true',
-      'Connection' => 'keep-alive',
-      'Referer' => 'https://stats.nba.com/',
-      'Pragma' => 'no-cache',
-      'Cache-Control' => 'no-cache',
-  }
-  response = Typhoeus.get(nba_api_url, headers: STATS_HEADERS, timeout: 5)
-  truth_teams = JSON.parse(response.body)
-  truth_teams = truth_teams['resultSets'].first['rowSet']
-
   all_teams = JSON.parse(File.read(DATA_FILE))
 
-  all_teams.each do |team|
-    truth_team = truth_teams.select{|t| t[3] == team['location'] }.first
-    binding.pry if truth_team.nil? || truth_team.empty?
+  # For some reason, the NBA API doesn't return the correct data for the PlayIn tournament.
+  # ['Regular+Season', 'PlayIn'].each do |season_type|
+  ['Regular+Season'].each do |season_type|
+    nba_api_url = "https://stats.nba.com/stats/leaguestandingsv3?LeagueID=00&Season=2023-24&SeasonType=#{season_type}"
+    STATS_HEADERS = {
+        'Host' => 'stats.nba.com',
+        'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0',
+        'Accept' => 'application/json, text/plain, */*',
+        'Accept-Language' => 'en-US,en;q=0.5',
+        'Accept-Encoding' => 'json',
+        'x-nba-stats-origin' => 'stats',
+        'x-nba-stats-token' => 'true',
+        'Connection' => 'keep-alive',
+        'Referer' => 'https://stats.nba.com/',
+        'Pragma' => 'no-cache',
+        'Cache-Control' => 'no-cache',
+    }
+    response = Typhoeus.get(nba_api_url, headers: STATS_HEADERS, timeout: 5)
+    truth_teams = JSON.parse(response.body)
+    truth_teams = truth_teams['resultSets'].first['rowSet']
 
-    # The Lakers won the mid-season tournament championship, but it's not in the standings.
-    mid_season_tournament_win = (truth_team[2].to_i == 1610612747) ? 1 : 0
-    team['wins'][Date.today.prev_day.to_s] = truth_team[13].to_i + mid_season_tournament_win.to_i
+    all_teams.each do |team|
+      truth_team = truth_teams.select{|t| t[3] == team['location'] }.first
+      binding.pry if truth_team.nil? || truth_team.empty?
+
+      # The Lakers won the mid-season tournament championship, but it's not in the standings.
+      mid_season_tournament_win = (truth_team[2].to_i == 1610612747 && season_type == 'Regular+Season') ? 1 : 0
+      team['wins'][Date.today.prev_day.to_s] = truth_team[13].to_i + mid_season_tournament_win.to_i
+    end
   end
 
   if write_file?

@@ -9,7 +9,7 @@
   - name: Philadelphia 76ers
     team_id: 1610612755
     css:
-    wins: 47
+    wins: 48
   - name: Memphis Grizzlies
     team_id: 1610612763
     css: out
@@ -17,7 +17,7 @@
   - name: New Orleans Pelicans
     team_id: 1610612740
     css:
-    wins: 49
+    wins: 50
   - name: LA Clippers
     team_id: 1610612746
     css:
@@ -43,15 +43,15 @@
     wins: 48
   - name: Sacramento Kings
     team_id: 1610612758
-    css:
-    wins: 46
+    css: out
+    wins: 47
   - name: New York Knicks
     team_id: 1610612752
     css:
     wins: 50
   - name: Atlanta Hawks
     team_id: 1610612737
-    css:
+    css: out
     wins: 36
   - name: Toronto Raptors
     team_id: 1610612761
@@ -71,10 +71,10 @@
   - name: Miami Heat
     team_id: 1610612748
     css:
-    wins: 46
+    wins: 47
   - name: Golden State Warriors
     team_id: 1610612744
-    css:
+    css: out
     wins: 46
   - name: Dallas Mavericks
     team_id: 1610612742
@@ -86,8 +86,8 @@
     wins: 47
   - name: Chicago Bulls
     team_id: 1610612741
-    css:
-    wins: 39
+    css: out
+    wins: 40
   - name: Detroit Pistons
     team_id: 1610612765
     css: out
@@ -102,7 +102,7 @@
   - name: Los Angeles Lakers
     team_id: 1610612747
     css:
-    wins: 48
+    wins: 49
   - name: Minnesota Timberwolves
     team_id: 1610612750
     css:
