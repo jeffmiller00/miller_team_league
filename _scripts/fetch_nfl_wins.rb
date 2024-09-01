@@ -73,8 +73,8 @@ EMPTY_WEEK = {jeff: 0, greg: 0, tim: 0, zach: 0, mike: 0}
 def generate_summary_chart
   all_teams = get_teams
   weeklySummary = []
-  week1begin = Date.parse('2023-09-07')
-  week1end   = Date.parse('2023-09-11')
+  week1begin = Date.parse('2024-09-05')
+  week1end   = Date.parse('2024-09-09')
   nfl_week_number = ((Date.today - week1begin)/7).to_i + 1
 
   nfl_week_number.times do |i|
