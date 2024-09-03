@@ -2,6 +2,12 @@
 - name: Jeff
   pick: 2
   teams:
+  - name: Chiefs
+    img: https://static.www.nfl.com/league/api/clubs/logos/KC.svg
+    css:
+    wins: 0
+    full_name: Kansas City Chiefs
+    location: Kansas City
 
 - name: Greg
   pick: 4
@@ -10,6 +16,12 @@
 - name: Tim
   pick: 1
   teams:
+  - name: 49ers
+    img: https://static.www.nfl.com/league/api/clubs/logos/SF.svg
+    css:
+    wins: 0
+    full_name: San Francisco 49ers
+    location: San Francisco
 
 - name: Zach
   pick: 5
@@ -94,12 +106,6 @@
     wins: 0
     full_name: Tennessee Titans
     location: Tennessee
-  - name: 49ers
-    img: https://static.www.nfl.com/league/api/clubs/logos/SF.svg
-    css:
-    wins: 0
-    full_name: San Francisco 49ers
-    location: San Francisco
   - name: Saints
     img: https://static.www.nfl.com/league/api/clubs/logos/NO.svg
     css:
@@ -142,12 +148,6 @@
     wins: 0
     full_name: Houston Texans
     location: Houston
-  - name: Chiefs
-    img: https://static.www.nfl.com/league/api/clubs/logos/KC.svg
-    css:
-    wins: 0
-    full_name: Kansas City Chiefs
-    location: Kansas City
   - name: Chargers
     img: https://static.www.nfl.com/league/api/clubs/logos/LAC.svg
     css:

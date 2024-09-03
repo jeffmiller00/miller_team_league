@@ -122,7 +122,7 @@
   {
     "location": "Kansas City",
     "name": "Chiefs",
-    "drafted_by": "",
+    "drafted_by": "jeff",
     "wins": {
     },
     "full_name": "Chiefs"
@@ -218,7 +218,7 @@
   {
     "location": "San Francisco",
     "name": "49ers",
-    "drafted_by": "",
+    "drafted_by": "tim",
     "wins": {
     },
     "full_name": "49ers"
