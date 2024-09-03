@@ -27,9 +27,15 @@
   pick: 5
   teams:
 
-- name: Mike
+- name: Mike & Hayden
   pick: 3
   teams:
+  - name: Lions
+    img: https://static.www.nfl.com/league/api/clubs/logos/DET.svg
+    css:
+    wins: 0
+    full_name: Detroit Lions
+    location: Detroit
 
 - name: Undrafted
   pick: None
@@ -82,12 +88,7 @@
     wins: 0
     full_name: Pittsburgh Steelers
     location: Pittsburgh
-  - name: Lions
-    img: https://static.www.nfl.com/league/api/clubs/logos/DET.svg
-    css:
-    wins: 0
-    full_name: Detroit Lions
-    location: Detroit
+
   - name: Raiders
     img: https://static.www.nfl.com/league/api/clubs/logos/LV.svg
     css:
