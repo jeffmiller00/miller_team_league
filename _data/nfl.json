@@ -170,7 +170,7 @@
   {
     "location": "New York",
     "name": "Jets",
-    "drafted_by": "",
+    "drafted_by": "jeff",
     "wins": {
     },
     "full_name": "Jets"
@@ -234,7 +234,7 @@
   {
     "location": "Tampa Bay",
     "name": "Buccaneers",
-    "drafted_by": "",
+    "drafted_by": "mike",
     "wins": {
     },
     "full_name": "Buccaneers"
