@@ -10,7 +10,7 @@
   {
     "location": "Atlanta",
     "name": "Falcons",
-    "drafted_by": "",
+    "drafted_by": "tim",
     "wins": {
     },
     "full_name": "Falcons"
@@ -26,7 +26,7 @@
   {
     "location": "Buffalo",
     "name": "Bills",
-    "drafted_by": "",
+    "drafted_by": "tim",
     "wins": {
     },
     "full_name": "Bills"
@@ -90,7 +90,7 @@
   {
     "location": "Green Bay",
     "name": "Packers",
-    "drafted_by": "",
+    "drafted_by": "jeff",
     "wins": {
     },
     "full_name": "Packers"

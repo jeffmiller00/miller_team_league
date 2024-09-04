@@ -14,6 +14,12 @@
     wins: 0
     full_name: New York Jets
     location: New York
+  - name: Packers
+    img: https://static.www.nfl.com/league/api/clubs/logos/GB.svg
+    css:
+    wins: 0
+    full_name: Green Bay Packers
+    location: Green Bay
 
 - name: Greg
   pick: 4
@@ -40,6 +46,18 @@
     wins: 0
     full_name: San Francisco 49ers
     location: San Francisco
+  - name: Bills
+    img: https://static.www.nfl.com/league/api/clubs/logos/BUF.svg
+    css:
+    wins: 0
+    full_name: Buffalo Bills
+    location: Buffalo
+  - name: Falcons
+    img: https://static.www.nfl.com/league/api/clubs/logos/ATL.svg
+    css:
+    wins: 0
+    full_name: Atlanta Falcons
+    location: Atlanta
 
 - name: Zach
   pick: 5
@@ -57,7 +75,7 @@
     full_name: Houston Texans
     location: Houston
 
-- name: Mike & Hayden
+- name: Mike
   pick: 3
   teams:
   - name: Lions
@@ -76,24 +94,12 @@
 - name: Undrafted
   pick: None
   teams:
-  - name: Bills
-    img: https://static.www.nfl.com/league/api/clubs/logos/BUF.svg
-    css:
-    wins: 0
-    full_name: Buffalo Bills
-    location: Buffalo
   - name: Commanders
     img: https://static.www.nfl.com/league/api/clubs/logos/WAS.svg
     css:
     wins: 0
     full_name: Washington Commanders
     location: Washington
-  - name: Packers
-    img: https://static.www.nfl.com/league/api/clubs/logos/GB.svg
-    css:
-    wins: 0
-    full_name: Green Bay Packers
-    location: Green Bay
   - name: Rams
     img: https://static.www.nfl.com/league/api/clubs/logos/LA.svg
     css:
@@ -139,12 +145,6 @@
     wins: 0
     full_name: Minnesota Vikings
     location: Minnesota
-  - name: Falcons
-    img: https://static.www.nfl.com/league/api/clubs/logos/ATL.svg
-    css:
-    wins: 0
-    full_name: Atlanta Falcons
-    location: Atlanta
 
   - name: Cardinals
     img: https://static.www.nfl.com/league/api/clubs/logos/ARI.svg
