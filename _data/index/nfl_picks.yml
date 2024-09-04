@@ -90,6 +90,12 @@
     wins: 0
     full_name: Tampa Bay Buccaneers
     location: Tampa Bay
+  - name: Rams
+    img: https://static.www.nfl.com/league/api/clubs/logos/LA.svg
+    css:
+    wins: 0
+    full_name: Los Angeles Rams
+    location: Los Angeles
 
 - name: Undrafted
   pick: None
@@ -100,20 +106,12 @@
     wins: 0
     full_name: Washington Commanders
     location: Washington
-  - name: Rams
-    img: https://static.www.nfl.com/league/api/clubs/logos/LA.svg
-    css:
-    wins: 0
-    full_name: Los Angeles Rams
-    location: Los Angeles
-
   - name: Steelers
     img: https://static.www.nfl.com/league/api/clubs/logos/PIT.svg
     css:
     wins: 0
     full_name: Pittsburgh Steelers
     location: Pittsburgh
-
   - name: Raiders
     img: https://static.www.nfl.com/league/api/clubs/logos/LV.svg
     css:
