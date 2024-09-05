@@ -2,7 +2,7 @@
   {
     "location": "Arizona",
     "name": "Cardinals",
-    "drafted_by": "",
+    "drafted_by": "zach",
     "wins": {
     },
     "full_name": "Cardinals"
@@ -202,7 +202,7 @@
   {
     "location": "Las Vegas",
     "name": "Raiders",
-    "drafted_by": "",
+    "drafted_by": "zach",
     "wins": {
     },
     "full_name": "Raiders"
@@ -226,7 +226,7 @@
   {
     "location": "Seattle",
     "name": "Seahawks",
-    "drafted_by": "",
+    "drafted_by": "greg",
     "wins": {
     },
     "full_name": "Seahawks"

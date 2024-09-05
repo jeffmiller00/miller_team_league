@@ -60,6 +60,12 @@
     wins: 0
     full_name: Pittsburgh Steelers
     location: Pittsburgh
+  - name: Seahawks
+    img: https://static.www.nfl.com/league/api/clubs/logos/SEA.svg
+    css:
+    wins: 0
+    full_name: Seattle Seahawks
+    location: Seattle
 
 - name: Tim
   pick: 1
@@ -122,6 +128,18 @@
     wins: 0
     full_name: Chicago Bears
     location: Chicago
+  - name: Cardinals
+    img: https://static.www.nfl.com/league/api/clubs/logos/ARI.svg
+    css:
+    wins: 0
+    full_name: Arizona Cardinals
+    location: Arizona
+  - name: Raiders
+    img: https://static.www.nfl.com/league/api/clubs/logos/LV.svg
+    css:
+    wins: 0
+    full_name: Las Vegas Raiders
+    location: Las Vegas
 
 - name: Mike
   pick: 3
@@ -166,12 +184,6 @@
     wins: 0
     full_name: Washington Commanders
     location: Washington
-  - name: Raiders
-    img: https://static.www.nfl.com/league/api/clubs/logos/LV.svg
-    css:
-    wins: 0
-    full_name: Las Vegas Raiders
-    location: Las Vegas
   - name: Patriots
     img: https://static.www.nfl.com/league/api/clubs/logos/NE.svg
     css:
@@ -184,18 +196,7 @@
     wins: 0
     full_name: Minnesota Vikings
     location: Minnesota
-  - name: Cardinals
-    img: https://static.www.nfl.com/league/api/clubs/logos/ARI.svg
-    css:
-    wins: 0
-    full_name: Arizona Cardinals
-    location: Arizona
-  - name: Seahawks
-    img: https://static.www.nfl.com/league/api/clubs/logos/SEA.svg
-    css:
-    wins: 0
-    full_name: Seattle Seahawks
-    location: Seattle
+
   - name: Broncos
     img: https://static.www.nfl.com/league/api/clubs/logos/DEN.svg
     css:
