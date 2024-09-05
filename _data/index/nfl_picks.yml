@@ -36,6 +36,18 @@
     wins: 0
     full_name: Dallas Cowboys
     location: Dallas
+  - name: Bengals
+    img: https://static.www.nfl.com/league/api/clubs/logos/CIN.svg
+    css:
+    wins: 0
+    full_name: Cincinnati Bengals
+    location: Cincinnati
+  - name: Steelers
+    img: https://static.www.nfl.com/league/api/clubs/logos/PIT.svg
+    css:
+    wins: 0
+    full_name: Pittsburgh Steelers
+    location: Pittsburgh
 
 - name: Tim
   pick: 1
@@ -74,6 +86,18 @@
     wins: 0
     full_name: Houston Texans
     location: Houston
+  - name: Dolphins
+    img: https://static.www.nfl.com/league/api/clubs/logos/MIA.svg
+    css:
+    wins: 0
+    full_name: Miami Dolphins
+    location: Miami
+  - name: Bears
+    img: https://static.www.nfl.com/league/api/clubs/logos/CHI.svg
+    css:
+    wins: 0
+    full_name: Chicago Bears
+    location: Chicago
 
 - name: Mike
   pick: 3
@@ -106,12 +130,6 @@
     wins: 0
     full_name: Washington Commanders
     location: Washington
-  - name: Steelers
-    img: https://static.www.nfl.com/league/api/clubs/logos/PIT.svg
-    css:
-    wins: 0
-    full_name: Pittsburgh Steelers
-    location: Pittsburgh
   - name: Raiders
     img: https://static.www.nfl.com/league/api/clubs/logos/LV.svg
     css:
@@ -157,24 +175,12 @@
     wins: 0
     full_name: Los Angeles Chargers
     location: Los Angeles
-  - name: Dolphins
-    img: https://static.www.nfl.com/league/api/clubs/logos/MIA.svg
-    css:
-    wins: 0
-    full_name: Miami Dolphins
-    location: Miami
   - name: Jaguars
     img: https://static.www.nfl.com/league/api/clubs/logos/JAX.svg
     css:
     wins: 0
     full_name: Jacksonville Jaguars
     location: Jacksonville
-  - name: Bengals
-    img: https://static.www.nfl.com/league/api/clubs/logos/CIN.svg
-    css:
-    wins: 0
-    full_name: Cincinnati Bengals
-    location: Cincinnati
   - name: Seahawks
     img: https://static.www.nfl.com/league/api/clubs/logos/SEA.svg
     css:
@@ -193,12 +199,6 @@
     wins: 0
     full_name: Carolina Panthers
     location: Carolina
-  - name: Bears
-    img: https://static.www.nfl.com/league/api/clubs/logos/CHI.svg
-    css:
-    wins: 0
-    full_name: Chicago Bears
-    location: Chicago
   - name: Browns
     img: https://static.www.nfl.com/league/api/clubs/logos/CLE.svg
     css:

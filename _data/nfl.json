@@ -42,7 +42,7 @@
   {
     "location": "Chicago",
     "name": "Bears",
-    "drafted_by": "",
+    "drafted_by": "zach",
     "wins": {
     },
     "full_name": "Bears"
@@ -50,7 +50,7 @@
   {
     "location": "Cincinnati",
     "name": "Bengals",
-    "drafted_by": "",
+    "drafted_by": "greg",
     "wins": {
     },
     "full_name": "Bengals"
@@ -138,7 +138,7 @@
   {
     "location": "Miami",
     "name": "Dolphins",
-    "drafted_by": "",
+    "drafted_by": "zach",
     "wins": {
     },
     "full_name": "Dolphins"
@@ -194,7 +194,7 @@
   {
     "location": "Pittsburgh",
     "name": "Steelers",
-    "drafted_by": "",
+    "drafted_by": "greg",
     "wins": {
     },
     "full_name": "Steelers"
