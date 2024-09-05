@@ -150,6 +150,12 @@
     wins: 0
     full_name: Cleveland Browns
     location: Cleveland
+  - name: Titans
+    img: https://static.www.nfl.com/league/api/clubs/logos/TEN.svg
+    css:
+    wins: 0
+    full_name: Tennessee Titans
+    location: Tennessee
 
 - name: Undrafted
   pick: None
@@ -172,12 +178,6 @@
     wins: 0
     full_name: New England Patriots
     location: New England
-  - name: Titans
-    img: https://static.www.nfl.com/league/api/clubs/logos/TEN.svg
-    css:
-    wins: 0
-    full_name: Tennessee Titans
-    location: Tennessee
   - name: Vikings
     img: https://static.www.nfl.com/league/api/clubs/logos/MIN.svg
     css:
