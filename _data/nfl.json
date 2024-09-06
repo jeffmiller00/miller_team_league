@@ -130,7 +130,7 @@
   {
     "location": "Los Angeles",
     "name": "Rams",
-    "drafted_by": "",
+    "drafted_by": "mike",
     "wins": {
     },
     "full_name": "Rams"
@@ -162,7 +162,7 @@
   {
     "location": "New York",
     "name": "Giants",
-    "drafted_by": "",
+    "drafted_by": "tim",
     "wins": {
     },
     "full_name": "Giants"

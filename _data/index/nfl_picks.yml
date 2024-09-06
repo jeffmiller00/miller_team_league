@@ -111,6 +111,12 @@
     wins: 0
     full_name: New Orleans Saints
     location: New Orleans
+  - name: Giants
+    img: https://static.www.nfl.com/league/api/clubs/logos/NYG.svg
+    css:
+    wins: 0
+    full_name: New York Giants
+    location: New York
 
 - name: Zach
   pick: 5
@@ -195,21 +201,15 @@
 - name: Undrafted
   pick: None
   teams:
-  - name: Patriots
-    img: https://static.www.nfl.com/league/api/clubs/logos/NE.svg
-    css:
-    wins: 0
-    full_name: New England Patriots
-    location: New England
   - name: Panthers
     img: https://static.www.nfl.com/league/api/clubs/logos/CAR.svg
     css:
     wins: 0
     full_name: Carolina Panthers
     location: Carolina
-  - name: Giants
-    img: https://static.www.nfl.com/league/api/clubs/logos/NYG.svg
+  - name: Patriots
+    img: https://static.www.nfl.com/league/api/clubs/logos/NE.svg
     css:
     wins: 0
-    full_name: New York Giants
-    location: New York
+    full_name: New England Patriots
+    location: New England
