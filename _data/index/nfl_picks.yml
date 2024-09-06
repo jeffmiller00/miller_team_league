@@ -32,7 +32,12 @@
     wins: 0
     full_name: Jacksonville Jaguars
     location: Jacksonville
-
+  - name: Commanders
+    img: https://static.www.nfl.com/league/api/clubs/logos/WAS.svg
+    css:
+    wins: 0
+    full_name: Washington Commanders
+    location: Washington
 - name: Greg
   pick: 4
   teams:
@@ -180,22 +185,6 @@
     wins: 0
     full_name: Tennessee Titans
     location: Tennessee
-
-- name: Undrafted
-  pick: None
-  teams:
-  - name: Commanders
-    img: https://static.www.nfl.com/league/api/clubs/logos/WAS.svg
-    css:
-    wins: 0
-    full_name: Washington Commanders
-    location: Washington
-  - name: Patriots
-    img: https://static.www.nfl.com/league/api/clubs/logos/NE.svg
-    css:
-    wins: 0
-    full_name: New England Patriots
-    location: New England
   - name: Vikings
     img: https://static.www.nfl.com/league/api/clubs/logos/MIN.svg
     css:
@@ -203,6 +192,15 @@
     full_name: Minnesota Vikings
     location: Minnesota
 
+- name: Undrafted
+  pick: None
+  teams:
+  - name: Patriots
+    img: https://static.www.nfl.com/league/api/clubs/logos/NE.svg
+    css:
+    wins: 0
+    full_name: New England Patriots
+    location: New England
   - name: Panthers
     img: https://static.www.nfl.com/league/api/clubs/logos/CAR.svg
     css:

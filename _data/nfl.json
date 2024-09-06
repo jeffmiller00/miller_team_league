@@ -146,7 +146,7 @@
   {
     "location": "Minnesota",
     "name": "Vikings",
-    "drafted_by": "",
+    "drafted_by": "mike",
     "wins": {
     },
     "full_name": "Vikings"
@@ -250,7 +250,7 @@
   {
     "location": "Washington",
     "name": "Commanders",
-    "drafted_by": "",
+    "drafted_by": "jeff",
     "wins": {
     },
     "full_name": "Commanders"
