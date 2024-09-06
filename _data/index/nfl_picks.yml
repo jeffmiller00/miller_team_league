@@ -66,6 +66,12 @@
     wins: 0
     full_name: Seattle Seahawks
     location: Seattle
+  - name: Broncos
+    img: https://static.www.nfl.com/league/api/clubs/logos/DEN.svg
+    css:
+    wins: 0
+    full_name: Denver Broncos
+    location: Denver
 
 - name: Tim
   pick: 1
@@ -197,12 +203,6 @@
     full_name: Minnesota Vikings
     location: Minnesota
 
-  - name: Broncos
-    img: https://static.www.nfl.com/league/api/clubs/logos/DEN.svg
-    css:
-    wins: 0
-    full_name: Denver Broncos
-    location: Denver
   - name: Panthers
     img: https://static.www.nfl.com/league/api/clubs/logos/CAR.svg
     css:
