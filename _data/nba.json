@@ -8,7 +8,7 @@
   {
     "location": "Boston",
     "name": "Celtics",
-    "drafted_by": "",
+    "drafted_by": "greg",
     "wins": {}
   },
   {
@@ -32,19 +32,19 @@
   {
     "location": "Cleveland",
     "name": "Cavaliers",
-    "drafted_by": "",
+    "drafted_by": "greg",
     "wins": {}
   },
   {
     "location": "Dallas",
     "name": "Mavericks",
-    "drafted_by": "",
+    "drafted_by": "greg",
     "wins": {}
   },
   {
     "location": "Denver",
     "name": "Nuggets",
-    "drafted_by": "",
+    "drafted_by": "tim",
     "wins": {}
   },
   {
@@ -81,13 +81,13 @@
   {
     "location": "Los Angeles",
     "name": "Lakers",
-    "drafted_by": "",
+    "drafted_by": "tim",
     "wins": {}
   },
   {
     "location": "Memphis",
     "name": "Grizzlies",
-    "drafted_by": "",
+    "drafted_by": "jeff",
     "wins": {}
   },
   {
@@ -99,13 +99,13 @@
   {
     "location": "Milwaukee",
     "name": "Bucks",
-    "drafted_by": "",
+    "drafted_by": "zach",
     "wins": {}
   },
   {
     "location": "Minnesota",
     "name": "Timberwolves",
-    "drafted_by": "",
+    "drafted_by": "jeff",
     "wins": {}
   },
   {
@@ -117,31 +117,31 @@
   {
     "location": "New York",
     "name": "Knicks",
-    "drafted_by": "",
+    "drafted_by": "jeff",
     "wins": {}
   },
   {
     "location": "Oklahoma City",
     "name": "Thunder",
-    "drafted_by": "",
+    "drafted_by": "zach",
     "wins": {}
   },
   {
     "location": "Orlando",
     "name": "Magic",
-    "drafted_by": "",
+    "drafted_by": "zach",
     "wins": {}
   },
   {
     "location": "Philadelphia",
     "name": "76ers",
-    "drafted_by": "",
+    "drafted_by": "tim",
     "wins": {}
   },
   {
     "location": "Phoenix",
     "name": "Suns",
-    "drafted_by": "",
+    "drafted_by": "jeff",
     "wins": {}
   },
   {
