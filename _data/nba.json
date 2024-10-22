@@ -2,7 +2,7 @@
   {
     "location": "Atlanta",
     "name": "Hawks",
-    "drafted_by": "",
+    "drafted_by": "jeff",
     "wins": {}
   },
   {
@@ -57,25 +57,25 @@
     "location": "Golden State",
     "alt_location": "Golden St.",
     "name": "Warriors",
-    "drafted_by": "",
+    "drafted_by": "greg",
     "wins": {}
   },
   {
     "location": "Houston",
     "name": "Rockets",
-    "drafted_by": "",
+    "drafted_by": "jeff",
     "wins": {}
   },
   {
     "location": "Indiana",
     "name": "Pacers",
-    "drafted_by": "",
+    "drafted_by": "greg",
     "wins": {}
   },
   {
     "location": "LA",
     "name": "Clippers",
-    "drafted_by": "",
+    "drafted_by": "tim",
     "wins": {}
   },
   {
@@ -93,7 +93,7 @@
   {
     "location": "Miami",
     "name": "Heat",
-    "drafted_by": "",
+    "drafted_by": "zach",
     "wins": {}
   },
   {
@@ -111,7 +111,7 @@
   {
     "location": "New Orleans",
     "name": "Pelicans",
-    "drafted_by": "",
+    "drafted_by": "tim",
     "wins": {}
   },
   {
@@ -153,13 +153,13 @@
   {
     "location": "Sacramento",
     "name": "Kings",
-    "drafted_by": "",
+    "drafted_by": "zach",
     "wins": {}
   },
   {
     "location": "San Antonio",
     "name": "Spurs",
-    "drafted_by": "",
+    "drafted_by": "tim",
     "wins": {}
   },
   {
@@ -171,7 +171,7 @@
   {
     "location": "Utah",
     "name": "Jazz",
-    "drafted_by": "",
+    "drafted_by": "zach",
     "wins": {}
   },
   {
