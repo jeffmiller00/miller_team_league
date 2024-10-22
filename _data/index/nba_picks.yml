@@ -22,6 +22,14 @@
     team_id: 1610612744
     css:
     wins: 0
+  - name: Chicago Bulls
+    team_id: 1610612741
+    css:
+    wins: 0
+  - name: Charlotte Hornets
+    team_id: 1610612766
+    css:
+    wins: 0
 
 - name: Zach
   pick: 2
@@ -48,6 +56,10 @@
     wins: 0
   - name: Utah Jazz
     team_id: 1610612762
+    css:
+    wins: 0
+  - name: Toronto Raptors
+    team_id: 1610612761
     css:
     wins: 0
 
@@ -78,6 +90,10 @@
     team_id: 1610612737
     css:
     wins: 0
+  - name: Detroit Pistons
+    team_id: 1610612765
+    css:
+    wins: 0
 
 - name: Tim
   pick: 4
@@ -106,36 +122,16 @@
     team_id: 1610612759
     css:
     wins: 0
+  - name: Portland Trail Blazers
+    team_id: 1610612757
+    css:
+    wins: 0
 
 - name: Undrafted
   pick: None
   teams:
-  - name: Toronto Raptors
-    team_id: 1610612761
-    css:
-    wins: 0
-  - name: Chicago Bulls
-    team_id: 1610612741
-    css:
-    wins: 0
-  - name: Detroit Pistons
-    team_id: 1610612765
-    css:
-    wins: 0
-
   - name: Brooklyn Nets
     team_id: 1610612751
-    css:
-    wins: 0
-
-  - name: Charlotte Hornets
-    team_id: 1610612766
-    css:
-    wins: 0
-
-
-  - name: Portland Trail Blazers
-    team_id: 1610612757
     css:
     wins: 0
   - name: Washington Wizards

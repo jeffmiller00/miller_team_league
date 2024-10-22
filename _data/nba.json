@@ -20,13 +20,13 @@
   {
     "location": "Charlotte",
     "name": "Hornets",
-    "drafted_by": "",
+    "drafted_by": "greg",
     "wins": {}
   },
   {
     "location": "Chicago",
     "name": "Bulls",
-    "drafted_by": "",
+    "drafted_by": "greg",
     "wins": {}
   },
   {
@@ -50,7 +50,7 @@
   {
     "location": "Detroit",
     "name": "Pistons",
-    "drafted_by": "",
+    "drafted_by": "jeff",
     "wins": {}
   },
   {
@@ -165,7 +165,7 @@
   {
     "location": "Toronto",
     "name": "Raptors",
-    "drafted_by": "",
+    "drafted_by": "zach",
     "wins": {}
   },
   {
