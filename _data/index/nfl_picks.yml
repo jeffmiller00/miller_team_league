@@ -5,7 +5,7 @@
   - name: Chiefs
     img: https://static.www.nfl.com/league/api/clubs/logos/KC.svg
     css:
-    wins: 16
+    wins: 17
     full_name: Kansas City Chiefs
     location: Kansas City
   - name: Jets
@@ -34,7 +34,7 @@
     location: Jacksonville
   - name: Commanders
     img: https://static.www.nfl.com/league/api/clubs/logos/WAS.svg
-    css:
+    css: out
     wins: 14
     full_name: Washington Commanders
     location: Washington
@@ -88,7 +88,7 @@
     location: San Francisco
   - name: Bills
     img: https://static.www.nfl.com/league/api/clubs/logos/BUF.svg
-    css:
+    css: out
     wins: 15
     full_name: Buffalo Bills
     location: Buffalo
@@ -122,7 +122,7 @@
   - name: Eagles
     img: https://static.www.nfl.com/league/api/clubs/logos/PHI.svg
     css:
-    wins: 16
+    wins: 17
     full_name: Philadelphia Eagles
     location: Philadelphia
   - name: Texans
