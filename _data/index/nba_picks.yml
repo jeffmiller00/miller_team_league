@@ -9,7 +9,7 @@
   - name: Dallas Mavericks
     team_id: 1610612742
     css: out
-    wins: 39
+    wins: 40
   - name: Cleveland Cavaliers
     team_id: 1610612739
     css:
@@ -21,7 +21,7 @@
   - name: Golden State Warriors
     team_id: 1610612744
     css:
-    wins: 48
+    wins: 49
   - name: Chicago Bulls
     team_id: 1610612741
     css: out
@@ -44,7 +44,7 @@
   - name: Orlando Magic
     team_id: 1610612753
     css:
-    wins: 41
+    wins: 42
   - name: Sacramento Kings
     team_id: 1610612758
     css: out
@@ -52,7 +52,7 @@
   - name: Miami Heat
     team_id: 1610612748
     css:
-    wins: 37
+    wins: 39
   - name: Utah Jazz
     team_id: 1610612762
     css: out
@@ -79,7 +79,7 @@
   - name: Memphis Grizzlies
     team_id: 1610612763
     css:
-    wins: 48
+    wins: 49
   - name: Houston Rockets
     team_id: 1610612745
     css:
