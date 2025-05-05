@@ -5,7 +5,7 @@
   - name: Boston Celtics
     team_id: 1610612738
     css:
-    wins: 61
+    wins: 65
   - name: Dallas Mavericks
     team_id: 1610612742
     css: out
@@ -13,15 +13,15 @@
   - name: Cleveland Cavaliers
     team_id: 1610612739
     css:
-    wins: 64
+    wins: 68
   - name: Indiana Pacers
     team_id: 1610612754
     css:
-    wins: 50
+    wins: 54
   - name: Golden State Warriors
     team_id: 1610612744
     css:
-    wins: 49
+    wins: 53
   - name: Chicago Bulls
     team_id: 1610612741
     css: out
@@ -36,22 +36,22 @@
   - name: Oklahoma City Thunder
     team_id: 1610612760
     css:
-    wins: 68
+    wins: 72
   - name: Milwaukee Bucks
     team_id: 1610612749
-    css:
-    wins: 49
+    css: out
+    wins: 50
   - name: Orlando Magic
     team_id: 1610612753
-    css:
-    wins: 42
+    css: out
+    wins: 43
   - name: Sacramento Kings
     team_id: 1610612758
     css: out
     wins: 40
   - name: Miami Heat
     team_id: 1610612748
-    css:
+    css: out
     wins: 39
   - name: Utah Jazz
     team_id: 1610612762
@@ -67,54 +67,54 @@
   - name: Minnesota Timberwolves
     team_id: 1610612750
     css:
-    wins: 49
+    wins: 53
   - name: New York Knicks
     team_id: 1610612752
     css:
-    wins: 51
+    wins: 55
   - name: Phoenix Suns
     team_id: 1610612756
     css: out
     wins: 36
   - name: Memphis Grizzlies
     team_id: 1610612763
-    css:
+    css: out
     wins: 49
   - name: Houston Rockets
     team_id: 1610612745
-    css:
-    wins: 52
+    css: out
+    wins: 55
   - name: Atlanta Hawks
     team_id: 1610612737
     css: out
     wins: 40
   - name: Detroit Pistons
     team_id: 1610612765
-    css:
-    wins: 44
+    css: out
+    wins: 46
 - name: Tim
   pick: 4
   teams:
   - name: Denver Nuggets
     team_id: 1610612743
     css:
-    wins: 50
+    wins: 54
   - name: Philadelphia 76ers
     team_id: 1610612755
     css: out
     wins: 24
   - name: Los Angeles Lakers
     team_id: 1610612747
-    css:
-    wins: 50
+    css: out
+    wins: 51
   - name: New Orleans Pelicans
     team_id: 1610612740
     css: out
     wins: 21
   - name: LA Clippers
     team_id: 1610612746
-    css:
-    wins: 50
+    css: out
+    wins: 53
   - name: San Antonio Spurs
     team_id: 1610612759
     css: out
