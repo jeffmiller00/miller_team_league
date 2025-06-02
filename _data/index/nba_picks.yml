@@ -17,7 +17,7 @@
   - name: Indiana Pacers
     team_id: 1610612754
     css:
-    wins: 58
+    wins: 62
   - name: Golden State Warriors
     team_id: 1610612744
     css: out
@@ -36,7 +36,7 @@
   - name: Oklahoma City Thunder
     team_id: 1610612760
     css:
-    wins: 76
+    wins: 80
   - name: Milwaukee Bucks
     team_id: 1610612749
     css: out
@@ -66,12 +66,12 @@
   teams:
   - name: Minnesota Timberwolves
     team_id: 1610612750
-    css:
-    wins: 57
+    css: out
+    wins: 58
   - name: New York Knicks
     team_id: 1610612752
-    css:
-    wins: 59
+    css: out
+    wins: 61
   - name: Phoenix Suns
     team_id: 1610612756
     css: out
