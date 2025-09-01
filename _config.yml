@@ -25,24 +25,24 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.millerteamleague.com" # the base hostname & protocol for your site, e.g. http://example.com
 # img_path: /Jalpc/static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
 
-current_sport: nba
+current_sport: nfl
 
 # author -- index page "about me" section
-author:  # change following line to your infomation.
-  name: Jeff Miller  # Be used at blog posts' author.
-  first_name: Jeff  # Be used at index page about me section.
-  last_name: Miller  # Be used at index page about me section.
-  avatar: /static/assets/img/landing/avatar.jpg  # upload your avatar at directory and edit it.
-  github_username: jeffmiller00  # Leave blank if you don't have now
+author: # change following line to your infomation.
+  name: Jeff Miller # Be used at blog posts' author.
+  first_name: Jeff # Be used at index page about me section.
+  last_name: Miller # Be used at index page about me section.
+  avatar: /static/assets/img/landing/avatar.jpg # upload your avatar at directory and edit it.
+  github_username: jeffmiller00 # Leave blank if you don't have now
   linkedin_id: jeffmiller00 # Leave blank if you don't have now
-  facebook_username:   # Leave blank if you don't have now
-  twitter_username: couchchamp  # Leave blank if you don't have now
-  email: jeffmiller00@gmail.com  # Leave blank if you don't have now
-  desc: Introduce myself will be here.  # Describe yourself.
+  facebook_username: # Leave blank if you don't have now
+  twitter_username: couchchamp # Leave blank if you don't have now
+  email: jeffmiller00@gmail.com # Leave blank if you don't have now
+  desc: Introduce myself will be here. # Describe yourself.
 
 # analytics
 ## google analytics
-ga:  # if you wanna this feature, go to https://www.google.com/analytics/ to get your configuration; if not, comment following line.
+ga: # if you wanna this feature, go to https://www.google.com/analytics/ to get your configuration; if not, comment following line.
   id: G-ENCLK1R5YR
 
 ## google optimize
@@ -50,7 +50,7 @@ go:
   # id:
 
 ## growingIO
-gio:  # if you wanna this feature, go to https://www.growingio.com/ to get your configuration; if not, comment following line.
+gio: # if you wanna this feature, go to https://www.growingio.com/ to get your configuration; if not, comment following line.
   # id:
 
 # scss
@@ -67,7 +67,6 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
