@@ -1,61 +1,68 @@
 <div class="container" id="i18_projects">
     <div class="row m-b-lg">
-        <div class="col-lg-12 text-center">
+        <div class="col-12 text-center">
             <div class="navy-line"></div>
             <h1>Trophy Wall</h1>
         </div>
     </div>
-    <div class="row">
+
+    <style>
+        /* 2 x 2 grid for exactly 4 players; collapses to single column on small screens */
+        .trophy-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px 40px;
+            justify-items: center;
+            align-items: start;
+        }
+
+        @media (max-width: 575.98px) {
+            .trophy-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .trophy-grid .team-member {
+            text-align: center;
+        }
+    </style>
+
+    <div class="trophy-grid">
         {% for player in site.data.index.trophy_room %}
-            {% assign loopindex = forloop.index | modulo: 2 %}
-            {% if forloop.last %}
-                {% if forloop.last == forloop.first %}
-            <div class="col-sm-6 wow col-sm-offset-3 zoomIn">
+        <div class="team-member wow zoomIn" data-wow-delay="{{ forloop.index0 | times: 0.1 }}s">
+            <img src="{{ player.img | prepend: site.baseurl }}" class="img-responsive img-circle img-small" alt="">
+            <h4>
+                {% if player.url %}
+                <a href="{{ player.url }}" target="_blank"><span class="navy">{{ player.name }}</span></a>
                 {% else %}
-            <div class="col-sm-6 wow {% if loopindex == 1 %} fadeInLeft col-sm-offset-3 {% else %} fadeInRight {% endif %}">
+                <span class="navy">{{ player.name }}</span>
                 {% endif %}
+            </h4>
+
+            {% for win in player.wins %}
+            {% assign title = win | split: "|" %}
+            {% assign place = title[0] %}
+            {% assign text = title[1] %}
+            {% if place == '1' %}
+            <span class="fa-stack fa-3x">
+                <i class="fa fa-trophy fa-stack-2x" style="color: gold;"></i>
+                <span class="fa fa-stack-1x" style="color:black;">
+                    <span style="font-size:0.5em; margin-top: 5px; line-height: 1; display:block;">{{ text }}</span>
+                </span>
+            </span>
             {% else %}
-            <div class="col-sm-6 wow {% if loopindex == 1 %} fadeInLeft {% else %} fadeInRight {% endif %}">
+            <span class="fa-stack fa-2x">
+                <i class="fa fa-trophy fa-stack-2x" style="color: silver;"></i>
+                <span class="fa fa-stack-1x" style="color:black;">
+                    <span style="font-size:0.5em; margin-top: 5px; line-height: 1; display:block;">{{ text }}</span>
+                </span>
+            </span>
             {% endif %}
-              <div class="team-member">
-                  <img src="{{ player.img | prepend: site.baseurl }}" class="img-responsive img-circle img-small" alt="">
-                  <h4>
-                  {% if player.url %}
-                  <a href="{{ player.url }}" target="_blank"><span class="navy">{{ player.name }}</span></a>
-                  {% else %}
-                  <span class="navy">{{ player.name }}</span>
-                  {% endif %}
-                  </h4>
+            {% endfor %}
 
-                  {% for win in player.wins %}
-                  {% assign title = win | split: "|" %}
-                  {% assign place = title[0] %}
-                  {% assign text = title[1] %}
-                  {% if place == '1' %}
-                    <span class="fa-stack fa-3x">
-                        <i class="fa fa-trophy fa-stack-2x" style="color: gold;"></i>
-                          <span class="fa fa-stack-1x" style="color:black;">
-                              <span style="font-size:0.5em; margin-top: 5px; line-height: 1; display:block;">
-                                  {{ text }}
-                              </span>
-                        </span>
-                    </span>
-                  {% else %}
-                    <span class="fa-stack fa-2x">
-                        <i class="fa fa-trophy fa-stack-2x" style="color: silver;"></i>
-                        <span class="fa fa-stack-1x" style="color:black;">
-                            <span style="font-size:0.5em; margin-top: 5px; line-height: 1; display:block;">
-                                  {{ text }}
-                              </span>
-                        </span>
-                    </span>
-                  {% endif %}
-                  {% endfor %}
-
-                  <p>{{ player.desc }}</p>
-              </div>
-          </div>
-      {% endfor %}
+            <p>{{ player.desc }}</p>
+        </div>
+        {% endfor %}
     </div>
 </div>
 <br>
