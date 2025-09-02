@@ -2,10 +2,22 @@
 - name: Jeff
   pick: 2
   teams:
+    - name: Bills
+      img: https://static.www.nfl.com/league/api/clubs/logos/BUF.svg
+      css:
+      wins: 0
+      full_name: Buffalo Bills
+      location: Buffalo
 
 - name: Greg
   pick: 3
   teams:
+    - name: Ravens
+      img: https://static.www.nfl.com/t_q-best/league/api/clubs/logos/BAL
+      css:
+      wins: 0
+      full_name: Baltimore Ravens
+      location: Baltimore
 
 - name: Tim
   pick: 5
@@ -14,10 +26,22 @@
 - name: Zach
   pick: 1
   teams:
+    - name: Eagles
+      img: https://static.www.nfl.com/league/api/clubs/logos/PHI.svg
+      css:
+      wins: 0
+      full_name: Philadelphia Eagles
+      location: Philadelphia
 
 - name: Mike
   pick: 4
   teams:
+    - name: Lions
+      img: https://static.www.nfl.com/league/api/clubs/logos/DET.svg
+      css:
+      wins: 0
+      full_name: Detroit Lions
+      location: Detroit
 
 - name: Undrafted
   pick: None
@@ -40,12 +64,6 @@
       wins: 0
       full_name: Cincinnati Bengals
       location: Cincinnati
-    - name: Bills
-      img: https://static.www.nfl.com/league/api/clubs/logos/BUF.svg
-      css:
-      wins: 0
-      full_name: Buffalo Bills
-      location: Buffalo
     - name: Broncos
       img: https://static.www.nfl.com/league/api/clubs/logos/DEN.svg
       css:
@@ -106,12 +124,7 @@
       wins: 0
       full_name: Miami Dolphins
       location: Miami
-    - name: Eagles
-      img: https://static.www.nfl.com/league/api/clubs/logos/PHI.svg
-      css:
-      wins: 0
-      full_name: Philadelphia Eagles
-      location: Philadelphia
+
     - name: Falcons
       img: https://static.www.nfl.com/league/api/clubs/logos/ATL.svg
       css:
@@ -136,12 +149,7 @@
       wins: 0
       full_name: New York Jets
       location: New York
-    - name: Lions
-      img: https://static.www.nfl.com/league/api/clubs/logos/DET.svg
-      css:
-      wins: 0
-      full_name: Detroit Lions
-      location: Detroit
+
     - name: Packers
       img: https://static.www.nfl.com/league/api/clubs/logos/GB.svg
       css:
@@ -172,12 +180,7 @@
       wins: 0
       full_name: Los Angeles Rams
       location: Los Angeles
-    - name: Ravens
-      img: https://static.www.nfl.com/t_q-best/league/api/clubs/logos/BAL
-      css:
-      wins: 0
-      full_name: Baltimore Ravens
-      location: Baltimore
+
     - name: Saints
       img: https://static.www.nfl.com/league/api/clubs/logos/NO.svg
       css:
