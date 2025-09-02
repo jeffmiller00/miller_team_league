@@ -60,12 +60,6 @@
       wins: 0
       full_name: Pittsburgh Steelers
       location: Pittsburgh
-    - name: Cardinals
-      img: https://static.www.nfl.com/league/api/clubs/logos/ARI.svg
-      css:
-      wins: 0
-      full_name: Arizona Cardinals
-      location: Arizona
     - name: Cowboys
       img: https://static.www.nfl.com/league/api/clubs/logos/DAL.svg
       css:
@@ -100,6 +94,12 @@
       wins: 0
       full_name: Los Angeles Chargers
       location: Los Angeles
+    - name: Colts
+      img: https://static.www.nfl.com/league/api/clubs/logos/IND.svg
+      css:
+      wins: 0
+      full_name: Indianapolis Colts
+      location: Indianapolis
 
 - name: Zach
   pick: 1
@@ -128,6 +128,12 @@
       wins: 0
       full_name: Seattle Seahawks
       location: Seattle
+    - name: Cardinals
+      img: https://static.www.nfl.com/league/api/clubs/logos/ARI.svg
+      css:
+      wins: 0
+      full_name: Arizona Cardinals
+      location: Arizona
 
 - name: Mike
   pick: 4
@@ -166,13 +172,6 @@
 - name: Undrafted
   pick: None
   teams:
-    - name: Colts
-      img: https://static.www.nfl.com/league/api/clubs/logos/IND.svg
-      css:
-      wins: 0
-      full_name: Indianapolis Colts
-      location: Indianapolis
-
     - name: Giants
       img: https://static.www.nfl.com/league/api/clubs/logos/NYG.svg
       css:
