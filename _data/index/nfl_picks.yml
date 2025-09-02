@@ -66,6 +66,12 @@
       wins: 0
       full_name: Arizona Cardinals
       location: Arizona
+    - name: Cowboys
+      img: https://static.www.nfl.com/league/api/clubs/logos/DAL.svg
+      css:
+      wins: 0
+      full_name: Dallas Cowboys
+      location: Dallas
 
 - name: Tim
   pick: 5
@@ -150,10 +156,6 @@
       wins: 0
       full_name: Chicago Bears
       location: Chicago
-
-- name: Undrafted
-  pick: None
-  teams:
     - name: Browns
       img: https://static.www.nfl.com/league/api/clubs/logos/CLE.svg
       css:
@@ -161,19 +163,15 @@
       full_name: Cleveland Browns
       location: Cleveland
 
+- name: Undrafted
+  pick: None
+  teams:
     - name: Colts
       img: https://static.www.nfl.com/league/api/clubs/logos/IND.svg
       css:
       wins: 0
       full_name: Indianapolis Colts
       location: Indianapolis
-
-    - name: Cowboys
-      img: https://static.www.nfl.com/league/api/clubs/logos/DAL.svg
-      css:
-      wins: 0
-      full_name: Dallas Cowboys
-      location: Dallas
 
     - name: Giants
       img: https://static.www.nfl.com/league/api/clubs/logos/NYG.svg
