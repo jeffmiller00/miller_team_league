@@ -2,7 +2,7 @@
   {
     "location": "Arizona",
     "name": "Cardinals",
-    "drafted_by": "",
+    "drafted_by": "zach",
     "wins": {
       "2025-09-04": 0
     },
@@ -11,7 +11,7 @@
   {
     "location": "Atlanta",
     "name": "Falcons",
-    "drafted_by": "",
+    "drafted_by": "jeff",
     "wins": {
       "2025-09-04": 0
     },
@@ -20,7 +20,7 @@
   {
     "location": "Baltimore",
     "name": "Ravens",
-    "drafted_by": "",
+    "drafted_by": "greg",
     "wins": {
       "2025-09-04": 0
     },
@@ -29,7 +29,7 @@
   {
     "location": "Buffalo",
     "name": "Bills",
-    "drafted_by": "",
+    "drafted_by": "jeff",
     "wins": {
       "2025-09-04": 0
     },
@@ -47,7 +47,7 @@
   {
     "location": "Chicago",
     "name": "Bears",
-    "drafted_by": "",
+    "drafted_by": "mike",
     "wins": {
       "2025-09-04": 0
     },
@@ -56,7 +56,7 @@
   {
     "location": "Cincinnati",
     "name": "Bengals",
-    "drafted_by": "",
+    "drafted_by": "zach",
     "wins": {
       "2025-09-04": 0
     },
@@ -65,7 +65,7 @@
   {
     "location": "Cleveland",
     "name": "Browns",
-    "drafted_by": "",
+    "drafted_by": "mike",
     "wins": {
       "2025-09-04": 0
     },
@@ -74,7 +74,7 @@
   {
     "location": "Dallas",
     "name": "Cowboys",
-    "drafted_by": "",
+    "drafted_by": "greg",
     "wins": {
       "2025-09-04": 0
     },
@@ -83,7 +83,7 @@
   {
     "location": "Denver",
     "name": "Broncos",
-    "drafted_by": "",
+    "drafted_by": "greg",
     "wins": {
       "2025-09-04": 0
     },
@@ -92,7 +92,7 @@
   {
     "location": "Detroit",
     "name": "Lions",
-    "drafted_by": "",
+    "drafted_by": "mike",
     "wins": {
       "2025-09-04": 0
     },
@@ -101,7 +101,7 @@
   {
     "location": "Green Bay",
     "name": "Packers",
-    "drafted_by": "",
+    "drafted_by": "jeff",
     "wins": {
       "2025-09-04": 0
     },
@@ -110,7 +110,7 @@
   {
     "location": "Houston",
     "name": "Texans",
-    "drafted_by": "",
+    "drafted_by": "tim",
     "wins": {
       "2025-09-04": 0
     },
@@ -119,7 +119,7 @@
   {
     "location": "Indianapolis",
     "name": "Colts",
-    "drafted_by": "",
+    "drafted_by": "tim",
     "wins": {
       "2025-09-04": 0
     },
@@ -128,7 +128,7 @@
   {
     "location": "Jacksonville",
     "name": "Jaguars",
-    "drafted_by": "",
+    "drafted_by": "greg",
     "wins": {
       "2025-09-04": 0
     },
@@ -137,7 +137,7 @@
   {
     "location": "Kansas City",
     "name": "Chiefs",
-    "drafted_by": "",
+    "drafted_by": "tim",
     "wins": {
       "2025-09-04": 0
     },
@@ -146,7 +146,7 @@
   {
     "location": "Los Angeles",
     "name": "Rams",
-    "drafted_by": "",
+    "drafted_by": "zach",
     "wins": {
       "2025-09-04": 0
     },
@@ -155,7 +155,7 @@
   {
     "location": "Miami",
     "name": "Dolphins",
-    "drafted_by": "",
+    "drafted_by": "mike",
     "wins": {
       "2025-09-04": 0
     },
@@ -164,7 +164,7 @@
   {
     "location": "Minnesota",
     "name": "Vikings",
-    "drafted_by": "",
+    "drafted_by": "greg",
     "wins": {
       "2025-09-04": 0
     },
@@ -173,7 +173,7 @@
   {
     "location": "New England",
     "name": "Patriots",
-    "drafted_by": "",
+    "drafted_by": "jeff",
     "wins": {
       "2025-09-04": 0
     },
@@ -182,7 +182,7 @@
   {
     "location": "New York",
     "name": "Giants",
-    "drafted_by": "",
+    "drafted_by": "mike",
     "wins": {
       "2025-09-04": 0
     },
@@ -191,7 +191,7 @@
   {
     "location": "New York",
     "name": "Jets",
-    "drafted_by": "",
+    "drafted_by": "zach",
     "wins": {
       "2025-09-04": 0
     },
@@ -209,7 +209,7 @@
   {
     "location": "Philadelphia",
     "name": "Eagles",
-    "drafted_by": "",
+    "drafted_by": "zach",
     "wins": {
       "2025-09-04": 0
     },
@@ -218,7 +218,7 @@
   {
     "location": "Pittsburgh",
     "name": "Steelers",
-    "drafted_by": "",
+    "drafted_by": "greg",
     "wins": {
       "2025-09-04": 0
     },
@@ -227,7 +227,7 @@
   {
     "location": "Las Vegas",
     "name": "Raiders",
-    "drafted_by": "",
+    "drafted_by": "tim",
     "wins": {
       "2025-09-04": 0
     },
@@ -236,7 +236,7 @@
   {
     "location": "Los Angeles",
     "name": "Chargers",
-    "drafted_by": "",
+    "drafted_by": "tim",
     "wins": {
       "2025-09-04": 0
     },
@@ -245,7 +245,7 @@
   {
     "location": "San Francisco",
     "name": "49ers",
-    "drafted_by": "",
+    "drafted_by": "jeff",
     "wins": {
       "2025-09-04": 0
     },
@@ -254,7 +254,7 @@
   {
     "location": "Seattle",
     "name": "Seahawks",
-    "drafted_by": "",
+    "drafted_by": "zach",
     "wins": {
       "2025-09-04": 0
     },
@@ -263,7 +263,7 @@
   {
     "location": "Tampa Bay",
     "name": "Buccaneers",
-    "drafted_by": "",
+    "drafted_by": "mike",
     "wins": {
       "2025-09-04": 0
     },
@@ -272,7 +272,7 @@
   {
     "location": "Tennessee",
     "name": "Titans",
-    "drafted_by": "",
+    "drafted_by": "jeff",
     "wins": {
       "2025-09-04": 0
     },
@@ -281,7 +281,7 @@
   {
     "location": "Washington",
     "name": "Commanders",
-    "drafted_by": "",
+    "drafted_by": "tim",
     "wins": {
       "2025-09-04": 0
     },
