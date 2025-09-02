@@ -26,6 +26,12 @@
       wins: 0
       full_name: New England Patriots
       location: New England
+    - name: Falcons
+      img: https://static.www.nfl.com/league/api/clubs/logos/ATL.svg
+      css:
+      wins: 0
+      full_name: Atlanta Falcons
+      location: Atlanta
 
 - name: Greg
   pick: 3
@@ -54,6 +60,12 @@
       wins: 0
       full_name: Pittsburgh Steelers
       location: Pittsburgh
+    - name: Cardinals
+      img: https://static.www.nfl.com/league/api/clubs/logos/ARI.svg
+      css:
+      wins: 0
+      full_name: Arizona Cardinals
+      location: Arizona
 
 - name: Tim
   pick: 5
@@ -104,6 +116,12 @@
       wins: 0
       full_name: Cincinnati Bengals
       location: Cincinnati
+    - name: Seahawks
+      img: https://static.www.nfl.com/league/api/clubs/logos/SEA.svg
+      css:
+      wins: 0
+      full_name: Seattle Seahawks
+      location: Seattle
 
 - name: Mike
   pick: 4
@@ -143,13 +161,6 @@
       full_name: Cleveland Browns
       location: Cleveland
 
-    - name: Cardinals
-      img: https://static.www.nfl.com/league/api/clubs/logos/ARI.svg
-      css:
-      wins: 0
-      full_name: Arizona Cardinals
-      location: Arizona
-
     - name: Colts
       img: https://static.www.nfl.com/league/api/clubs/logos/IND.svg
       css:
@@ -164,12 +175,6 @@
       full_name: Dallas Cowboys
       location: Dallas
 
-    - name: Falcons
-      img: https://static.www.nfl.com/league/api/clubs/logos/ATL.svg
-      css:
-      wins: 0
-      full_name: Atlanta Falcons
-      location: Atlanta
     - name: Giants
       img: https://static.www.nfl.com/league/api/clubs/logos/NYG.svg
       css:
@@ -209,12 +214,6 @@
       wins: 0
       full_name: New Orleans Saints
       location: New Orleans
-    - name: Seahawks
-      img: https://static.www.nfl.com/league/api/clubs/logos/SEA.svg
-      css:
-      wins: 0
-      full_name: Seattle Seahawks
-      location: Seattle
 
     - name: Titans
       img: https://static.www.nfl.com/league/api/clubs/logos/TEN.svg
