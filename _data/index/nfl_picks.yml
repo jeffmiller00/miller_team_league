@@ -14,6 +14,12 @@
       wins: 0
       full_name: Green Bay Packers
       location: Green Bay
+    - name: 49ers
+      img: https://static.www.nfl.com/league/api/clubs/logos/SF.svg
+      css:
+      wins: 0
+      full_name: San Francisco 49ers
+      location: San Francisco
 
 - name: Greg
   pick: 3
@@ -30,6 +36,12 @@
       wins: 0
       full_name: Denver Broncos
       location: Denver
+    - name: Vikings
+      img: https://static.www.nfl.com/league/api/clubs/logos/MIN.svg
+      css:
+      wins: 0
+      full_name: Minnesota Vikings
+      location: Minnesota
 
 - name: Tim
   pick: 5
@@ -56,6 +68,18 @@
       wins: 0
       full_name: Philadelphia Eagles
       location: Philadelphia
+    - name: Rams
+      img: https://static.www.nfl.com/league/api/clubs/logos/LA.svg
+      css:
+      wins: 0
+      full_name: Los Angeles Rams
+      location: Los Angeles
+    - name: Bengals
+      img: https://static.www.nfl.com/league/api/clubs/logos/CIN.svg
+      css:
+      wins: 0
+      full_name: Cincinnati Bengals
+      location: Cincinnati
 
 - name: Mike
   pick: 4
@@ -72,28 +96,23 @@
       wins: 0
       full_name: Tampa Bay Buccaneers
       location: Tampa Bay
+    - name: Dolphins
+      img: https://static.www.nfl.com/league/api/clubs/logos/MIA.svg
+      css:
+      wins: 0
+      full_name: Miami Dolphins
+      location: Miami
 
 - name: Undrafted
   pick: None
   teams:
-    - name: 49ers
-      img: https://static.www.nfl.com/league/api/clubs/logos/SF.svg
-      css:
-      wins: 0
-      full_name: San Francisco 49ers
-      location: San Francisco
     - name: Bears
       img: https://static.www.nfl.com/league/api/clubs/logos/CHI.svg
       css:
       wins: 0
       full_name: Chicago Bears
       location: Chicago
-    - name: Bengals
-      img: https://static.www.nfl.com/league/api/clubs/logos/CIN.svg
-      css:
-      wins: 0
-      full_name: Cincinnati Bengals
-      location: Cincinnati
+
     - name: Browns
       img: https://static.www.nfl.com/league/api/clubs/logos/CLE.svg
       css:
@@ -127,12 +146,6 @@
       wins: 0
       full_name: Dallas Cowboys
       location: Dallas
-    - name: Dolphins
-      img: https://static.www.nfl.com/league/api/clubs/logos/MIA.svg
-      css:
-      wins: 0
-      full_name: Miami Dolphins
-      location: Miami
 
     - name: Falcons
       img: https://static.www.nfl.com/league/api/clubs/logos/ATL.svg
@@ -177,12 +190,6 @@
       wins: 0
       full_name: Las Vegas Raiders
       location: Las Vegas
-    - name: Rams
-      img: https://static.www.nfl.com/league/api/clubs/logos/LA.svg
-      css:
-      wins: 0
-      full_name: Los Angeles Rams
-      location: Los Angeles
 
     - name: Saints
       img: https://static.www.nfl.com/league/api/clubs/logos/NO.svg
@@ -214,9 +221,3 @@
       wins: 0
       full_name: Tennessee Titans
       location: Tennessee
-    - name: Vikings
-      img: https://static.www.nfl.com/league/api/clubs/logos/MIN.svg
-      css:
-      wins: 0
-      full_name: Minnesota Vikings
-      location: Minnesota
