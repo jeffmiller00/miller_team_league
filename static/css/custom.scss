@@ -1,9 +1,8 @@
 ---
-
 ---
-
-@import "search";
-@import "pygments";
-@import "open_sans";
-@import "roboto";
-@import "style";
+// Entry point for site styles using Dart Sass modules (aggregator removed)
+@use "search";
+@use "pygments";
+@use "open_sans";
+@use "roboto";
+@use "style";
