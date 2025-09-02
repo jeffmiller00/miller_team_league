@@ -100,6 +100,12 @@
       wins: 0
       full_name: Indianapolis Colts
       location: Indianapolis
+    - name: Raiders
+      img: https://static.www.nfl.com/league/api/clubs/logos/LV.svg
+      css:
+      wins: 0
+      full_name: Las Vegas Raiders
+      location: Las Vegas
 
 - name: Zach
   pick: 1
@@ -168,16 +174,16 @@
       wins: 0
       full_name: Cleveland Browns
       location: Cleveland
-
-- name: Undrafted
-  pick: None
-  teams:
     - name: Giants
       img: https://static.www.nfl.com/league/api/clubs/logos/NYG.svg
       css:
       wins: 0
       full_name: New York Giants
       location: New York
+
+- name: Undrafted
+  pick: None
+  teams:
     - name: Jaguars
       img: https://static.www.nfl.com/league/api/clubs/logos/JAX.svg
       css:
@@ -197,13 +203,6 @@
       wins: 0
       full_name: Carolina Panthers
       location: Carolina
-
-    - name: Raiders
-      img: https://static.www.nfl.com/league/api/clubs/logos/LV.svg
-      css:
-      wins: 0
-      full_name: Las Vegas Raiders
-      location: Las Vegas
 
     - name: Saints
       img: https://static.www.nfl.com/league/api/clubs/logos/NO.svg
