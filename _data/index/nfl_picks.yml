@@ -22,6 +22,18 @@
 - name: Tim
   pick: 5
   teams:
+    - name: Chiefs
+      img: https://static.www.nfl.com/league/api/clubs/logos/KC.svg
+      css:
+      wins: 0
+      full_name: Kansas City Chiefs
+      location: Kansas City
+    - name: Commanders
+      img: https://static.www.nfl.com/league/api/clubs/logos/WAS.svg
+      css:
+      wins: 0
+      full_name: Washington Commanders
+      location: Washington
 
 - name: Zach
   pick: 1
@@ -42,6 +54,12 @@
       wins: 0
       full_name: Detroit Lions
       location: Detroit
+    - name: Buccaneers
+      img: https://static.www.nfl.com/league/api/clubs/logos/TB.svg
+      css:
+      wins: 0
+      full_name: Tampa Bay Buccaneers
+      location: Tampa Bay
 
 - name: Undrafted
   pick: None
@@ -76,12 +94,7 @@
       wins: 0
       full_name: Cleveland Browns
       location: Cleveland
-    - name: Buccaneers
-      img: https://static.www.nfl.com/league/api/clubs/logos/TB.svg
-      css:
-      wins: 0
-      full_name: Tampa Bay Buccaneers
-      location: Tampa Bay
+
     - name: Cardinals
       img: https://static.www.nfl.com/league/api/clubs/logos/ARI.svg
       css:
@@ -94,24 +107,14 @@
       wins: 0
       full_name: Los Angeles Chargers
       location: Los Angeles
-    - name: Chiefs
-      img: https://static.www.nfl.com/league/api/clubs/logos/KC.svg
-      css:
-      wins: 0
-      full_name: Kansas City Chiefs
-      location: Kansas City
+
     - name: Colts
       img: https://static.www.nfl.com/league/api/clubs/logos/IND.svg
       css:
       wins: 0
       full_name: Indianapolis Colts
       location: Indianapolis
-    - name: Commanders
-      img: https://static.www.nfl.com/league/api/clubs/logos/WAS.svg
-      css:
-      wins: 0
-      full_name: Washington Commanders
-      location: Washington
+
     - name: Cowboys
       img: https://static.www.nfl.com/league/api/clubs/logos/DAL.svg
       css:
