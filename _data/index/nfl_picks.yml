@@ -1,22 +1,22 @@
 ---
 - name: Jeff
-  pick: _
+  pick: 2
   teams:
 
 - name: Greg
-  pick: _
+  pick: 3
   teams:
 
 - name: Tim
-  pick: _
+  pick: 5
   teams:
 
 - name: Zach
-  pick: _
+  pick: 1
   teams:
 
 - name: Mike
-  pick: _
+  pick: 4
   teams:
 
 - name: Undrafted
