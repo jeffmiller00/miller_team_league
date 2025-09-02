@@ -8,6 +8,12 @@
       wins: 0
       full_name: Buffalo Bills
       location: Buffalo
+    - name: Packers
+      img: https://static.www.nfl.com/league/api/clubs/logos/GB.svg
+      css:
+      wins: 0
+      full_name: Green Bay Packers
+      location: Green Bay
 
 - name: Greg
   pick: 3
@@ -18,6 +24,12 @@
       wins: 0
       full_name: Baltimore Ravens
       location: Baltimore
+    - name: Broncos
+      img: https://static.www.nfl.com/league/api/clubs/logos/DEN.svg
+      css:
+      wins: 0
+      full_name: Denver Broncos
+      location: Denver
 
 - name: Tim
   pick: 5
@@ -82,12 +94,6 @@
       wins: 0
       full_name: Cincinnati Bengals
       location: Cincinnati
-    - name: Broncos
-      img: https://static.www.nfl.com/league/api/clubs/logos/DEN.svg
-      css:
-      wins: 0
-      full_name: Denver Broncos
-      location: Denver
     - name: Browns
       img: https://static.www.nfl.com/league/api/clubs/logos/CLE.svg
       css:
@@ -153,12 +159,6 @@
       full_name: New York Jets
       location: New York
 
-    - name: Packers
-      img: https://static.www.nfl.com/league/api/clubs/logos/GB.svg
-      css:
-      wins: 0
-      full_name: Green Bay Packers
-      location: Green Bay
     - name: Panthers
       img: https://static.www.nfl.com/league/api/clubs/logos/CAR.svg
       css:
