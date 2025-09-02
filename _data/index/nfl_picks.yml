@@ -20,6 +20,12 @@
       wins: 0
       full_name: San Francisco 49ers
       location: San Francisco
+    - name: Patriots
+      img: https://static.www.nfl.com/league/api/clubs/logos/NE.svg
+      css:
+      wins: 0
+      full_name: New England Patriots
+      location: New England
 
 - name: Greg
   pick: 3
@@ -42,6 +48,12 @@
       wins: 0
       full_name: Minnesota Vikings
       location: Minnesota
+    - name: Steelers
+      img: https://static.www.nfl.com/league/api/clubs/logos/PIT.svg
+      css:
+      wins: 0
+      full_name: Pittsburgh Steelers
+      location: Pittsburgh
 
 - name: Tim
   pick: 5
@@ -183,12 +195,7 @@
       wins: 0
       full_name: Carolina Panthers
       location: Carolina
-    - name: Patriots
-      img: https://static.www.nfl.com/league/api/clubs/logos/NE.svg
-      css:
-      wins: 0
-      full_name: New England Patriots
-      location: New England
+
     - name: Raiders
       img: https://static.www.nfl.com/league/api/clubs/logos/LV.svg
       css:
@@ -208,12 +215,6 @@
       wins: 0
       full_name: Seattle Seahawks
       location: Seattle
-    - name: Steelers
-      img: https://static.www.nfl.com/league/api/clubs/logos/PIT.svg
-      css:
-      wins: 0
-      full_name: Pittsburgh Steelers
-      location: Pittsburgh
 
     - name: Titans
       img: https://static.www.nfl.com/league/api/clubs/logos/TEN.svg
