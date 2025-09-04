@@ -43,7 +43,7 @@ We only have wins now; computing streaks automatically would require per-week re
             <h3 class="player-name">{{ player.name }}</h3>
             <span class="total-wins" title="Total wins across all picked teams">{{ total_wins }} total</span>
           </div>
-          <div class="primary-pick">Primary pick: <strong>{{ player.pick }}</strong></div>
+          <div class="primary-pick">Pick: <strong>{{ player.pick }}</strong></div>
           <ul class="teams-grid">
             {% for pick in player.teams %}
               {%- assign streak_val = pick.streak | default: nil -%}
