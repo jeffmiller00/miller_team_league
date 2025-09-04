@@ -74,15 +74,15 @@ We only have wins now; computing streaks automatically would require per-week re
   </div>
   {% if undrafted_list and undrafted_list.size > 0 %}
     {% assign undrafted = undrafted_list | first %}
-    <div class="undrafted-wrapper" style="margin-top:2rem;">
-      <div class="player-card" style="background:#162028; border-style:dashed;">
-        <div class="player-header" style="margin-bottom:.5rem;">
-          <h3 class="player-name" style="color:#bbb;">Undrafted</h3>
+    <div class="undrafted-wrapper">
+      <div class="player-card player-card--undrafted" aria-label="Undrafted teams aggregate">
+        <div class="player-header">
+          <h3 class="player-name">Undrafted</h3>
           <span class="total-wins" title="Total wins among undrafted teams">{% assign undrafted_total = 0 %}{% for t in undrafted.teams %}{% assign undrafted_total = undrafted_total | plus: t.wins %}{% endfor %}{{ undrafted_total }} wins</span>
         </div>
-        <ul class="teams-grid" style="--cols:6;">
+        <ul class="teams-grid">
           {% for pick in undrafted.teams %}
-            <li class="team-card {{ pick.css }}" style="background:#1d2832;">
+            <li class="team-card {{ pick.css }}">
               <img class="team-logo" src="{{ pick.img }}" alt="{{ pick.full_name }} logo">
               <div class="team-name">{{ pick.full_name }}</div>
               <div class="team-wins" title="Wins">{{ pick.wins }}</div>

@@ -1,0 +1,32 @@
+/* Static light theme (dark mode removed) */
+:root {
+  --surface-primary: #ffffff;
+  --surface-secondary: #f5f7fa;
+  --surface-elevated: #f0f4f8;
+  --surface-accent: #eef3f8;
+  --surface-inset: #e6edf3;
+  --border-color: #d1dae2;
+  --border-color-strong: #b4c1cc;
+  --text-primary: #1a242e;
+  --text-secondary: #4a5a68;
+  --text-inverse: #ffffff;
+  --pill-bg: var(--surface-inset);
+  --badge-win-start: #0f6d2d;
+  --badge-win-end: #1ea94d;
+  --badge-loss-start: #7e1d1d;
+  --badge-loss-end: #c73737;
+  --streak-neutral-bg: #888888;
+  --trophy-first-start: #735900;
+  --trophy-first-end: #c9a32b;
+  --trophy-second-start: #4b545c;
+  --trophy-second-end: #8b959e;
+  --focus-ring: 0 0 0 3px rgba(30,160,230,.45);
+  color-scheme: light;
+}
+
+.u-focus-visible:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+
+html, body { background: var(--surface-secondary); color: var(--text-primary); }
+body .white-bg { background: var(--surface-primary); }
+.navbar-fixed-top, .navbar-static-top { background: var(--surface-primary); border-color: var(--border-color) !important; }
+hr, .navy-line { border-color: var(--border-color); }

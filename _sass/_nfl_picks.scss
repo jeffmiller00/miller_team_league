@@ -1,150 +1,40 @@
+/* NFL Picks section themed with CSS variables */
 .nfl-picks {
   margin-top: 1rem;
 
-  .players-grid {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-  @media (min-width: 1100px) {
-    .players-grid {
-      grid-template-columns: repeat(5, 1fr);
-    }
-  }
-  .player-column {
-    min-width: 0;
-  }
-  .player-card {
-    background: #10141a;
-    color: #f5f7fa;
-    border: 1px solid #1f2a36;
-    border-radius: .75rem;
-    padding: 1rem .85rem 1.1rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,.35);
-    position: relative;
-    &:hover {
-      box-shadow: 0 4px 14px rgba(0,0,0,.5);
-      transform: translateY(-2px);
-      transition: all .25s ease;
-    }
-  }
-  .player-header {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: .5rem;
-    flex-wrap: wrap;
-  }
-  .player-name {
-    font-size: 1.35rem;
-    font-weight: 600;
-    margin: 0;
-  }
-  .total-wins {
-    font-size: .85rem;
-    background: #243240;
-    color: #cdd7e1;
-    padding: .25rem .55rem;
-    border-radius: .5rem;
-    letter-spacing: .5px;
-  }
-  .primary-pick {
-    font-size: .85rem;
-    font-style: italic;
-    opacity: .85;
-  }
-  .teams-grid {
-    list-style: none;
-    margin: .85rem 0 0 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(115px, 1fr));
-    gap: .65rem;
-  }
-  .team-card {
-    background: #18222c;
-    border: 1px solid #223140;
-    border-radius: .65rem;
-    padding: .4rem .45rem .6rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    &:hover {
-      border-color: #345065;
-    }
-  }
-  .team-logo {
-    width: 64px;
-    height: 64px;
-    object-fit: contain;
-    filter: drop-shadow(0 2px 2px rgba(0,0,0,.35));
-  }
-  .team-name {
-    font-size: .7rem;
-    font-weight: 600;
-    margin: .35rem 0 .25rem;
-    line-height: 1.1;
-    letter-spacing: .5px;
-    text-transform: uppercase;
-  }
-  .team-wins {
-    font-size: .85rem;
-    font-weight: 600;
-    display: inline-block;
-    padding: .15rem .5rem;
-    background: #2d4255;
-    color: #fff;
-    border-radius: .75rem;
-  }
-  .streak-badge {
-    position: absolute;
-    top: .4rem;
-    right: .4rem;
-    font-size: .6rem;
-    font-weight: 700;
-    padding: .25rem .4rem;
-    border-radius: .5rem;
-    letter-spacing: .5px;
-  }
-  .streak-win {
-    background: linear-gradient(135deg,#0f6d2d,#1ea94d);
-    color: #fff;
-  }
-  .streak-loss {
-    background: linear-gradient(135deg,#7e1d1d,#c73737);
-    color: #fff;
-  }
-  .streak-neutral {
-    background: #555;
-    color: #eee;
-  }
+  .players-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  @media (min-width: 1100px) { .players-grid { grid-template-columns: repeat(5, 1fr); } }
+  .player-column { min-width: 0; }
+
+  .player-card { background: var(--surface-primary); color: var(--text-primary); border: 1px solid var(--border-color); border-radius: .75rem; padding: 1rem .85rem 1.1rem; box-shadow: 0 2px 4px rgba(0,0,0,.08); position: relative; }
+  .player-header { display: flex; align-items: baseline; justify-content: space-between; gap: .5rem; flex-wrap: wrap; }
+  .player-name { font-size: 1.35rem; font-weight: 600; margin: 0; }
+  .total-wins { font-size: .75rem; background: var(--surface-inset); color: var(--text-secondary); padding: .25rem .55rem; border-radius: .5rem; letter-spacing: .5px; }
+  .primary-pick { font-size: .75rem; font-style: italic; opacity: .85; }
+  .teams-grid { list-style: none; margin: .85rem 0 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(115px, 1fr)); gap: .65rem; }
+  .team-card { background: var(--surface-secondary); border: 1px solid var(--border-color); border-radius: .65rem; padding: .4rem .45rem .6rem; display: flex; flex-direction: column; align-items: center; text-align: center; position: relative; }
+  .team-logo { width: 64px; height: 64px; object-fit: contain; filter: drop-shadow(0 2px 2px rgba(0,0,0,.15)); }
+  .team-name { font-size: .65rem; font-weight: 600; margin: .35rem 0 .25rem; line-height: 1.1; letter-spacing: .5px; text-transform: uppercase; }
+  .team-wins { font-size: .75rem; font-weight: 600; display: inline-block; padding: .15rem .5rem; background: var(--pill-bg); color: var(--text-inverse); border-radius: .75rem; }
+  .streak-badge { position: absolute; top: .4rem; right: .4rem; font-size: .6rem; font-weight: 700; padding: .25rem .4rem; border-radius: .5rem; letter-spacing: .5px; color: #fff; }
+  .streak-win { background: linear-gradient(135deg,var(--badge-win-start),var(--badge-win-end)); }
+  .streak-loss { background: linear-gradient(135deg,var(--badge-loss-start),var(--badge-loss-end)); }
+  .streak-neutral { background: var(--streak-neutral-bg); color: var(--text-inverse); }
+
   /* Responsive tweaks */
-  @media (max-width: 992px) {
-    .player-name {
-      font-size: 1.15rem;
-    }
-  }
+  @media (max-width: 992px) { .player-name { font-size: 1.15rem; } }
   @media (max-width: 768px) {
-    .teams-grid {
-      grid-template-columns: repeat(auto-fill, minmax(95px, 1fr));
-    }
-    .team-logo {
-      width: 56px;
-      height: 56px;
-    }
+    .teams-grid { grid-template-columns: repeat(auto-fill, minmax(95px, 1fr)); }
+    .team-logo { width: 56px; height: 56px; }
   }
   @media (max-width: 576px) {
-    .teams-grid {
-      grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-    }
-    .team-card {
-      padding: .35rem .4rem .5rem;
-    }
-    .team-logo {
-      width: 52px;
-      height: 52px;
-    }
+    .teams-grid { grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); }
+    .team-card { padding: .35rem .4rem .5rem; }
+    .team-logo { width: 52px; height: 52px; }
   }
 }
+
+/* Undrafted section (light theme variant) */
+.undrafted-wrapper { margin-top: 2rem; }
+.player-card--undrafted { background: var(--surface-elevated); border-style: dashed; }
+.player-card--undrafted .player-name { color: var(--text-secondary); }

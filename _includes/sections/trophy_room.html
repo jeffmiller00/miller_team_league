@@ -1,68 +1,71 @@
-<div class="container" id="i18_projects">
-    <div class="row m-b-lg">
-        <div class="col-12 text-center">
+{%- comment -%}
+    Trophy Room redesign (original content removed in favor of card layout).
+    Previous implementation used inline styles & fixed 2x2 grid.
+    New version:
+     * Responsive auto-fit grid
+     * Player summary badges (# Championships / # Runner-ups)
+     * Timeline strip of trophies with year + sport
+     * Accessible markup & reduced inline styles (moved to _trophy_room.scss)
+     * Easily extensible for filtering by sport later
+{%- endcomment -%}
+
+<section class="trophy-room" id="trophy-room" aria-labelledby="trophy-room-heading">
+    <div class="container">
+        <header class="trophy-room__header text-center">
             <div class="navy-line"></div>
-            <h1>Trophy Wall</h1>
-        </div>
-    </div>
+            <h1 id="trophy-room-heading" class="trophy-room__title">Trophy Wall</h1>
+            <p class="trophy-room__subtitle">Historic finishes across NFL &amp; NBA seasons</p>
+        </header>
 
-    <style>
-        /* 2 x 2 grid for exactly 4 players; collapses to single column on small screens */
-        .trophy-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 40px 40px;
-            justify-items: center;
-            align-items: start;
-        }
-
-        @media (max-width: 575.98px) {
-            .trophy-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .trophy-grid .team-member {
-            text-align: center;
-        }
-    </style>
-
-    <div class="trophy-grid">
-        {% for player in site.data.index.trophy_room %}
-        <div class="team-member wow zoomIn" data-wow-delay="{{ forloop.index0 | times: 0.1 }}s">
-            <img src="{{ player.img | prepend: site.baseurl }}" class="img-responsive img-circle img-small" alt="">
-            <h4>
-                {% if player.url %}
-                <a href="{{ player.url }}" target="_blank"><span class="navy">{{ player.name }}</span></a>
-                {% else %}
-                <span class="navy">{{ player.name }}</span>
-                {% endif %}
-            </h4>
-
-            {% for win in player.wins %}
-            {% assign title = win | split: "|" %}
-            {% assign place = title[0] %}
-            {% assign text = title[1] %}
-            {% if place == '1' %}
-            <span class="fa-stack fa-3x">
-                <i class="fa fa-trophy fa-stack-2x" style="color: gold;"></i>
-                <span class="fa fa-stack-1x" style="color:black;">
-                    <span style="font-size:0.5em; margin-top: 5px; line-height: 1; display:block;">{{ text }}</span>
-                </span>
-            </span>
-            {% else %}
-            <span class="fa-stack fa-2x">
-                <i class="fa fa-trophy fa-stack-2x" style="color: silver;"></i>
-                <span class="fa fa-stack-1x" style="color:black;">
-                    <span style="font-size:0.5em; margin-top: 5px; line-height: 1; display:block;">{{ text }}</span>
-                </span>
-            </span>
-            {% endif %}
+        <div class="trophy-room__grid">
+            {% for player in site.data.index.trophy_room %}
+                {%- assign first_total = 0 -%}
+                {%- assign second_total = 0 -%}
+                {%- for win in player.wins -%}
+                    {%- assign parts = win | split: '|' -%}
+                    {%- if parts[0] == '1' -%}
+                        {%- assign first_total = first_total | plus: 1 -%}
+                    {%- else -%}
+                        {%- assign second_total = second_total | plus: 1 -%}
+                    {%- endif -%}
+                {%- endfor -%}
+                <article class="trophy-card wow fadeInUp" data-wow-delay="{{ forloop.index0 | times: 0.07 }}s" aria-label="{{ player.name }} trophy summary">
+                    <div class="trophy-card__top">
+                        <div class="trophy-card__avatar-wrapper">
+                            <img src="{{ player.img | prepend: site.baseurl }}" alt="Photo of {{ player.name }}" class="trophy-card__avatar" loading="lazy" decoding="async" />
+                        </div>
+                        <div class="trophy-card__identity">
+                            <h3 class="trophy-card__name">
+                                {% if player.url %}<a href="{{ player.url }}" target="_blank" rel="noopener" class="trophy-card__link">{{ player.name }}</a>{% else %}{{ player.name }}{% endif %}
+                            </h3>
+                            <div class="trophy-card__badges" aria-label="Summary badges">
+                                <span class="trophy-badge trophy-badge--first" title="First place finishes">🏆 {{ first_total }}</span>
+                                <span class="trophy-badge trophy-badge--second" title="Second place finishes">🥈 {{ second_total }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="trophy-card__desc">{{ player.desc }}</p>
+                    <div class="trophy-card__timeline" aria-label="Finish history timeline">
+                        <ul class="trophy-timeline" role="list">
+                            {%- for win in player.wins -%}
+                                {%- assign parts = win | split: '|' -%}
+                                {%- assign place = parts[0] -%}
+                                {%- assign label = parts[1] -%}
+                                {%- assign pieces = label | split: ' ' -%}
+                                {%- assign year = pieces[0] -%}
+                                {%- assign sport = pieces | last -%}
+                                <li class="trophy-timeline__item {% if place == '1' %}is-first{% else %}is-second{% endif %}" aria-label="{{ place == '1' ? 'First' : 'Second' }} place {{ sport }} {{ year }}">
+                                    <span class="trophy-icon" title="{% if place == '1' %}Champion{% else %}Runner-up{% endif %} {{ sport }} {{ year }}">{% if place == '1' %}🏆{% else %}🥈{% endif %}</span>
+                                    <span class="trophy-meta">
+                                        <span class="trophy-year">{{ year }}</span>
+                                        <span class="trophy-sport">{{ sport }}</span>
+                                    </span>
+                                </li>
+                            {%- endfor -%}
+                        </ul>
+                    </div>
+                </article>
             {% endfor %}
-
-            <p>{{ player.desc }}</p>
         </div>
-        {% endfor %}
     </div>
-</div>
-<br>
+</section>

@@ -1,4 +1,6 @@
+@use 'theme';
 @use 'nfl_picks';
+@use 'trophy_room';
 .landing-page .carousel-caption {
   h1, p {
     text-transform: uppercase;
