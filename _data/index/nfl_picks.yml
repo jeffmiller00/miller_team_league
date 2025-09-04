@@ -6,12 +6,14 @@
       img: https://static.www.nfl.com/league/api/clubs/logos/BUF.svg
       css:
       wins: 0
+      streak: 0
       full_name: Buffalo Bills
       location: Buffalo
     - name: Packers
       img: https://static.www.nfl.com/league/api/clubs/logos/GB.svg
       css:
       wins: 0
+      streak: 0
       full_name: Green Bay Packers
       location: Green Bay
     - name: 49ers

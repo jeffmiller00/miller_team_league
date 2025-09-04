@@ -1,14 +1,95 @@
+{%- comment -%}
+Original simple list layout retained for reference. Remove this block if no longer needed.
 <div class="container">
   <div class="row">
     {% for player in site.data.index.nfl_picks %}
-    <div class="col-xs-2">
-      <h1>{{ player.name }}</h1>
-      <h3><em>Pick: {{ player.pick }}</em></h3>
-      <ol>
-        {% for pick in player.teams %}
-          <li class='{{ pick.css }}'><img class='img-fluid img-logo' src="{{ pick.img }}" style="width: 8em;"><h4>{{ pick.full_name }}</h4><span>{{ pick.wins }}</span></li>
-        {% endfor %}
-      </ol>
-   </div>
-   {% endfor %}
+      <div class="col-xs-2">
+        <h1>{{ player.name }}</h1>
+        <h3><em>Pick: {{ player.pick }}</em></h3>
+        <ol>
+          {% for pick in player.teams %}
+            <li class='{{ pick.css }}'><img class='img-fluid img-logo' src="{{ pick.img }}" style="width: 8em;"><h4>{{ pick.full_name }}</h4><span>{{ pick.wins }}</span></li>
+          {% endfor %}
+        </ol>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{%- endcomment -%}
+
+
+{%- comment -%}
+Streak badges:
+Add a 'streak' value to each team object in data (e.g., streak: 3 for W3, streak: -2 for L2, streak: 0 for neutral).
+If not provided, badge is omitted. Positive => W#, negative => L#.
+Data shape (example):
+player:
+  teams:
+    - full_name: Philadelphia Eagles
+      wins: 10
+      streak: 3  # three wins in a row
+We only have wins now; computing streaks automatically would require per-week results history.
+{%- endcomment -%}
+
+<div class="container nfl-picks">
+  {% assign undrafted_list = site.data.index.nfl_picks | where: 'name', 'Undrafted' %}
+  {% assign players_only = site.data.index.nfl_picks | where_exp: 'p','p.name != "Undrafted"' %}
+  <div class="players-grid" aria-label="NFL player picks grid">
+    {% for player in players_only %}
+      {% assign total_wins = 0 %}{% for t in player.teams %}{% assign total_wins = total_wins | plus: t.wins %}{% endfor %}
+      <div class="player-column">
+        <div class="player-card" aria-label="{{ player.name }} picks card">
+          <div class="player-header">
+            <h3 class="player-name">{{ player.name }}</h3>
+            <span class="total-wins" title="Total wins across all picked teams">{{ total_wins }} total</span>
+          </div>
+          <div class="primary-pick">Primary pick: <strong>{{ player.pick }}</strong></div>
+          <ul class="teams-grid">
+            {% for pick in player.teams %}
+              {%- assign streak_val = pick.streak | default: nil -%}
+              {%- if streak_val -%}
+                {%- if streak_val > 0 -%}
+                  {%- assign streak_class = 'streak-win' -%}
+                  {%- assign streak_label = 'W' | append: streak_val -%}
+                {%- elsif streak_val < 0 -%}
+                  {%- assign streak_class = 'streak-loss' -%}
+                  {%- assign abs = streak_val | times: -1 -%}
+                  {%- assign streak_label = 'L' | append: abs -%}
+                {%- else -%}
+                  {%- assign streak_class = 'streak-neutral' -%}
+                  {%- assign streak_label = '—' -%}
+                {%- endif -%}
+              {%- endif -%}
+              <li class="team-card {{ pick.css }}">
+                {% if streak_val %}<span class="streak-badge {{ streak_class }}">{{ streak_label }}</span>{% endif %}
+                <img class="team-logo" src="{{ pick.img }}" alt="{{ pick.full_name }} logo">
+                <div class="team-name">{{ pick.full_name }}</div>
+                <div class="team-wins" title="Wins">{{ pick.wins }}</div>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  {% if undrafted_list and undrafted_list.size > 0 %}
+    {% assign undrafted = undrafted_list | first %}
+    <div class="undrafted-wrapper" style="margin-top:2rem;">
+      <div class="player-card" style="background:#162028; border-style:dashed;">
+        <div class="player-header" style="margin-bottom:.5rem;">
+          <h3 class="player-name" style="color:#bbb;">Undrafted</h3>
+          <span class="total-wins" title="Total wins among undrafted teams">{% assign undrafted_total = 0 %}{% for t in undrafted.teams %}{% assign undrafted_total = undrafted_total | plus: t.wins %}{% endfor %}{{ undrafted_total }} wins</span>
+        </div>
+        <ul class="teams-grid" style="--cols:6;">
+          {% for pick in undrafted.teams %}
+            <li class="team-card {{ pick.css }}" style="background:#1d2832;">
+              <img class="team-logo" src="{{ pick.img }}" alt="{{ pick.full_name }} logo">
+              <div class="team-name">{{ pick.full_name }}</div>
+              <div class="team-wins" title="Wins">{{ pick.wins }}</div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% endif %}
 </div>
