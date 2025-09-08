@@ -54,8 +54,34 @@ def generate_team_table
       truth_team = find_team team, all_teams
       begin
         team['wins'] = truth_team['wins'].map{ |wins_on| wins_on[1] }.max
+
+        wins_series = truth_team['wins'].sort_by { |d,_| d }.map { |_,v| v }
+        if wins_series.size < 2
+          team['streak'] = 0
+        else
+          if wins_series[-1] == wins_series[-2]
+            # Negative streak: number of games since last increase
+            plateau = 0
+            last_val = wins_series[-1]
+            i = wins_series.size - 1
+            while i >= 0 && wins_series[i] == last_val
+              plateau += 1
+              i -= 1
+            end
+            team['streak'] = -(plateau - 1)
+          else
+            # Positive streak: consecutive +1 increments ending the array
+            len = 1
+            i = wins_series.size - 1
+            while i > 0 && wins_series[i] - wins_series[i - 1] == 1
+              len += 1
+              i -= 1
+            end
+            team['streak'] = len
+          end
+        end
       rescue
-      binding.pry
+        binding.pry
       end
     end
   end
@@ -73,8 +99,8 @@ EMPTY_WEEK = {jeff: 0, greg: 0, tim: 0, zach: 0, mike: 0}
 def generate_summary_chart
   all_teams = get_teams
   weeklySummary = []
-  week1begin = Date.parse('2024-09-05')
-  week1end   = Date.parse('2024-09-09')
+  week1begin = Date.parse('2025-09-04')
+  week1end   = Date.parse('2025-09-08')
   nfl_week_number = ((Date.today - week1begin)/7).to_i + 1
 
   nfl_week_number.times do |i|
