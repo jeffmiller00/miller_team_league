@@ -70,8 +70,8 @@ def generate_team_table
             end
             team['streak'] = -(plateau - 1)
           else
-            # Positive streak: consecutive +1 increments ending the array
-            len = 1
+            # Positive streak: consecutive +1 increments ending the array (count increments, not elements)
+            len = 0
             i = wins_series.size - 1
             while i > 0 && wins_series[i] - wins_series[i - 1] == 1
               len += 1
