@@ -7,6 +7,7 @@ require 'pry'
 
 DATA_FILE  = '../_data/nfl.json'
 PICKS_FILE ='../_data/index/nfl_picks.yml'
+SUMMARY_FILE ='../_data/index/nfl_summary.yml'
 
 def get_teams
   all_teams = File.read(DATA_FILE)
@@ -71,6 +72,7 @@ def generate_team_table
             team['streak'] = -(plateau - 1)
           else
             # Positive streak: consecutive +1 increments ending the array (count increments, not elements)
+            # TODO: This does not handle bye weeks correctly. The Win streak resets during the bye week.
             len = 0
             i = wins_series.size - 1
             while i > 0 && wins_series[i] - wins_series[i - 1] == 1
@@ -129,7 +131,24 @@ def generate_summary_chart
   allSummaries << weeklySummary.map{ |summary| summary[:tim] }.last(10)
   allSummaries << weeklySummary.map{ |summary| summary[:zach] }.last(10)
   allSummaries << weeklySummary.map{ |summary| summary[:mike] }.last(10)
-  puts allSummaries.to_s
+
+  if write_file?
+    weekly_summary =
+      if File.exist?(SUMMARY_FILE)
+        YAML.load_file(SUMMARY_FILE) || {}
+      else
+        {}
+      end
+
+    weekly_summary['data'] = allSummaries.to_s
+    weekly_summary['labels'] = weeklySummary.last(10).map{ |summary| "Wk #{summary[:weekNum]}" }
+
+    File.open(SUMMARY_FILE,"w") do |f|
+      f.write(weekly_summary.to_yaml)
+    end
+  else
+    puts weekly_summary.to_yaml
+  end
 end
 
 def fetch_wins?; true; end;
