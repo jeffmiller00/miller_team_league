@@ -107,14 +107,6 @@
     {
         "location": "Los Angeles",
         "name": "Lakers",
-        "drafted_by": "tim",
-        "wins": {
-            "2025-10-21": 0
-        }
-    },
-    {
-        "location": "Los Angeles",
-        "name": "Lakers",
         "drafted_by": "",
         "wins": {
             "2025-10-21": 0
@@ -171,15 +163,7 @@
     {
         "location": "Oklahoma City",
         "name": "Thunder",
-        "drafted_by": "",
-        "wins": {
-            "2025-10-21": 0
-        }
-    },
-    {
-        "location": "Oklahoma City",
-        "name": "Thunder",
-        "drafted_by": "",
+        "drafted_by": "zach",
         "wins": {
             "2025-10-21": 0
         }

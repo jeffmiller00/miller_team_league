@@ -2,6 +2,10 @@
 - name: Zach
   pick: 1
   teams:
+  - name: Oklahoma City Thunder
+    team_id: 1610612760
+    css:
+    wins: 0
 - name: Tim
   pick: 2
   teams:
@@ -40,10 +44,6 @@
     wins: 0
   - name: Charlotte Hornets
     team_id: 1610612766
-    css:
-    wins: 0
-  - name: Oklahoma City Thunder
-    team_id: 1610612760
     css:
     wins: 0
   - name: Milwaukee Bucks
