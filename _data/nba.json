@@ -42,7 +42,7 @@
     {
         "location": "Cleveland",
         "name": "Cavaliers",
-        "drafted_by": "",
+        "drafted_by": "jeff",
         "wins": {
             "2025-10-21": 0
         }
@@ -75,7 +75,7 @@
         "location": "Golden State",
         "alt_location": "Golden St.",
         "name": "Warriors",
-        "drafted_by": "",
+        "drafted_by": "tim",
         "wins": {
             "2025-10-21": 0
         }

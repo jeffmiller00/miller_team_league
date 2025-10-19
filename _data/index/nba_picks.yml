@@ -9,9 +9,17 @@
 - name: Tim
   pick: 2
   teams:
+  - name: Golden State Warriors
+    team_id: 1610612744
+    css:
+    wins: 0
 - name: Jeff
   pick: 3
   teams:
+  - name: Cleveland Cavaliers
+    team_id: 1610612739
+    css:
+    wins: 0
 - name: Greg
   pick: 4
   teams:
@@ -26,16 +34,8 @@
     team_id: 1610612742
     css:
     wins: 0
-  - name: Cleveland Cavaliers
-    team_id: 1610612739
-    css:
-    wins: 0
   - name: Indiana Pacers
     team_id: 1610612754
-    css:
-    wins: 0
-  - name: Golden State Warriors
-    team_id: 1610612744
     css:
     wins: 0
   - name: Chicago Bulls
