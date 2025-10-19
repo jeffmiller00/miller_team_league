@@ -13,6 +13,10 @@
     team_id: 1610612744
     css:
     wins: 0
+  - name: LA Clippers
+    team_id: 1610612746
+    css:
+    wins: 0
 - name: Jeff
   pick: 3
   teams:
@@ -112,10 +116,6 @@
     wins: 0
   - name: New Orleans Pelicans
     team_id: 1610612740
-    css:
-    wins: 0
-  - name: LA Clippers
-    team_id: 1610612746
     css:
     wins: 0
   - name: San Antonio Spurs
