@@ -58,7 +58,7 @@
     {
         "location": "Denver",
         "name": "Nuggets",
-        "drafted_by": "",
+        "drafted_by": "greg",
         "wins": {
             "2025-10-21": 0
         }
@@ -83,7 +83,7 @@
     {
         "location": "Houston",
         "name": "Rockets",
-        "drafted_by": "",
+        "drafted_by": "greg",
         "wins": {
             "2025-10-21": 0
         }
@@ -155,7 +155,7 @@
     {
         "location": "New York",
         "name": "Knicks",
-        "drafted_by": "",
+        "drafted_by": "jeff",
         "wins": {
             "2025-10-21": 0
         }
