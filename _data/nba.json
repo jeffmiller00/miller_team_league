@@ -2,7 +2,7 @@
     {
         "location": "Atlanta",
         "name": "Hawks",
-        "drafted_by": "",
+        "drafted_by": "jeff",
         "wins": {
             "2025-10-21": 0
         }
@@ -66,7 +66,7 @@
     {
         "location": "Detroit",
         "name": "Pistons",
-        "drafted_by": "",
+        "drafted_by": "greg",
         "wins": {
             "2025-10-21": 0
         }
@@ -131,7 +131,7 @@
     {
         "location": "Milwaukee",
         "name": "Bucks",
-        "drafted_by": "",
+        "drafted_by": "greg",
         "wins": {
             "2025-10-21": 0
         }

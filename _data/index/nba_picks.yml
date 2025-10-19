@@ -44,6 +44,10 @@
     team_id: 1610612750
     css:
     wins: 0
+  - name: Atlanta Hawks
+    team_id: 1610612737
+    css:
+    wins: 0
 - name: Greg
   pick: 4
   teams:
@@ -53,6 +57,14 @@
     wins: 0
   - name: Houston Rockets
     team_id: 1610612745
+    css:
+    wins: 0
+  - name: Detroit Pistons
+    team_id: 1610612765
+    css:
+    wins: 0
+  - name: Milwaukee Bucks
+    team_id: 1610612749
     css:
     wins: 0
 - name: Undrafted
@@ -72,10 +84,6 @@
     wins: 0
   - name: Charlotte Hornets
     team_id: 1610612766
-    css:
-    wins: 0
-  - name: Milwaukee Bucks
-    team_id: 1610612749
     css:
     wins: 0
   - name: Sacramento Kings
@@ -100,14 +108,6 @@
     wins: 0
   - name: Memphis Grizzlies
     team_id: 1610612763
-    css:
-    wins: 0
-  - name: Atlanta Hawks
-    team_id: 1610612737
-    css:
-    wins: 0
-  - name: Detroit Pistons
-    team_id: 1610612765
     css:
     wins: 0
   - name: Philadelphia 76ers
