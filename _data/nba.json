@@ -10,7 +10,7 @@
     {
         "location": "Boston",
         "name": "Celtics",
-        "drafted_by": "",
+        "drafted_by": "zach",
         "wins": {
             "2025-10-21": 0
         }
@@ -107,7 +107,7 @@
     {
         "location": "Los Angeles",
         "name": "Lakers",
-        "drafted_by": "",
+        "drafted_by": "tim",
         "wins": {
             "2025-10-21": 0
         }
@@ -139,7 +139,7 @@
     {
         "location": "Minnesota",
         "name": "Timberwolves",
-        "drafted_by": "",
+        "drafted_by": "jeff",
         "wins": {
             "2025-10-21": 0
         }
@@ -171,7 +171,7 @@
     {
         "location": "Orlando",
         "name": "Magic",
-        "drafted_by": "",
+        "drafted_by": "zach",
         "wins": {
             "2025-10-21": 0
         }

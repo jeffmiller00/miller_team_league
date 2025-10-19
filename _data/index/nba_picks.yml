@@ -6,6 +6,14 @@
     team_id: 1610612760
     css:
     wins: 0
+  - name: Orlando Magic
+    team_id: 1610612753
+    css:
+    wins: 0
+  - name: Boston Celtics
+    team_id: 1610612738
+    css:
+    wins: 0
 - name: Tim
   pick: 2
   teams:
@@ -17,6 +25,10 @@
     team_id: 1610612746
     css:
     wins: 0
+  - name: Los Angeles Lakers
+    team_id: 1610612747
+    css:
+    wins: 0
 - name: Jeff
   pick: 3
   teams:
@@ -26,6 +38,10 @@
     wins: 0
   - name: New York Knicks
     team_id: 1610612752
+    css:
+    wins: 0
+  - name: Minnesota Timberwolves
+    team_id: 1610612750
     css:
     wins: 0
 - name: Greg
@@ -42,10 +58,6 @@
 - name: Undrafted
   pick: None
   teams:
-  - name: Boston Celtics
-    team_id: 1610612738
-    css:
-    wins: 0
   - name: Dallas Mavericks
     team_id: 1610612742
     css:
@@ -66,10 +78,6 @@
     team_id: 1610612749
     css:
     wins: 0
-  - name: Orlando Magic
-    team_id: 1610612753
-    css:
-    wins: 0
   - name: Sacramento Kings
     team_id: 1610612758
     css:
@@ -84,10 +92,6 @@
     wins: 0
   - name: Toronto Raptors
     team_id: 1610612761
-    css:
-    wins: 0
-  - name: Minnesota Timberwolves
-    team_id: 1610612750
     css:
     wins: 0
   - name: Phoenix Suns
@@ -108,10 +112,6 @@
     wins: 0
   - name: Philadelphia 76ers
     team_id: 1610612755
-    css:
-    wins: 0
-  - name: Los Angeles Lakers
-    team_id: 1610612747
     css:
     wins: 0
   - name: New Orleans Pelicans
