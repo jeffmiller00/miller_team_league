@@ -18,7 +18,7 @@
     {
         "location": "Brooklyn",
         "name": "Nets",
-        "drafted_by": "",
+        "drafted_by": "greg",
         "wins": {
             "2025-10-21": 0
         }
@@ -26,7 +26,7 @@
     {
         "location": "Charlotte",
         "name": "Hornets",
-        "drafted_by": "",
+        "drafted_by": "jeff",
         "wins": {
             "2025-10-21": 0
         }
@@ -147,7 +147,7 @@
     {
         "location": "New Orleans",
         "name": "Pelicans",
-        "drafted_by": "",
+        "drafted_by": "tim",
         "wins": {
             "2025-10-21": 0
         }
