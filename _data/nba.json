@@ -34,7 +34,7 @@
     {
         "location": "Chicago",
         "name": "Bulls",
-        "drafted_by": "",
+        "drafted_by": "jeff",
         "wins": {
             "2025-10-21": 0
         }
@@ -50,7 +50,7 @@
     {
         "location": "Dallas",
         "name": "Mavericks",
-        "drafted_by": "",
+        "drafted_by": "tim",
         "wins": {
             "2025-10-21": 0
         }
@@ -91,7 +91,7 @@
     {
         "location": "Indiana",
         "name": "Pacers",
-        "drafted_by": "",
+        "drafted_by": "zach",
         "wins": {
             "2025-10-21": 0
         }
@@ -115,7 +115,7 @@
     {
         "location": "Memphis",
         "name": "Grizzlies",
-        "drafted_by": "",
+        "drafted_by": "zach",
         "wins": {
             "2025-10-21": 0
         }
@@ -123,7 +123,7 @@
     {
         "location": "Miami",
         "name": "Heat",
-        "drafted_by": "",
+        "drafted_by": "greg",
         "wins": {
             "2025-10-21": 0
         }
@@ -179,7 +179,7 @@
     {
         "location": "Philadelphia",
         "name": "76ers",
-        "drafted_by": "",
+        "drafted_by": "jeff",
         "wins": {
             "2025-10-21": 0
         }
@@ -187,7 +187,7 @@
     {
         "location": "Phoenix",
         "name": "Suns",
-        "drafted_by": "",
+        "drafted_by": "zach",
         "wins": {
             "2025-10-21": 0
         }
@@ -195,7 +195,7 @@
     {
         "location": "Portland",
         "name": "Trail Blazers",
-        "drafted_by": "",
+        "drafted_by": "zach",
         "wins": {
             "2025-10-21": 0
         }
@@ -203,7 +203,7 @@
     {
         "location": "Sacramento",
         "name": "Kings",
-        "drafted_by": "",
+        "drafted_by": "tim",
         "wins": {
             "2025-10-21": 0
         }
@@ -211,7 +211,7 @@
     {
         "location": "San Antonio",
         "name": "Spurs",
-        "drafted_by": "",
+        "drafted_by": "tim",
         "wins": {
             "2025-10-21": 0
         }
@@ -219,7 +219,7 @@
     {
         "location": "Toronto",
         "name": "Raptors",
-        "drafted_by": "",
+        "drafted_by": "greg",
         "wins": {
             "2025-10-21": 0
         }
