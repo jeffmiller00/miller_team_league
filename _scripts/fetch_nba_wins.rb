@@ -74,7 +74,7 @@ if fetch_wins?
   # For some reason, the NBA API doesn't return the correct data for the PlayIn tournament.
   # ['Regular+Season', 'PlayIn'].each do |season_type|
   ['Regular+Season'].each do |season_type|
-    nba_api_url = "https://stats.nba.com/stats/leaguestandingsv3?LeagueID=00&Season=2024-25&SeasonType=#{season_type}"
+    nba_api_url = "https://stats.nba.com/stats/leaguestandingsv3?LeagueID=00&Season=2025-26&SeasonType=#{season_type}"
     STATS_HEADERS = {
         'Host' => 'stats.nba.com',
         'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0',
