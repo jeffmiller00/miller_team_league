@@ -5,15 +5,15 @@
   - name: Oklahoma City Thunder
     team_id: 1610612760
     css: 
-    wins: 7
+    wins: 13
   - name: Orlando Magic
     team_id: 1610612753
     css: 
-    wins: 3
+    wins: 7
   - name: Boston Celtics
     team_id: 1610612738
     css: 
-    wins: 3
+    wins: 7
   - name: Indiana Pacers
     team_id: 1610612754
     css: 
@@ -21,115 +21,115 @@
   - name: Memphis Grizzlies
     team_id: 1610612763
     css: 
-    wins: 3
+    wins: 4
   - name: Portland Trail Blazers
     team_id: 1610612757
     css: 
-    wins: 4
+    wins: 6
   - name: Phoenix Suns
     team_id: 1610612756
     css: 
-    wins: 3
+    wins: 8
 - name: Tim
   pick: 2
   teams:
   - name: Golden State Warriors
     team_id: 1610612744
     css: 
-    wins: 4
+    wins: 9
   - name: LA Clippers
     team_id: 1610612746
     css: 
-    wins: 3
+    wins: 4
   - name: Los Angeles Lakers
     team_id: 1610612747
     css: 
-    wins: 5
+    wins: 10
   - name: Dallas Mavericks
     team_id: 1610612742
     css: 
-    wins: 2
+    wins: 4
   - name: San Antonio Spurs
     team_id: 1610612759
     css: 
-    wins: 5
+    wins: 9
   - name: Sacramento Kings
     team_id: 1610612758
     css: 
-    wins: 2
+    wins: 3
   - name: New Orleans Pelicans
     team_id: 1610612740
     css: 
-    wins: 0
+    wins: 2
 - name: Jeff
   pick: 3
   teams:
   - name: Cleveland Cavaliers
     team_id: 1610612739
     css: 
-    wins: 4
+    wins: 9
   - name: New York Knicks
     team_id: 1610612752
     css: 
-    wins: 3
+    wins: 8
   - name: Minnesota Timberwolves
     team_id: 1610612750
     css: 
-    wins: 3
+    wins: 8
   - name: Atlanta Hawks
     team_id: 1610612737
     css: 
-    wins: 3
+    wins: 9
   - name: Philadelphia 76ers
     team_id: 1610612755
     css: 
-    wins: 5
+    wins: 7
   - name: Chicago Bulls
     team_id: 1610612741
     css: 
-    wins: 5
+    wins: 6
   - name: Charlotte Hornets
     team_id: 1610612766
     css: 
-    wins: 3
+    wins: 4
 - name: Greg
   pick: 4
   teams:
   - name: Denver Nuggets
     team_id: 1610612743
     css: 
-    wins: 3
+    wins: 10
   - name: Houston Rockets
     team_id: 1610612745
     css: 
-    wins: 3
+    wins: 9
   - name: Detroit Pistons
     team_id: 1610612765
     css: 
-    wins: 4
+    wins: 11
   - name: Milwaukee Bucks
     team_id: 1610612749
     css: 
-    wins: 5
+    wins: 9
   - name: Toronto Raptors
     team_id: 1610612761
     css: 
-    wins: 3
+    wins: 8
   - name: Miami Heat
     team_id: 1610612748
     css: 
-    wins: 3
+    wins: 7
   - name: Brooklyn Nets
     team_id: 1610612751
     css: 
-    wins: 0
+    wins: 2
 - name: Undrafted
   pick: None
   teams:
   - name: Utah Jazz
     team_id: 1610612762
     css: 
-    wins: 2
+    wins: 5
   - name: Washington Wizards
     team_id: 1610612764
     css: 
