@@ -97,7 +97,7 @@ if fetch_wins?
       binding.pry if truth_team.nil? || truth_team.empty?
 
       # This is for the winner of the mid-season tournament championship, because it's not in the standings.
-      mid_season_tournament_win = team['name'] == 'Bucks' ? 1 : 0
+      mid_season_tournament_win = team['name'] == 'Knicks' ? 1 : 0
       team['wins'][Date.today.prev_day.to_s] = truth_team[13].to_i + mid_season_tournament_win.to_i
     end
   end
