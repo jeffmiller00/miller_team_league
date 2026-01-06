@@ -5,15 +5,15 @@
   - name: Bills
     img: https://static.www.nfl.com/league/api/clubs/logos/BUF.svg
     css: 
-    wins: 11
-    streak: -1
+    wins: 12
+    streak: 1
     full_name: Buffalo Bills
     location: Buffalo
   - name: Packers
     img: https://static.www.nfl.com/league/api/clubs/logos/GB.svg
     css: 
     wins: 9
-    streak: -3
+    streak: -4
     full_name: Green Bay Packers
     location: Green Bay
   - name: 49ers
@@ -22,28 +22,28 @@
     wins: 12
     full_name: San Francisco 49ers
     location: San Francisco
-    streak: 3
+    streak: -1
   - name: Patriots
     img: https://static.www.nfl.com/league/api/clubs/logos/NE.svg
     css: 
-    wins: 13
+    wins: 14
     full_name: New England Patriots
     location: New England
-    streak: 2
+    streak: 3
   - name: Falcons
     img: https://static.www.nfl.com/league/api/clubs/logos/ATL.svg
     css: 
-    wins: 7
+    wins: 8
     full_name: Atlanta Falcons
     location: Atlanta
-    streak: 3
+    streak: 4
   - name: Titans
     img: https://static.www.nfl.com/league/api/clubs/logos/TEN.svg
     css: 
     wins: 3
     full_name: Tennessee Titans
     location: Tennessee
-    streak: -1
+    streak: -2
 - name: Greg
   pick: 3
   teams:
@@ -53,42 +53,42 @@
     wins: 8
     full_name: Baltimore Ravens
     location: Baltimore
-    streak: 1
+    streak: -1
   - name: Broncos
     img: https://static.www.nfl.com/league/api/clubs/logos/DEN.svg
     css: 
-    wins: 13
+    wins: 14
     full_name: Denver Broncos
     location: Denver
-    streak: 1
+    streak: 2
   - name: Vikings
     img: https://static.www.nfl.com/league/api/clubs/logos/MIN.svg
     css: 
-    wins: 8
+    wins: 9
     full_name: Minnesota Vikings
     location: Minnesota
-    streak: 4
+    streak: 5
   - name: Steelers
     img: https://static.www.nfl.com/league/api/clubs/logos/PIT.svg
     css: 
-    wins: 9
+    wins: 10
     full_name: Pittsburgh Steelers
     location: Pittsburgh
-    streak: -1
+    streak: 1
   - name: Cowboys
     img: https://static.www.nfl.com/league/api/clubs/logos/DAL.svg
     css: 
     wins: 7
     full_name: Dallas Cowboys
     location: Dallas
-    streak: 1
+    streak: -1
   - name: Jaguars
     img: https://static.www.nfl.com/league/api/clubs/logos/JAX.svg
     css: 
-    wins: 12
+    wins: 13
     full_name: Jacksonville Jaguars
     location: Jacksonville
-    streak: 7
+    streak: 8
 - name: Tim
   pick: 5
   teams:
@@ -98,42 +98,42 @@
     wins: 6
     full_name: Kansas City Chiefs
     location: Kansas City
-    streak: -5
+    streak: -6
   - name: Commanders
     img: https://static.www.nfl.com/league/api/clubs/logos/WAS.svg
     css: 
-    wins: 4
+    wins: 5
     full_name: Washington Commanders
     location: Washington
-    streak: -2
+    streak: 1
   - name: Texans
     img: https://static.www.nfl.com/league/api/clubs/logos/HOU.svg
     css: 
-    wins: 11
+    wins: 12
     full_name: Houston Texans
     location: Houston
-    streak: 8
+    streak: 9
   - name: Chargers
     img: https://static.www.nfl.com/league/api/clubs/logos/LAC.svg
     css: 
     wins: 11
     full_name: Los Angeles Chargers
     location: Los Angeles
-    streak: -1
+    streak: -2
   - name: Colts
     img: https://static.www.nfl.com/league/api/clubs/logos/IND.svg
     css: 
     wins: 8
     full_name: Indianapolis Colts
     location: Indianapolis
-    streak: -7
+    streak: -8
   - name: Raiders
     img: https://static.www.nfl.com/league/api/clubs/logos/LV.svg
     css: 
-    wins: 2
+    wins: 3
     full_name: Las Vegas Raiders
     location: Las Vegas
-    streak: -11
+    streak: 1
 - name: Zach
   pick: 1
   teams:
@@ -143,87 +143,87 @@
     wins: 11
     full_name: Philadelphia Eagles
     location: Philadelphia
-    streak: 3
+    streak: -1
   - name: Rams
     img: https://static.www.nfl.com/league/api/clubs/logos/LA.svg
     css: 
-    wins: 11
+    wins: 12
     full_name: Los Angeles Rams
     location: Los Angeles
-    streak: -2
+    streak: 1
   - name: Bengals
     img: https://static.www.nfl.com/league/api/clubs/logos/CIN.svg
     css: 
     wins: 6
     full_name: Cincinnati Bengals
     location: Cincinnati
-    streak: 2
+    streak: -1
   - name: Seahawks
     img: https://static.www.nfl.com/league/api/clubs/logos/SEA.svg
     css: 
-    wins: 13
+    wins: 14
     full_name: Seattle Seahawks
     location: Seattle
-    streak: 6
+    streak: 7
   - name: Cardinals
     img: https://static.www.nfl.com/league/api/clubs/logos/ARI.svg
     css: 
     wins: 3
     full_name: Arizona Cardinals
     location: Arizona
-    streak: -8
+    streak: -9
   - name: Jets
     img: https://static.www.nfl.com/league/api/clubs/logos/NYJ.svg
     css: 
     wins: 3
     full_name: New York Jets
     location: New York
-    streak: -4
+    streak: -5
 - name: Mike
   pick: 4
   teams:
   - name: Lions
     img: https://static.www.nfl.com/league/api/clubs/logos/DET.svg
     css: 
-    wins: 8
+    wins: 9
     full_name: Detroit Lions
     location: Detroit
-    streak: -3
+    streak: 1
   - name: Buccaneers
     img: https://static.www.nfl.com/league/api/clubs/logos/TB.svg
     css: 
-    wins: 7
+    wins: 8
     full_name: Tampa Bay Buccaneers
     location: Tampa Bay
-    streak: -4
+    streak: 1
   - name: Dolphins
     img: https://static.www.nfl.com/league/api/clubs/logos/MIA.svg
     css: 
     wins: 7
     full_name: Miami Dolphins
     location: Miami
-    streak: 1
+    streak: -1
   - name: Bears
     img: https://static.www.nfl.com/league/api/clubs/logos/CHI.svg
     css: 
     wins: 11
     full_name: Chicago Bears
     location: Chicago
-    streak: -1
+    streak: -2
   - name: Browns
     img: https://static.www.nfl.com/league/api/clubs/logos/CLE.svg
     css: 
-    wins: 4
+    wins: 5
     full_name: Cleveland Browns
     location: Cleveland
-    streak: 1
+    streak: 2
   - name: Giants
     img: https://static.www.nfl.com/league/api/clubs/logos/NYG.svg
     css: 
-    wins: 3
+    wins: 4
     full_name: New York Giants
     location: New York
-    streak: 1
+    streak: 2
 - name: Undrafted
   pick: None
   teams:
@@ -233,11 +233,11 @@
     wins: 8
     full_name: Carolina Panthers
     location: Carolina
-    streak: -1
+    streak: -2
   - name: Saints
     img: https://static.www.nfl.com/league/api/clubs/logos/NO.svg
     css: 
     wins: 6
     full_name: New Orleans Saints
     location: New Orleans
-    streak: 4
+    streak: -1
