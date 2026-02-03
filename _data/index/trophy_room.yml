@@ -19,6 +19,7 @@
     - 2|2023 NBA
     - 1|2024 NFL
     - 2|2024 NBA
+    - 1|2025 NFL
   desc: Is the early favorite every season.
 
 - name: Greg
@@ -33,6 +34,7 @@
     - 2|2023 NFL
     - 2|2024 NFL
     - 1|2024 NBA
+    - 2|2025 NFL
   desc: Only responds with gifs
 
 - name: Tim
