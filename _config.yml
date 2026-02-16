@@ -18,14 +18,14 @@
 title: Miller Brothers Team Leagues
 email: jeffmiller00@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A league where you draft NFL teams and score it by the number of wins the
+  A league where you draft NFL or NBA teams and score it by the number of wins the
   team gets during the season.
 keywords: Miller,brothers,fantasy,nfl,nba
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.millerteamleague.com" # the base hostname & protocol for your site, e.g. http://example.com
 # img_path: /Jalpc/static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
 
-current_sport: nfl
+current_sport: nba
 
 # author -- index page "about me" section
 author: # change following line to your infomation.
