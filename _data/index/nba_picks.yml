@@ -5,15 +5,15 @@
     - name: Oklahoma City Thunder
       team_id: 1610612760
       css:
-      wins: 64
+      wins: 68
     - name: Orlando Magic
       team_id: 1610612753
-      css:
-      wins: 46
+      css: out
+      wins: 49
     - name: Boston Celtics
       team_id: 1610612738
-      css:
-      wins: 56
+      css: out
+      wins: 59
     - name: Indiana Pacers
       team_id: 1610612754
       css: out
@@ -24,11 +24,11 @@
       wins: 25
     - name: Portland Trail Blazers
       team_id: 1610612757
-      css:
-      wins: 43
+      css: out
+      wins: 44
     - name: Phoenix Suns
       team_id: 1610612756
-      css:
+      css: out
       wins: 46
 - name: Tim
   pick: 2
@@ -44,7 +44,7 @@
     - name: Los Angeles Lakers
       team_id: 1610612747
       css:
-      wins: 53
+      wins: 57
     - name: Dallas Mavericks
       team_id: 1610612742
       css: out
@@ -52,7 +52,7 @@
     - name: San Antonio Spurs
       team_id: 1610612759
       css:
-      wins: 62
+      wins: 66
     - name: Sacramento Kings
       team_id: 1610612758
       css: out
@@ -67,23 +67,23 @@
     - name: Cleveland Cavaliers
       team_id: 1610612739
       css:
-      wins: 52
+      wins: 56
     - name: New York Knicks
       team_id: 1610612752
       css:
-      wins: 54
+      wins: 58
     - name: Minnesota Timberwolves
       team_id: 1610612750
       css:
-      wins: 49
+      wins: 53
     - name: Atlanta Hawks
       team_id: 1610612737
-      css:
-      wins: 46
+      css: out
+      wins: 48
     - name: Philadelphia 76ers
       team_id: 1610612755
       css:
-      wins: 46
+      wins: 50
     - name: Chicago Bulls
       team_id: 1610612741
       css: out
@@ -97,24 +97,24 @@
   teams:
     - name: Denver Nuggets
       team_id: 1610612743
-      css:
-      wins: 54
+      css: out
+      wins: 56
     - name: Houston Rockets
       team_id: 1610612745
-      css:
-      wins: 52
+      css: out
+      wins: 56
     - name: Detroit Pistons
       team_id: 1610612765
       css:
-      wins: 60
+      wins: 64
     - name: Milwaukee Bucks
       team_id: 1610612749
       css: out
       wins: 32
     - name: Toronto Raptors
       team_id: 1610612761
-      css:
-      wins: 46
+      css: out
+      wins: 49
     - name: Miami Heat
       team_id: 1610612748
       css: out
