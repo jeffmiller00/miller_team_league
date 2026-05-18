@@ -5,7 +5,7 @@
     - name: Oklahoma City Thunder
       team_id: 1610612760
       css:
-      wins: 68
+      wins: 72
     - name: Orlando Magic
       team_id: 1610612753
       css: out
@@ -43,7 +43,7 @@
       wins: 42
     - name: Los Angeles Lakers
       team_id: 1610612747
-      css:
+      css: out
       wins: 57
     - name: Dallas Mavericks
       team_id: 1610612742
@@ -52,7 +52,7 @@
     - name: San Antonio Spurs
       team_id: 1610612759
       css:
-      wins: 66
+      wins: 70
     - name: Sacramento Kings
       team_id: 1610612758
       css: out
@@ -67,22 +67,22 @@
     - name: Cleveland Cavaliers
       team_id: 1610612739
       css:
-      wins: 56
+      wins: 60
     - name: New York Knicks
       team_id: 1610612752
       css:
-      wins: 58
+      wins: 62
     - name: Minnesota Timberwolves
       team_id: 1610612750
-      css:
-      wins: 53
+      css: out
+      wins: 55
     - name: Atlanta Hawks
       team_id: 1610612737
       css: out
       wins: 48
     - name: Philadelphia 76ers
       team_id: 1610612755
-      css:
+      css: out
       wins: 50
     - name: Chicago Bulls
       team_id: 1610612741
@@ -105,8 +105,8 @@
       wins: 56
     - name: Detroit Pistons
       team_id: 1610612765
-      css:
-      wins: 64
+      css: out
+      wins: 67
     - name: Milwaukee Bucks
       team_id: 1610612749
       css: out
