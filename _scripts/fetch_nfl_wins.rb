@@ -96,7 +96,7 @@ def generate_team_table
   end
 end
 
-EMPTY_WEEK = {jeff: 0, greg: 0, tim: 0, zach: 0, mike: 0}
+EMPTY_WEEK = {jeff: 0, greg: 0, tim: 0, zach: 0}
 
 def generate_summary_chart
   all_teams = get_teams
@@ -130,7 +130,6 @@ def generate_summary_chart
   allSummaries << weeklySummary.map{ |summary| summary[:greg] }.last(10)
   allSummaries << weeklySummary.map{ |summary| summary[:tim] }.last(10)
   allSummaries << weeklySummary.map{ |summary| summary[:zach] }.last(10)
-  allSummaries << weeklySummary.map{ |summary| summary[:mike] }.last(10)
 
   if write_file?
     weekly_summary =

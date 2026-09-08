@@ -179,9 +179,23 @@
       full_name: New York Jets
       location: New York
       streak: -5
-- name: Mike
-  pick: 4
+- name: Undrafted
+  pick: None
   teams:
+    - name: Panthers
+      img: https://static.www.nfl.com/league/api/clubs/logos/CAR.svg
+      css: out
+      wins: 8
+      full_name: Carolina Panthers
+      location: Carolina
+      streak: -3
+    - name: Saints
+      img: https://static.www.nfl.com/league/api/clubs/logos/NO.svg
+      css: out
+      wins: 6
+      full_name: New Orleans Saints
+      location: New Orleans
+      streak: -1
     - name: Lions
       img: https://static.www.nfl.com/league/api/clubs/logos/DET.svg
       css: out
@@ -224,20 +238,3 @@
       full_name: New York Giants
       location: New York
       streak: 2
-- name: Undrafted
-  pick: None
-  teams:
-    - name: Panthers
-      img: https://static.www.nfl.com/league/api/clubs/logos/CAR.svg
-      css: out
-      wins: 8
-      full_name: Carolina Panthers
-      location: Carolina
-      streak: -3
-    - name: Saints
-      img: https://static.www.nfl.com/league/api/clubs/logos/NO.svg
-      css: out
-      wins: 6
-      full_name: New Orleans Saints
-      location: New Orleans
-      streak: -1
