@@ -23,6 +23,13 @@
       full_name: Los Angeles Chargers
       location: Los Angeles
       streak: 0
+    - name: Packers
+      img: https://static.www.nfl.com/league/api/clubs/logos/GB.svg
+      css:
+      wins: 0
+      streak: 0
+      full_name: Green Bay Packers
+      location: Green Bay
 - name: Greg
   pick: 4
   teams:
@@ -39,6 +46,20 @@
       wins: 0
       full_name: Cincinnati Bengals
       location: Cincinnati
+      streak: 0
+    - name: 49ers
+      img: https://static.www.nfl.com/league/api/clubs/logos/SF.svg
+      css:
+      wins: 0
+      full_name: San Francisco 49ers
+      location: San Francisco
+      streak: 0
+    - name: Broncos
+      img: https://static.www.nfl.com/league/api/clubs/logos/DEN.svg
+      css:
+      wins: 0
+      full_name: Denver Broncos
+      location: Denver
       streak: 0
 - name: Tim
   pick: 1
@@ -88,18 +109,16 @@
       full_name: New England Patriots
       location: New England
       streak: 0
-
-
+    - name: Bears
+      img: https://static.www.nfl.com/league/api/clubs/logos/CHI.svg
+      css:
+      wins: 0
+      full_name: Chicago Bears
+      location: Chicago
+      streak: 0
 - name: Undrafted
   pick: None
   teams:
-    - name: Broncos
-      img: https://static.www.nfl.com/league/api/clubs/logos/DEN.svg
-      css:
-      wins: 0
-      full_name: Denver Broncos
-      location: Denver
-      streak: 0
     - name: Vikings
       img: https://static.www.nfl.com/league/api/clubs/logos/MIN.svg
       css:
@@ -164,21 +183,6 @@
       full_name: New York Jets
       location: New York
       streak: 0
-
-    - name: Packers
-      img: https://static.www.nfl.com/league/api/clubs/logos/GB.svg
-      css:
-      wins: 0
-      streak: 0
-      full_name: Green Bay Packers
-      location: Green Bay
-    - name: 49ers
-      img: https://static.www.nfl.com/league/api/clubs/logos/SF.svg
-      css:
-      wins: 0
-      full_name: San Francisco 49ers
-      location: San Francisco
-      streak: 0
     - name: Falcons
       img: https://static.www.nfl.com/league/api/clubs/logos/ATL.svg
       css:
@@ -220,13 +224,6 @@
       wins: 0
       full_name: Miami Dolphins
       location: Miami
-      streak: 0
-    - name: Bears
-      img: https://static.www.nfl.com/league/api/clubs/logos/CHI.svg
-      css:
-      wins: 0
-      full_name: Chicago Bears
-      location: Chicago
       streak: 0
     - name: Browns
       img: https://static.www.nfl.com/league/api/clubs/logos/CLE.svg

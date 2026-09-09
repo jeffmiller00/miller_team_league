@@ -47,7 +47,7 @@
     {
         "location": "Chicago",
         "name": "Bears",
-        "drafted_by": "",
+        "drafted_by": "zach",
         "wins": {
             "2026-09-09": 0
         },
@@ -83,7 +83,7 @@
     {
         "location": "Denver",
         "name": "Broncos",
-        "drafted_by": "",
+        "drafted_by": "greg",
         "wins": {
             "2026-09-09": 0
         },
@@ -101,7 +101,7 @@
     {
         "location": "Green Bay",
         "name": "Packers",
-        "drafted_by": "",
+        "drafted_by": "jeff",
         "wins": {
             "2026-09-09": 0
         },
@@ -245,7 +245,7 @@
     {
         "location": "San Francisco",
         "name": "49ers",
-        "drafted_by": "",
+        "drafted_by": "greg",
         "wins": {
             "2026-09-09": 0
         },
