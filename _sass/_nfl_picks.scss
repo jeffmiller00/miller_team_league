@@ -3,7 +3,7 @@
   margin-top: 1rem;
 
   .players-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
-  @media (min-width: 1100px) { .players-grid { grid-template-columns: repeat(5, 1fr); } }
+  @media (min-width: 1100px) { .players-grid { grid-template-columns: repeat(4, 1fr); } }
   .player-column { min-width: 0; }
 
   .player-card { background: var(--surface-primary); color: var(--text-primary); border: 1px solid var(--border-color); border-radius: .75rem; padding: 1rem .85rem 1.1rem; box-shadow: 0 2px 4px rgba(0,0,0,.08); position: relative; }
