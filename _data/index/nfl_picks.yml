@@ -9,7 +9,20 @@
       full_name: Baltimore Ravens
       location: Baltimore
       streak: 0
-
+    - name: Seahawks
+      img: https://static.www.nfl.com/league/api/clubs/logos/SEA.svg
+      css:
+      wins: 0
+      full_name: Seattle Seahawks
+      location: Seattle
+      streak: 0
+    - name: Chargers
+      img: https://static.www.nfl.com/league/api/clubs/logos/LAC.svg
+      css:
+      wins: 0
+      full_name: Los Angeles Chargers
+      location: Los Angeles
+      streak: 0
 - name: Greg
   pick: 4
   teams:
@@ -37,7 +50,20 @@
       full_name: Los Angeles Rams
       location: Los Angeles
       streak: 0
-
+    - name: Chiefs
+      img: https://static.www.nfl.com/league/api/clubs/logos/KC.svg
+      css:
+      wins: 0
+      full_name: Kansas City Chiefs
+      location: Kansas City
+      streak: 0
+    - name: Texans
+      img: https://static.www.nfl.com/league/api/clubs/logos/HOU.svg
+      css:
+      wins: 0
+      full_name: Houston Texans
+      location: Houston
+      streak: 0
 - name: Zach
   pick: 3
   teams:
@@ -94,33 +120,13 @@
       full_name: Jacksonville Jaguars
       location: Jacksonville
       streak: 0
-    - name: Chiefs
-      img: https://static.www.nfl.com/league/api/clubs/logos/KC.svg
-      css:
-      wins: 0
-      full_name: Kansas City Chiefs
-      location: Kansas City
-      streak: 0
+
     - name: Commanders
       img: https://static.www.nfl.com/league/api/clubs/logos/WAS.svg
       css:
       wins: 0
       full_name: Washington Commanders
       location: Washington
-      streak: 0
-    - name: Texans
-      img: https://static.www.nfl.com/league/api/clubs/logos/HOU.svg
-      css:
-      wins: 0
-      full_name: Houston Texans
-      location: Houston
-      streak: 0
-    - name: Chargers
-      img: https://static.www.nfl.com/league/api/clubs/logos/LAC.svg
-      css:
-      wins: 0
-      full_name: Los Angeles Chargers
-      location: Los Angeles
       streak: 0
     - name: Colts
       img: https://static.www.nfl.com/league/api/clubs/logos/IND.svg
@@ -135,13 +141,6 @@
       wins: 0
       full_name: Las Vegas Raiders
       location: Las Vegas
-      streak: 0
-    - name: Seahawks
-      img: https://static.www.nfl.com/league/api/clubs/logos/SEA.svg
-      css:
-      wins: 0
-      full_name: Seattle Seahawks
-      location: Seattle
       streak: 0
     - name: Cardinals
       img: https://static.www.nfl.com/league/api/clubs/logos/ARI.svg
