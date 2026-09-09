@@ -30,6 +30,13 @@
       streak: 0
       full_name: Green Bay Packers
       location: Green Bay
+    - name: Buccaneers
+      img: https://static.www.nfl.com/league/api/clubs/logos/TB.svg
+      css:
+      wins: 0
+      full_name: Tampa Bay Buccaneers
+      location: Tampa Bay
+      streak: 0
 - name: Greg
   pick: 4
   teams:
@@ -85,6 +92,20 @@
       full_name: Houston Texans
       location: Houston
       streak: 0
+    - name: Cowboys
+      img: https://static.www.nfl.com/league/api/clubs/logos/DAL.svg
+      css:
+      wins: 0
+      full_name: Dallas Cowboys
+      location: Dallas
+      streak: 0
+    - name: Jaguars
+      img: https://static.www.nfl.com/league/api/clubs/logos/JAX.svg
+      css:
+      wins: 0
+      full_name: Jacksonville Jaguars
+      location: Jacksonville
+      streak: 0
 - name: Zach
   pick: 3
   teams:
@@ -116,6 +137,13 @@
       full_name: Chicago Bears
       location: Chicago
       streak: 0
+    - name: Steelers
+      img: https://static.www.nfl.com/league/api/clubs/logos/PIT.svg
+      css:
+      wins: 0
+      full_name: Pittsburgh Steelers
+      location: Pittsburgh
+      streak: 0
 - name: Undrafted
   pick: None
   teams:
@@ -125,27 +153,6 @@
       wins: 0
       full_name: Minnesota Vikings
       location: Minnesota
-      streak: 0
-    - name: Steelers
-      img: https://static.www.nfl.com/league/api/clubs/logos/PIT.svg
-      css:
-      wins: 0
-      full_name: Pittsburgh Steelers
-      location: Pittsburgh
-      streak: 0
-    - name: Cowboys
-      img: https://static.www.nfl.com/league/api/clubs/logos/DAL.svg
-      css:
-      wins: 0
-      full_name: Dallas Cowboys
-      location: Dallas
-      streak: 0
-    - name: Jaguars
-      img: https://static.www.nfl.com/league/api/clubs/logos/JAX.svg
-      css:
-      wins: 0
-      full_name: Jacksonville Jaguars
-      location: Jacksonville
       streak: 0
 
     - name: Commanders
@@ -210,13 +217,6 @@
       wins: 0
       full_name: New Orleans Saints
       location: New Orleans
-      streak: 0
-    - name: Buccaneers
-      img: https://static.www.nfl.com/league/api/clubs/logos/TB.svg
-      css:
-      wins: 0
-      full_name: Tampa Bay Buccaneers
-      location: Tampa Bay
       streak: 0
     - name: Dolphins
       img: https://static.www.nfl.com/league/api/clubs/logos/MIA.svg

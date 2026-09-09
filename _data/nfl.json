@@ -74,7 +74,7 @@
     {
         "location": "Dallas",
         "name": "Cowboys",
-        "drafted_by": "",
+        "drafted_by": "tim",
         "wins": {
             "2026-09-09": 0
         },
@@ -128,7 +128,7 @@
     {
         "location": "Jacksonville",
         "name": "Jaguars",
-        "drafted_by": "",
+        "drafted_by": "tim",
         "wins": {
             "2026-09-09": 0
         },
@@ -218,7 +218,7 @@
     {
         "location": "Pittsburgh",
         "name": "Steelers",
-        "drafted_by": "",
+        "drafted_by": "zach",
         "wins": {
             "2026-09-09": 0
         },
@@ -263,7 +263,7 @@
     {
         "location": "Tampa Bay",
         "name": "Buccaneers",
-        "drafted_by": "",
+        "drafted_by": "jeff",
         "wins": {
             "2026-09-09": 0
         },
