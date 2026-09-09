@@ -2,22 +2,6 @@
 - name: Jeff
   pick: 2
   teams:
-
-- name: Greg
-  pick: 4
-  teams:
-
-- name: Tim
-  pick: 1
-  teams:
-
-- name: Zach
-  pick: 3
-  teams:
-
-- name: Undrafted
-  pick: None
-  teams:
     - name: Ravens
       img: https://static.www.nfl.com/t_q-best/league/api/clubs/logos/BAL
       css:
@@ -25,6 +9,56 @@
       full_name: Baltimore Ravens
       location: Baltimore
       streak: 0
+
+- name: Greg
+  pick: 4
+  teams:
+    - name: Lions
+      img: https://static.www.nfl.com/league/api/clubs/logos/DET.svg
+      css:
+      wins: 0
+      full_name: Detroit Lions
+      location: Detroit
+      streak: 0
+    - name: Bengals
+      img: https://static.www.nfl.com/league/api/clubs/logos/CIN.svg
+      css:
+      wins: 0
+      full_name: Cincinnati Bengals
+      location: Cincinnati
+      streak: 0
+- name: Tim
+  pick: 1
+  teams:
+    - name: Rams
+      img: https://static.www.nfl.com/league/api/clubs/logos/LA.svg
+      css:
+      wins: 0
+      full_name: Los Angeles Rams
+      location: Los Angeles
+      streak: 0
+
+- name: Zach
+  pick: 3
+  teams:
+    - name: Bills
+      img: https://static.www.nfl.com/league/api/clubs/logos/BUF.svg
+      css:
+      wins: 0
+      streak: 0
+      full_name: Buffalo Bills
+      location: Buffalo
+    - name: Eagles
+      img: https://static.www.nfl.com/league/api/clubs/logos/PHI.svg
+      css:
+      wins: 0
+      full_name: Philadelphia Eagles
+      location: Philadelphia
+      streak: 0
+
+- name: Undrafted
+  pick: None
+  teams:
     - name: Broncos
       img: https://static.www.nfl.com/league/api/clubs/logos/DEN.svg
       css:
@@ -102,27 +136,6 @@
       full_name: Las Vegas Raiders
       location: Las Vegas
       streak: 0
-    - name: Eagles
-      img: https://static.www.nfl.com/league/api/clubs/logos/PHI.svg
-      css:
-      wins: 0
-      full_name: Philadelphia Eagles
-      location: Philadelphia
-      streak: 0
-    - name: Rams
-      img: https://static.www.nfl.com/league/api/clubs/logos/LA.svg
-      css:
-      wins: 0
-      full_name: Los Angeles Rams
-      location: Los Angeles
-      streak: 0
-    - name: Bengals
-      img: https://static.www.nfl.com/league/api/clubs/logos/CIN.svg
-      css:
-      wins: 0
-      full_name: Cincinnati Bengals
-      location: Cincinnati
-      streak: 0
     - name: Seahawks
       img: https://static.www.nfl.com/league/api/clubs/logos/SEA.svg
       css:
@@ -144,13 +157,7 @@
       full_name: New York Jets
       location: New York
       streak: 0
-    - name: Bills
-      img: https://static.www.nfl.com/league/api/clubs/logos/BUF.svg
-      css:
-      wins: 0
-      streak: 0
-      full_name: Buffalo Bills
-      location: Buffalo
+
     - name: Packers
       img: https://static.www.nfl.com/league/api/clubs/logos/GB.svg
       css:
@@ -199,13 +206,6 @@
       wins: 0
       full_name: New Orleans Saints
       location: New Orleans
-      streak: 0
-    - name: Lions
-      img: https://static.www.nfl.com/league/api/clubs/logos/DET.svg
-      css:
-      wins: 0
-      full_name: Detroit Lions
-      location: Detroit
       streak: 0
     - name: Buccaneers
       img: https://static.www.nfl.com/league/api/clubs/logos/TB.svg

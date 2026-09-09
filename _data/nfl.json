@@ -20,7 +20,7 @@
     {
         "location": "Baltimore",
         "name": "Ravens",
-        "drafted_by": "",
+        "drafted_by": "jeff",
         "wins": {
             "2026-09-09": 0
         },
@@ -29,7 +29,7 @@
     {
         "location": "Buffalo",
         "name": "Bills",
-        "drafted_by": "",
+        "drafted_by": "zach",
         "wins": {
             "2026-09-09": 0
         },
@@ -56,7 +56,7 @@
     {
         "location": "Cincinnati",
         "name": "Bengals",
-        "drafted_by": "",
+        "drafted_by": "greg",
         "wins": {
             "2026-09-09": 0
         },
@@ -92,7 +92,7 @@
     {
         "location": "Detroit",
         "name": "Lions",
-        "drafted_by": "",
+        "drafted_by": "greg",
         "wins": {
             "2026-09-09": 0
         },
@@ -146,7 +146,7 @@
     {
         "location": "Los Angeles",
         "name": "Rams",
-        "drafted_by": "",
+        "drafted_by": "tim·",
         "wins": {
             "2026-09-09": 0
         },
@@ -209,7 +209,7 @@
     {
         "location": "Philadelphia",
         "name": "Eagles",
-        "drafted_by": "",
+        "drafted_by": "zach",
         "wins": {
             "2026-09-09": 0
         },
