@@ -4,3 +4,16 @@ labels:
   - Wk 0
   - Wk 1
 data: "[[0,0], [0,0], [0,0], [0,0]]"
+players:
+  - name: Jeff
+    backgroundColor: "rgb(36, 23, 115)"
+    borderColor: "rgb(0, 0, 0)"
+  - name: Greg
+    backgroundColor: "rgb(0, 118, 182)"
+    borderColor: "rgb(176, 183, 188)"
+  - name: Tim
+    backgroundColor: "rgb(255, 163, 0)"
+    borderColor: "rgb(0, 53, 148)"
+  - name: Zach
+    backgroundColor: "rgb(198, 12, 48)"
+    borderColor: "rgb(0, 51, 141)"

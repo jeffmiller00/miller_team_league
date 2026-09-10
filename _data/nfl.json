@@ -2,7 +2,7 @@
     {
         "location": "Arizona",
         "name": "Cardinals",
-        "drafted_by": "",
+        "drafted_by": "jeff",
         "wins": {
             "2026-09-09": 0
         },
@@ -11,7 +11,7 @@
     {
         "location": "Atlanta",
         "name": "Falcons",
-        "drafted_by": "",
+        "drafted_by": "zach",
         "wins": {
             "2026-09-09": 0
         },
@@ -38,7 +38,7 @@
     {
         "location": "Carolina",
         "name": "Panthers",
-        "drafted_by": "",
+        "drafted_by": "zach",
         "wins": {
             "2026-09-09": 0
         },
@@ -65,7 +65,7 @@
     {
         "location": "Cleveland",
         "name": "Browns",
-        "drafted_by": "",
+        "drafted_by": "zach",
         "wins": {
             "2026-09-09": 0
         },
@@ -155,7 +155,7 @@
     {
         "location": "Miami",
         "name": "Dolphins",
-        "drafted_by": "",
+        "drafted_by": "tim",
         "wins": {
             "2026-09-09": 0
         },
@@ -191,7 +191,7 @@
     {
         "location": "New York",
         "name": "Jets",
-        "drafted_by": "",
+        "drafted_by": "greg",
         "wins": {
             "2026-09-09": 0
         },
@@ -227,7 +227,7 @@
     {
         "location": "Las Vegas",
         "name": "Raiders",
-        "drafted_by": "",
+        "drafted_by": "greg",
         "wins": {
             "2026-09-09": 0
         },

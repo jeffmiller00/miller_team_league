@@ -32,31 +32,17 @@
             {% unless forloop.last %}, {% endunless %}
             {% endfor %}
                 ],
-            datasets: [{
-                label: 'Jeff',
-                backgroundColor: 'rgb(198, 12, 48)',
-                borderColor: 'rgb(0, 51, 141)',
-                data: window.allWins[0],
-                fill: false,
-            }, {
-                label: 'Greg',
-                backgroundColor: 'rgb(158, 124, 12)',
-                borderColor: 'rgb(26, 25, 95)',
-                data: window.allWins[1],
-                fill: false,
-            }, {
-                label: 'Tim',
-                backgroundColor: 'rgb(255, 184, 28)',
-                borderColor: 'rgb(227, 24, 55)',
-                data: window.allWins[2],
-                fill: false,
-            }, {
-                label: 'Zach',
-                backgroundColor: 'rgb(165, 172, 175)',
-                borderColor: 'rgb(0, 76, 84)',
-                data: window.allWins[3],
-                fill: false,
-            }]
+            datasets: [
+                {% for player in site.data.index.nfl_summary.players %}
+                {
+                    label: '{{ player.name | escape }}',
+                    backgroundColor: '{{ player.backgroundColor | escape }}',
+                    borderColor: '{{ player.borderColor | escape }}',
+                    data: window.allWins[{{ forloop.index0 }}],
+                    fill: false,
+                }{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+            ]
             };
             var myRadarChart = new Chart(ctx, {
                 type: 'line',
