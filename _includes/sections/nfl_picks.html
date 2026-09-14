@@ -72,8 +72,8 @@ We only have wins now; computing streaks automatically would require per-week re
       </div>
     {% endfor %}
   </div>
-  {% if undrafted_list and undrafted_list.size > 0 %}
-    {% assign undrafted = undrafted_list | first %}
+  {% assign undrafted = undrafted_list | first %}
+  {% if undrafted and undrafted.teams and undrafted.teams.size > 0 %}
     <div class="undrafted-wrapper">
       <div class="player-card player-card--undrafted" aria-label="Undrafted teams aggregate">
         <div class="player-header">
