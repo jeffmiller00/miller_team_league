@@ -1,19 +1,20 @@
 ---
 id: cs
 labels:
-  - Wk 1
-  - Wk 2
-data: "[[3, 5], [6, 11], [3, 7], [4, 9]]"
+- Wk 1
+- Wk 2
+- Wk 3
+data: "[[3, 5, 7], [6, 11, 17], [3, 7, 10], [4, 9, 14]]"
 players:
-  - name: Jeff
-    backgroundColor: rgb(0, 0, 0)
-    borderColor: rgb(36, 23, 115)
-  - name: Greg
-    backgroundColor: rgb(176, 183, 188)
-    borderColor: rgb(0, 118, 182)
-  - name: Tim
-    backgroundColor: rgb(0, 53, 148)
-    borderColor: rgb(255, 163, 0)
-  - name: Zach
-    backgroundColor: rgb(0, 51, 141)
-    borderColor: rgb(198, 12, 48)
+- name: Jeff
+  backgroundColor: rgb(0, 0, 0)
+  borderColor: rgb(36, 23, 115)
+- name: Greg
+  backgroundColor: rgb(176, 183, 188)
+  borderColor: rgb(0, 118, 182)
+- name: Tim
+  backgroundColor: rgb(0, 53, 148)
+  borderColor: rgb(255, 163, 0)
+- name: Zach
+  backgroundColor: rgb(0, 51, 141)
+  borderColor: rgb(198, 12, 48)
