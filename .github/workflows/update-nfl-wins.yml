@@ -1,0 +1,47 @@
+name: Update NFL wins
+
+on:
+  schedule:
+    # Tuesdays at 13:00 UTC (8am CDT / 7am CST), after Monday Night Football.
+    # fetch_nfl_wins.rb keys each snapshot to the previous day, so this must
+    # run on a Tuesday. Limited to the September-January season.
+    - cron: '0 13 * 9-12,1 2'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-nfl-wins
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+        env:
+          BUNDLE_WITHOUT: development:test
+
+      - name: Fetch wins
+        run: bundle exec ruby _scripts/fetch_nfl_wins.rb
+        env:
+          TZ: America/Chicago
+
+      - name: Commit and push
+        run: |
+          files="_data/nfl.json _data/index/nfl_picks.yml _data/index/nfl_summary.yml"
+          if git diff --quiet -- $files; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          week=$(grep -oE '^- Wk [0-9]+' _data/index/nfl_summary.yml | tail -1 | grep -oE '[0-9]+')
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add $files
+          git commit -m "Updated wins for week ${week}"
+          git push
