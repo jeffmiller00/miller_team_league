@@ -4,7 +4,8 @@ labels:
 - Wk 1
 - Wk 2
 - Wk 3
-data: "[[3, 5, 7], [6, 11, 17], [3, 7, 10], [4, 9, 14]]"
+- Wk 4
+data: "[[3, 5, 7, 10], [6, 11, 17, 20], [3, 7, 10, 15], [4, 9, 14, 19]]"
 players:
 - name: Jeff
   backgroundColor: rgb(0, 0, 0)
