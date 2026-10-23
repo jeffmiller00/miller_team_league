@@ -2,22 +2,30 @@
 - name: Tim
   pick: 1
   teams:
+  - name: Philadelphia 76ers
+    team_id: 1610612755
+    css:
+    wins: 0
 - name: Jeff
   pick: 2
   teams:
+  - name: Oklahoma City Thunder
+    team_id: 1610612760
+    css:
+    wins: 0
 - name: Zach
   pick: 3
   teams:
+  - name: San Antonio Spurs
+    team_id: 1610612759
+    css:
+    wins: 0
 - name: Greg
   pick: 4
   teams:
 - name: Undrafted
   pick: None
   teams:
-  - name: Oklahoma City Thunder
-    team_id: 1610612760
-    css:
-    wins: 0
   - name: Orlando Magic
     team_id: 1610612753
     css:
@@ -58,10 +66,6 @@
     team_id: 1610612742
     css:
     wins: 0
-  - name: San Antonio Spurs
-    team_id: 1610612759
-    css:
-    wins: 0
   - name: Sacramento Kings
     team_id: 1610612758
     css:
@@ -84,10 +88,6 @@
     wins: 0
   - name: Atlanta Hawks
     team_id: 1610612737
-    css:
-    wins: 0
-  - name: Philadelphia 76ers
-    team_id: 1610612755
     css:
     wins: 0
   - name: Chicago Bulls
