@@ -74,7 +74,7 @@ if fetch_wins?
   # For some reason, the NBA API doesn't return the correct data for the PlayIn tournament.
   # ['Regular+Season', 'PlayIn'].each do |season_type|
   ['Regular+Season'].each do |season_type|
-    nba_api_url = "https://stats.nba.com/stats/leaguestandingsv3?LeagueID=00&Season=2025-26&SeasonType=#{season_type}"
+    nba_api_url = "https://stats.nba.com/stats/leaguestandingsv3?LeagueID=00&Season=2026-27&SeasonType=#{season_type}"
     STATS_HEADERS = {
         'Host' => 'stats.nba.com',
         'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0',
@@ -97,7 +97,7 @@ if fetch_wins?
       binding.pry if truth_team.nil? || truth_team.empty?
 
       # This is for the winner of the mid-season tournament championship, because it's not in the standings.
-      mid_season_tournament_win = team['name'] == 'Knicks' ? 1 : 0
+      mid_season_tournament_win = 0 # Set to the NBA Cup winner once it's decided, e.g. team['name'] == 'Knicks' ? 1 : 0
       team['wins'][Date.today.prev_day.to_s] = truth_team[13].to_i + mid_season_tournament_win.to_i
     end
   end
