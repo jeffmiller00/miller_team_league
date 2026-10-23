@@ -11,7 +11,7 @@
   i18n: nav.nba_summary
   name: NBA Wins Summary
   tpl: nba_summary.html
-  css: random_bg
+  css: nba_summary_bg
   sport: nba
   link: false
 

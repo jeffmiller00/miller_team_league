@@ -1,0 +1,75 @@
+// NBA-only extras layered on the shared pick cards in _nfl_picks.scss
+.nba-picks {
+  --nba-orange: #f26b1d;
+  --nba-orange-deep: #c2410c;
+  --nba-navy: #17408b;
+
+  // Draft banner: only rendered while there are enough undrafted teams for another round.
+  .draft-status {
+    display: flex; align-items: center; justify-content: center; gap: .75rem; flex-wrap: wrap;
+    margin: 0 auto 1.25rem; padding: .6rem 1.1rem; max-width: 32rem;
+    background: var(--surface-primary); color: var(--text-primary);
+    border: 1px solid var(--border-color); border-radius: 999px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.18);
+  }
+  .draft-status__round {
+    background: linear-gradient(135deg, var(--nba-orange-deep), var(--nba-orange)); color: #fff;
+    font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+    padding: .3rem .7rem; border-radius: 999px;
+  }
+  .draft-status__text { font-size: 1rem; }
+
+  .player-card { border-top: 4px solid var(--nba-navy); transition: transform .15s ease, box-shadow .15s ease; }
+  .player-card:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(0,0,0,.16); }
+  .player-card--leader { border-top-color: var(--nba-orange); box-shadow: 0 0 0 2px var(--nba-orange), 0 8px 18px rgba(0,0,0,.18); }
+  .player-card--on-clock { border-top-color: var(--nba-orange); }
+  .player-card--on-clock .player-name::after {
+    content: "On the clock"; margin-left: .5rem; vertical-align: middle;
+    font-size: .6rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+    color: #fff; background: var(--nba-orange-deep); padding: .2rem .45rem; border-radius: .4rem;
+  }
+  .leader-badge {
+    margin-left: .35rem; vertical-align: middle;
+    font-size: .6rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+    color: #fff; background: linear-gradient(135deg, var(--trophy-first-start), var(--trophy-first-end));
+    padding: .2rem .45rem; border-radius: .4rem;
+  }
+
+  // Let grid tracks shrink below their minimum on phones so cards never overflow sideways.
+  .players-grid { grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); }
+  @media (min-width: 1100px) { .players-grid { grid-template-columns: repeat(4, 1fr); } }
+  @media (max-width: 576px) {
+    .teams-grid { grid-template-columns: repeat(auto-fill, minmax(min(80px, 100%), 1fr)); }
+    .team-name { overflow-wrap: anywhere; }
+  }
+
+  // Each player's share of the leader's total.
+  .win-share { height: 6px; margin-top: .5rem; background: var(--surface-inset); border-radius: 999px; overflow: hidden; }
+  .win-share span { display: block; height: 100%; background: linear-gradient(90deg, var(--nba-navy), var(--nba-orange)); border-radius: inherit; }
+
+  .team-card { transition: transform .15s ease, box-shadow .15s ease; }
+  .team-card:hover { transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0,0,0,.12); }
+  .team-card.out { opacity: .55; }
+  .team-card.out .team-name { text-decoration: line-through; }
+
+  .empty-roster {
+    margin: .85rem 0 0; padding: 1.5rem .5rem; text-align: center;
+    font-size: .8rem; font-style: italic; color: var(--text-secondary);
+    border: 1px dashed var(--border-color-strong); border-radius: .65rem;
+  }
+}
+
+// Basketball backdrop for the NBA wins chart (replaces the football photo on random_bg).
+.nba_summary_bg {
+  background:
+    radial-gradient(circle at 50% 120%, rgba(255,255,255,.08) 0 18%, transparent 18.5%),
+    linear-gradient(160deg, #0b1f44 0%, #17408b 55%, #c2410c 140%);
+}
+.nba_summary_bg h1 {
+  background: rgba(254, 254, 254, 0.85);
+  color: #030303;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0.25em;
+  border-radius: .5rem;
+}

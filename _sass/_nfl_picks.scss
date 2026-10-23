@@ -1,5 +1,5 @@
-/* NFL Picks section themed with CSS variables */
-.nfl-picks {
+/* NFL & NBA picks sections themed with CSS variables */
+.nfl-picks, .nba-picks {
   margin-top: 1rem;
 
   .players-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }

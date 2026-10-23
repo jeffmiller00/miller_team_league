@@ -4,3 +4,16 @@ id: cs
 labels:
   - 10.20
 data: "[[0], [0], [0], [0]]"
+players:
+- name: Jeff
+  backgroundColor: rgb(134, 0, 56)
+  borderColor: rgb(134, 0, 56)
+- name: Greg
+  backgroundColor: rgb(254, 197, 36)
+  borderColor: rgb(254, 197, 36)
+- name: Tim
+  backgroundColor: rgb(0, 122, 51)
+  borderColor: rgb(0, 122, 51)
+- name: Zach
+  backgroundColor: rgb(0, 122, 193)
+  borderColor: rgb(0, 122, 193)

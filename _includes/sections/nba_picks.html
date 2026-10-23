@@ -1,223 +1,89 @@
-<div class="nba-picks-section container">
-  <style>
-    .nba-picks-section {
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-    }
+<div class="container nba-picks">
+  {% assign undrafted_list = site.data.index.nba_picks | where: 'name', 'Undrafted' %}
+  {% assign undrafted = undrafted_list | first %}
+  {% assign players_only = site.data.index.nba_picks | where_exp: 'p','p.name != "Undrafted"' %}
 
-    .nba-picks-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 1.5rem;
-    }
+  {%- comment -%}
+  Leader & bar widths: find the best total so every card can show its share of it.
+  {%- endcomment -%}
+  {% assign max_wins = 0 %}{% assign drafted_count = 0 %}
+  {% for player in players_only %}
+    {% assign total_wins = 0 %}{% for t in player.teams %}{% assign total_wins = total_wins | plus: t.wins %}{% endfor %}
+    {% if total_wins > max_wins %}{% assign max_wins = total_wins %}{% endif %}
+    {% if player.teams %}{% assign drafted_count = drafted_count | plus: player.teams.size %}{% endif %}
+  {% endfor %}
 
-    .nba-picks-card {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      background: linear-gradient(155deg, rgba(18, 42, 76, 0.92), rgba(36, 64, 112, 0.75));
-      border-radius: 18px;
-      box-shadow: 0 24px 48px rgba(11, 23, 47, 0.18);
-      color: #f6f9ff;
-      padding: 1.5rem 1.25rem 1.25rem;
-      overflow: hidden;
-    }
+  {%- comment -%}
+  On the clock: snake draft, so odd rounds run in pick order and even rounds run in reverse.
+  The draft is over once there aren't enough undrafted teams left for a full round.
+  {%- endcomment -%}
+  {% assign player_count = players_only.size %}
+  {% assign on_the_clock = nil %}
+  {% if undrafted and undrafted.teams and undrafted.teams.size >= player_count %}
+    {% assign sorted_players = players_only | sort: 'pick' %}
+    {% assign round_index = drafted_count | divided_by: player_count %}
+    {% assign slot = drafted_count | modulo: player_count %}
+    {% assign round_parity = round_index | modulo: 2 %}
+    {% if round_parity == 1 %}{% assign slot = player_count | minus: 1 | minus: slot %}{% endif %}
+    {% assign on_the_clock = sorted_players[slot].name %}
+    {% assign draft_round = round_index | plus: 1 %}
+  {% endif %}
 
-    .nba-picks-card::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: inherit;
-      pointer-events: none;
-      background: linear-gradient(135deg, rgba(70, 180, 255, 0.36) 0%, rgba(255, 255, 255, 0) 55%);
-      mix-blend-mode: screen;
-      opacity: 0.6;
-    }
+  {% if on_the_clock %}
+    <div class="draft-status" role="status">
+      <span class="draft-status__round">Round {{ draft_round }}</span>
+      <span class="draft-status__text"><strong>{{ on_the_clock }}</strong> is on the clock</span>
+    </div>
+  {% endif %}
 
-    .nba-picks-card > * {
-      position: relative;
-      z-index: 1;
-    }
-
-    .nba-player-header {
-      display: flex;
-      flex-direction: column;
-      gap: 0.4rem;
-      margin-bottom: 1.1rem;
-    }
-
-    .nba-player-name {
-      font-size: 1.6rem;
-      font-weight: 700;
-      letter-spacing: -0.01em;
-    }
-
-    .nba-player-pick {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.45rem;
-      padding: 0.475rem 0.85rem 0.45rem;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.08);
-      font-size: 0.95rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: rgba(245, 248, 255, 0.88);
-    }
-
-    .nba-player-pick em {
-      font-style: normal;
-      color: #d4e8ff;
-      font-weight: 600;
-    }
-
-    .nba-team-list {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-
-    .nba-team-item {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.75rem;
-      padding: 0.85rem 0.95rem;
-      border-radius: 12px;
-      background: rgba(6, 20, 41, 0.45);
-      backdrop-filter: blur(6px);
-      transition: transform 140ms ease, box-shadow 140ms ease;
-    }
-
-    .nba-team-item:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 12px 24px rgba(9, 24, 52, 0.22);
-    }
-
-    .nba-team-core {
-      display: flex;
-      align-items: center;
-      gap: 0.85rem;
-    }
-
-    .nba-team-logo {
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      background: rgba(255, 255, 255, 0.12);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.4rem;
-    }
-
-    .nba-team-logo img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    .nba-team-name {
-      margin: 0;
-      font-size: 1.05rem;
-      font-weight: 600;
-      color: #f8fbff;
-    }
-
-    .nba-team-meta {
-      display: block;
-      margin-top: 0.15rem;
-      font-size: 0.75rem;
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
-      color: rgba(230, 239, 255, 0.58);
-    }
-
-    .nba-team-stats {
-      display: flex;
-      align-items: center;
-      gap: 0.35rem;
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: rgba(248, 253, 255, 0.82);
-    }
-
-    .nba-team-stats span {
-      padding: 0.2rem 0.6rem;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.12);
-      color: rgba(245, 248, 255, 0.8);
-      font-size: 0.75rem;
-      letter-spacing: 0.12em;
-    }
-
-    @media (max-width: 768px) {
-      .nba-picks-card {
-        padding: 1.25rem 1rem;
-      }
-
-      .nba-player-name {
-        font-size: 1.4rem;
-      }
-
-      .nba-team-item {
-        padding: 0.7rem 0.85rem;
-      }
-
-      .nba-team-name {
-        font-size: 1rem;
-      }
-
-      .nba-team-logo {
-        width: 40px;
-        height: 40px;
-      }
-    }
-
-    .nba-team-item.streak-hot .nba-team-stats span,
-    .nba-team-item.hot .nba-team-stats span {
-      background: rgba(255, 105, 97, 0.22);
-      color: rgba(255, 232, 229, 0.92);
-    }
-
-    .nba-team-item.streak-cold .nba-team-stats span,
-    .nba-team-item.cold .nba-team-stats span {
-      background: rgba(86, 112, 255, 0.22);
-      color: rgba(220, 228, 255, 0.92);
-    }
-  </style>
-
-  <div class="nba-picks-grid">
-    {% for player in site.data.index.nba_picks %}
-      <div class="nba-picks-card">
-        <header class="nba-player-header">
-          <span class="nba-player-name">{{ player.name }}</span>
-          {% if player.pick %}
-            <span class="nba-player-pick">Pick <em>{{ player.pick }}</em></span>
+  <div class="players-grid" aria-label="NBA player picks grid">
+    {% for player in players_only %}
+      {% assign total_wins = 0 %}{% for t in player.teams %}{% assign total_wins = total_wins | plus: t.wins %}{% endfor %}
+      {% assign is_leader = false %}{% if max_wins > 0 and total_wins == max_wins %}{% assign is_leader = true %}{% endif %}
+      {% assign share = 0 %}{% if max_wins > 0 %}{% assign share = total_wins | times: 100 | divided_by: max_wins %}{% endif %}
+      <div class="player-column">
+        <div class="player-card{% if is_leader %} player-card--leader{% endif %}{% if player.name == on_the_clock %} player-card--on-clock{% endif %}" aria-label="{{ player.name }} picks card">
+          <div class="player-header">
+            <h3 class="player-name">{{ player.name }}{% if is_leader %} <span class="leader-badge" title="Most wins">Leader</span>{% endif %}</h3>
+            <span class="total-wins" title="Total wins across all picked teams">{{ total_wins }} total</span>
+          </div>
+          <div class="primary-pick">Pick: <strong>{{ player.pick }}</strong></div>
+          <div class="win-share" aria-hidden="true"><span style="width: {{ share }}%"></span></div>
+          {% if player.teams and player.teams.size > 0 %}
+            <ul class="teams-grid">
+              {% for pick in player.teams %}
+                <li class="team-card {{ pick.css }}">
+                  <img class="team-logo" src="https://cdn.nba.com/logos/nba/{{ pick.team_id }}/primary/L/logo.svg" alt="{{ pick.name }} logo" loading="lazy">
+                  <div class="team-name">{{ pick.name }}</div>
+                  <div class="team-wins" title="Wins">{{ pick.wins }}</div>
+                </li>
+              {% endfor %}
+            </ul>
+          {% else %}
+            <p class="empty-roster">No teams yet</p>
           {% endif %}
-        </header>
-
-        <ol class="nba-team-list">
-          {% for pick in player.teams %}
-            <li class="nba-team-item {{ pick.css }}">
-              <div class="nba-team-core">
-                <span class="nba-team-logo">
-                  <img class="img-fluid" src="https://cdn.nba.com/logos/nba/{{ pick.team_id }}/primary/L/logo.svg" alt="{{ pick.name }} logo">
-                </span>
-                <div>
-                  <h4 class="nba-team-name">{{ pick.name }}</h4>
-                  <span class="nba-team-meta">{{ pick.conference | default: "" }}</span>
-                </div>
-              </div>
-              <div class="nba-team-stats">
-                <span>{{ pick.wins }} wins</span>
-              </div>
-            </li>
-          {% endfor %}
-        </ol>
+        </div>
       </div>
     {% endfor %}
   </div>
+
+  {% if undrafted and undrafted.teams and undrafted.teams.size > 0 %}
+    <div class="undrafted-wrapper">
+      <div class="player-card player-card--undrafted" aria-label="Undrafted teams aggregate">
+        <div class="player-header">
+          <h3 class="player-name">Undrafted</h3>
+          <span class="total-wins" title="Total wins among undrafted teams">{% assign undrafted_total = 0 %}{% for t in undrafted.teams %}{% assign undrafted_total = undrafted_total | plus: t.wins %}{% endfor %}{{ undrafted_total }} wins</span>
+        </div>
+        <ul class="teams-grid">
+          {% for pick in undrafted.teams %}
+            <li class="team-card {{ pick.css }}">
+              <img class="team-logo" src="https://cdn.nba.com/logos/nba/{{ pick.team_id }}/primary/L/logo.svg" alt="{{ pick.name }} logo" loading="lazy">
+              <div class="team-name">{{ pick.name }}</div>
+              <div class="team-wins" title="Wins">{{ pick.wins }}</div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% endif %}
 </div>
