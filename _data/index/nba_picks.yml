@@ -29,6 +29,10 @@
     team_id: 1610612761
     css:
     wins: 0
+  - name: Atlanta Hawks
+    team_id: 1610612737
+    css:
+    wins: 0
 - name: Zach
   pick: 3
   teams:
@@ -44,6 +48,10 @@
     team_id: 1610612743
     css:
     wins: 0
+  - name: Miami Heat
+    team_id: 1610612748
+    css:
+    wins: 0
 - name: Greg
   pick: 4
   teams:
@@ -55,15 +63,19 @@
     team_id: 1610612738
     css:
     wins: 0
+  - name: Los Angeles Lakers
+    team_id: 1610612747
+    css:
+    wins: 0
+  - name: Indiana Pacers
+    team_id: 1610612754
+    css:
+    wins: 0
 - name: Undrafted
   pick: None
   teams:
   - name: Orlando Magic
     team_id: 1610612753
-    css:
-    wins: 0
-  - name: Indiana Pacers
-    team_id: 1610612754
     css:
     wins: 0
   - name: Memphis Grizzlies
@@ -86,10 +98,6 @@
     team_id: 1610612746
     css:
     wins: 0
-  - name: Los Angeles Lakers
-    team_id: 1610612747
-    css:
-    wins: 0
   - name: Dallas Mavericks
     team_id: 1610612742
     css:
@@ -102,10 +110,6 @@
     team_id: 1610612740
     css:
     wins: 0
-  - name: Atlanta Hawks
-    team_id: 1610612737
-    css:
-    wins: 0
   - name: Chicago Bulls
     team_id: 1610612741
     css:
@@ -116,10 +120,6 @@
     wins: 0
   - name: Milwaukee Bucks
     team_id: 1610612749
-    css:
-    wins: 0
-  - name: Miami Heat
-    team_id: 1610612748
     css:
     wins: 0
   - name: Brooklyn Nets

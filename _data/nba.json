@@ -2,7 +2,7 @@
     {
         "location": "Atlanta",
         "name": "Hawks",
-        "drafted_by": "",
+        "drafted_by": "jeff",
         "wins": {
             "2026-10-20": 0
         }
@@ -91,7 +91,7 @@
     {
         "location": "Indiana",
         "name": "Pacers",
-        "drafted_by": "",
+        "drafted_by": "greg",
         "wins": {
             "2026-10-20": 0
         }
@@ -107,7 +107,7 @@
     {
         "location": "Los Angeles",
         "name": "Lakers",
-        "drafted_by": "",
+        "drafted_by": "greg",
         "wins": {
             "2026-10-20": 0
         }
@@ -123,7 +123,7 @@
     {
         "location": "Miami",
         "name": "Heat",
-        "drafted_by": "",
+        "drafted_by": "zach",
         "wins": {
             "2026-10-20": 0
         }
