@@ -13,6 +13,10 @@
     team_id: 1610612760
     css:
     wins: 0
+  - name: Houston Rockets
+    team_id: 1610612745
+    css:
+    wins: 0
 - name: Zach
   pick: 3
   teams:
@@ -20,18 +24,26 @@
     team_id: 1610612759
     css:
     wins: 0
+  - name: Cleveland Cavaliers
+    team_id: 1610612739
+    css:
+    wins: 0
 - name: Greg
   pick: 4
   teams:
+  - name: New York Knicks
+    team_id: 1610612752
+    css:
+    wins: 0
+  - name: Boston Celtics
+    team_id: 1610612738
+    css:
+    wins: 0
 - name: Undrafted
   pick: None
   teams:
   - name: Orlando Magic
     team_id: 1610612753
-    css:
-    wins: 0
-  - name: Boston Celtics
-    team_id: 1610612738
     css:
     wins: 0
   - name: Indiana Pacers
@@ -74,14 +86,6 @@
     team_id: 1610612740
     css:
     wins: 0
-  - name: Cleveland Cavaliers
-    team_id: 1610612739
-    css:
-    wins: 0
-  - name: New York Knicks
-    team_id: 1610612752
-    css:
-    wins: 0
   - name: Minnesota Timberwolves
     team_id: 1610612750
     css:
@@ -100,10 +104,6 @@
     wins: 0
   - name: Denver Nuggets
     team_id: 1610612743
-    css:
-    wins: 0
-  - name: Houston Rockets
-    team_id: 1610612745
     css:
     wins: 0
   - name: Detroit Pistons
