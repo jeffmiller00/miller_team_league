@@ -66,7 +66,7 @@
     {
         "location": "Detroit",
         "name": "Pistons",
-        "drafted_by": "",
+        "drafted_by": "tim",
         "wins": {
             "2026-10-20": 0
         }
@@ -139,7 +139,7 @@
     {
         "location": "Minnesota",
         "name": "Timberwolves",
-        "drafted_by": "",
+        "drafted_by": "tim",
         "wins": {
             "2026-10-20": 0
         }
@@ -219,7 +219,7 @@
     {
         "location": "Toronto",
         "name": "Raptors",
-        "drafted_by": "",
+        "drafted_by": "jeff",
         "wins": {
             "2026-10-20": 0
         }
