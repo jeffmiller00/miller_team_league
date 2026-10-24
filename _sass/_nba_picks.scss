@@ -60,12 +60,13 @@
 }
 
 // Basketball backdrop for the NBA wins chart (replaces the football photo on random_bg).
-.nba_summary_bg {
+// Scoped under .landing-page section so it outranks .landing-page .gray-section from _style.scss.
+.landing-page section.nba_summary_bg {
   background:
     radial-gradient(circle at 50% 120%, rgba(255,255,255,.08) 0 18%, transparent 18.5%),
     linear-gradient(160deg, #0b1f44 0%, #17408b 55%, #c2410c 140%);
 }
-.nba_summary_bg h1 {
+.landing-page section.nba_summary_bg h1 {
   background: rgba(254, 254, 254, 0.85);
   color: #030303;
   width: 50%;
