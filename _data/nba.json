@@ -75,7 +75,7 @@
         "location": "Golden State",
         "alt_location": "Golden St.",
         "name": "Warriors",
-        "drafted_by": "",
+        "drafted_by": "tim",
         "wins": {
             "2026-10-20": 0
         }
@@ -195,7 +195,7 @@
     {
         "location": "Portland",
         "name": "Trail Blazers",
-        "drafted_by": "",
+        "drafted_by": "tim",
         "wins": {
             "2026-10-20": 0
         }
@@ -227,7 +227,7 @@
     {
         "location": "Utah",
         "name": "Jazz",
-        "drafted_by": "",
+        "drafted_by": "jeff",
         "wins": {
             "2026-10-20": 0
         }
