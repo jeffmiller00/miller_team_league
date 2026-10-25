@@ -26,7 +26,7 @@
     {
         "location": "Charlotte",
         "name": "Hornets",
-        "drafted_by": "",
+        "drafted_by": "zach",
         "wins": {
             "2026-10-20": 0
         }
@@ -115,7 +115,7 @@
     {
         "location": "Memphis",
         "name": "Grizzlies",
-        "drafted_by": "",
+        "drafted_by": "greg",
         "wins": {
             "2026-10-20": 0
         }
@@ -187,7 +187,7 @@
     {
         "location": "Phoenix",
         "name": "Suns",
-        "drafted_by": "",
+        "drafted_by": "greg",
         "wins": {
             "2026-10-20": 0
         }
@@ -235,7 +235,7 @@
     {
         "location": "Washington",
         "name": "Wizards",
-        "drafted_by": "",
+        "drafted_by": "jeff",
         "wins": {
             "2026-10-20": 0
         }
