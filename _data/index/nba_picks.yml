@@ -64,6 +64,10 @@
     team_id: 1610612748
     css:
     wins: 0
+  - name: Orlando Magic
+    team_id: 1610612753
+    css:
+    wins: 0
 - name: Greg
   pick: 4
   teams:
@@ -86,10 +90,6 @@
 - name: Undrafted
   pick: None
   teams:
-  - name: Orlando Magic
-    team_id: 1610612753
-    css:
-    wins: 0
   - name: Memphis Grizzlies
     team_id: 1610612763
     css:
