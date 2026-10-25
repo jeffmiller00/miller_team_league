@@ -50,7 +50,7 @@
     {
         "location": "Dallas",
         "name": "Mavericks",
-        "drafted_by": "",
+        "drafted_by": "tim",
         "wins": {
             "2026-10-20": 0
         }
@@ -99,7 +99,7 @@
     {
         "location": "LA",
         "name": "Clippers",
-        "drafted_by": "",
+        "drafted_by": "tim",
         "wins": {
             "2026-10-20": 0
         }
@@ -147,7 +147,7 @@
     {
         "location": "New Orleans",
         "name": "Pelicans",
-        "drafted_by": "",
+        "drafted_by": "jeff",
         "wins": {
             "2026-10-20": 0
         }

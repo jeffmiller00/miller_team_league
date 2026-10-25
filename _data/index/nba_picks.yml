@@ -22,6 +22,14 @@
     team_id: 1610612744
     css:
     wins: 0
+  - name: LA Clippers
+    team_id: 1610612746
+    css:
+    wins: 0
+  - name: Dallas Mavericks
+    team_id: 1610612742
+    css:
+    wins: 0
 - name: Jeff
   pick: 2
   teams:
@@ -47,6 +55,10 @@
     wins: 0
   - name: Washington Wizards
     team_id: 1610612764
+    css:
+    wins: 0
+  - name: New Orleans Pelicans
+    team_id: 1610612740
     css:
     wins: 0
 - name: Zach
@@ -106,20 +118,8 @@
 - name: Undrafted
   pick: None
   teams:
-  - name: LA Clippers
-    team_id: 1610612746
-    css:
-    wins: 0
-  - name: Dallas Mavericks
-    team_id: 1610612742
-    css:
-    wins: 0
   - name: Sacramento Kings
     team_id: 1610612758
-    css:
-    wins: 0
-  - name: New Orleans Pelicans
-    team_id: 1610612740
     css:
     wins: 0
   - name: Chicago Bulls
