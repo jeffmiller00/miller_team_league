@@ -88,6 +88,10 @@
     team_id: 1610612766
     css:
     wins: 0
+  - name: Chicago Bulls
+    team_id: 1610612741
+    css:
+    wins: 0
 - name: Greg
   pick: 4
   teams:
@@ -115,6 +119,10 @@
     team_id: 1610612756
     css:
     wins: 0
+  - name: Brooklyn Nets
+    team_id: 1610612751
+    css:
+    wins: 0
 - name: Undrafted
   pick: None
   teams:
@@ -122,15 +130,7 @@
     team_id: 1610612758
     css:
     wins: 0
-  - name: Chicago Bulls
-    team_id: 1610612741
-    css:
-    wins: 0
   - name: Milwaukee Bucks
     team_id: 1610612749
-    css:
-    wins: 0
-  - name: Brooklyn Nets
-    team_id: 1610612751
     css:
     wins: 0
