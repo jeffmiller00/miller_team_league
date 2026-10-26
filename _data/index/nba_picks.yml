@@ -4,133 +4,133 @@
   teams:
   - name: Philadelphia 76ers
     team_id: 1610612755
-    css: 
+    css:
     wins: 3
   - name: Minnesota Timberwolves
     team_id: 1610612750
-    css: 
+    css:
     wins: 3
   - name: Detroit Pistons
     team_id: 1610612765
-    css: 
+    css:
     wins: 3
   - name: Portland Trail Blazers
     team_id: 1610612757
-    css: 
+    css:
     wins: 2
   - name: Golden State Warriors
     team_id: 1610612744
-    css: 
+    css:
     wins: 0
   - name: LA Clippers
     team_id: 1610612746
-    css: 
+    css:
     wins: 1
   - name: Dallas Mavericks
     team_id: 1610612742
-    css: 
+    css:
     wins: 1
 - name: Jeff
   pick: 2
   teams:
   - name: Oklahoma City Thunder
     team_id: 1610612760
-    css: 
+    css:
     wins: 3
   - name: Houston Rockets
     team_id: 1610612745
-    css: 
+    css:
     wins: 3
   - name: Toronto Raptors
     team_id: 1610612761
-    css: 
+    css:
     wins: 2
   - name: Atlanta Hawks
     team_id: 1610612737
-    css: 
+    css:
     wins: 2
   - name: Utah Jazz
     team_id: 1610612762
-    css: 
+    css:
     wins: 1
   - name: Washington Wizards
     team_id: 1610612764
-    css: 
+    css:
     wins: 2
   - name: New Orleans Pelicans
     team_id: 1610612740
-    css: 
+    css:
     wins: 0
 - name: Zach
   pick: 3
   teams:
   - name: San Antonio Spurs
     team_id: 1610612759
-    css: 
+    css:
     wins: 1
   - name: Cleveland Cavaliers
     team_id: 1610612739
-    css: 
+    css:
     wins: 1
   - name: Denver Nuggets
     team_id: 1610612743
-    css: 
+    css:
     wins: 1
   - name: Miami Heat
     team_id: 1610612748
-    css: 
+    css:
     wins: 0
   - name: Orlando Magic
     team_id: 1610612753
-    css: 
+    css:
     wins: 1
   - name: Charlotte Hornets
     team_id: 1610612766
-    css: 
+    css:
     wins: 2
   - name: Chicago Bulls
     team_id: 1610612741
-    css: 
+    css:
     wins: 1
 - name: Greg
   pick: 4
   teams:
   - name: New York Knicks
     team_id: 1610612752
-    css: 
+    css:
     wins: 0
   - name: Boston Celtics
     team_id: 1610612738
-    css: 
+    css:
     wins: 1
   - name: Los Angeles Lakers
     team_id: 1610612747
-    css: 
+    css:
     wins: 3
   - name: Indiana Pacers
     team_id: 1610612754
-    css: 
+    css:
     wins: 2
   - name: Memphis Grizzlies
     team_id: 1610612763
-    css: 
+    css:
     wins: 3
   - name: Phoenix Suns
     team_id: 1610612756
-    css: 
+    css:
     wins: 1
   - name: Brooklyn Nets
     team_id: 1610612751
-    css: 
+    css:
     wins: 0
 - name: Undrafted
   pick: None
   teams:
   - name: Sacramento Kings
     team_id: 1610612758
-    css: 
+    css:
     wins: 0
   - name: Milwaukee Bucks
     team_id: 1610612749
-    css: 
+    css:
     wins: 0
