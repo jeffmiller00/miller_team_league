@@ -1,0 +1,70 @@
+name: Update NBA wins
+
+on:
+  schedule:
+    # Mondays at 8am Central. Cron runs in UTC, so both offsets are scheduled
+    # and the gate job below keeps whichever one is 8am in Chicago that day:
+    # 13:00 UTC during CDT, 14:00 UTC during CST. Limited to the
+    # October-April regular season.
+    - cron: '0 13 * 10-12,1-4 1'
+    - cron: '0 14 * 10-12,1-4 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-nba-wins
+  cancel-in-progress: false
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.check.outputs.run }}
+    steps:
+      - id: check
+        # Compares the trigger's cron rather than the current time, so a
+        # delayed scheduled run is still recognised.
+        run: |
+          offset=$(TZ=America/Chicago date +%z)
+          case "${{ github.event_name }}:${{ github.event.schedule }}:$offset" in
+            workflow_dispatch:*)                 run=true ;;
+            "schedule:0 13 * 10-12,1-4 1:-0500") run=true ;;
+            "schedule:0 14 * 10-12,1-4 1:-0600") run=true ;;
+            *)                                   run=false ;;
+          esac
+          echo "Chicago UTC offset $offset; run=$run"
+          echo "run=$run" >> "$GITHUB_OUTPUT"
+
+  update:
+    needs: gate
+    if: needs.gate.outputs.run == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+        env:
+          BUNDLE_WITHOUT: development:test
+
+      - name: Fetch wins
+        run: bundle exec ruby _scripts/fetch_nba_wins.rb
+        env:
+          TZ: America/Chicago
+
+      - name: Commit and push
+        run: |
+          files="_data/nba.json _data/index/nba_picks.yml _data/index/nba_summary.yml"
+          if git diff --quiet -- $files; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          through=$(TZ=America/Chicago date -d yesterday +%-m/%-d)
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add $files
+          git commit -m "Updated NBA wins through ${through}"
+          git push
