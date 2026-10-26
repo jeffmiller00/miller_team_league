@@ -1,9 +1,9 @@
-# nba_summary section data
-
+---
 id: cs
 labels:
-  - 10.20
-data: "[[0], [0], [0], [0]]"
+- '10.20'
+- '10.25'
+data: "[[0, 13], [0, 10], [0, 13], [0, 7]]"
 players:
 - name: Jeff
   backgroundColor: rgb(134, 0, 56)

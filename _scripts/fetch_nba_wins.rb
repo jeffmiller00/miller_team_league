@@ -1,18 +1,54 @@
 require 'typhoeus'
+require 'date'
 require 'json'
 require 'yaml'
-require 'date'
-require 'pry'
+require 'fileutils'
 
-DATA_FILE  = '../_data/nba.json'
-PICKS_FILE = '../_data/index/nba_picks.yml'
-def fetch_wins?; true; end;
-def write_file?; true; end;
+# Paths are resolved relative to this file so the script can be run from any
+# working directory, not just _scripts/.
+ROOT         = File.expand_path('..', __dir__)
+DATA_FILE    = File.join(ROOT, '_data', 'nba.json')
+PICKS_FILE   = File.join(ROOT, '_data', 'index', 'nba_picks.yml')
+SUMMARY_FILE = File.join(ROOT, '_data', 'index', 'nba_summary.yml')
+ARCHIVE_DIR  = File.join(ROOT, '_data', 'archive')
 
+# stats.nba.com throttles and blocks cloud IP ranges (including GitHub's
+# runners), so standings come from ESPN, as they do for the NFL.
+STANDINGS_URL   = 'https://site.api.espn.com/apis/v2/sports/basketball/nba/standings'
+FETCH_ATTEMPTS  = 3
+DEFAULT_PLAYERS = %i[jeff greg tim zach].freeze
+CHART_POINTS    = 10
+
+# The NBA Cup final is not counted in the standings, so its winner is credited
+# one extra win here. Set to the team name (e.g. 'Knicks') once it's decided.
+NBA_CUP_WINNER = nil
+
+# Run with --dry-run to print what would change without writing any file, and
+# --no-fetch to rebuild the table and chart from the existing nba.json.
+DRY_RUN    = ARGV.include?('--dry-run')
+SKIP_FETCH = ARGV.include?('--no-fetch')
+
+def fetch_wins?; !SKIP_FETCH; end
+def write_file?; !DRY_RUN; end
+
+# Each snapshot holds the wins through the previous day's games.
+def snapshot_date; Date.today.prev_day; end
 
 def get_teams
-  all_teams = File.read(DATA_FILE)
-  JSON.parse(all_teams)
+  JSON.parse(File.read(DATA_FILE))
+end
+
+def chart_config
+  @chart_config ||= File.exist?(SUMMARY_FILE) ? (YAML.load_file(SUMMARY_FILE) || {}) : {}
+end
+
+# Read the roster from the chart legend so each data series stays lined up
+# with the colour it is drawn in.
+def players
+  @players ||= begin
+    names = (chart_config['players'] || []).map { |player| player['name'].to_s.downcase.to_sym }
+    names.empty? ? DEFAULT_PLAYERS : names
+  end
 end
 
 def generate_team_table
@@ -20,96 +56,132 @@ def generate_team_table
   player_picks = YAML.load(File.read(PICKS_FILE))
 
   player_picks.each do |player|
+    next if player['teams'].nil? || player['teams'].empty?
+
     player['teams'].each do |team|
-      truth_team = all_teams.find{ |team_hash| team_hash['name'].split.last == team['name'].split.last }
-      team['wins'] = truth_team['wins'].map{ |wins_on| wins_on[1] }.max
+      truth_team = all_teams.find { |team_hash| team_hash['name'].split.last == team['name'].split.last }
+      abort "Could not match #{player['name']}'s pick #{team['name'].inspect} to a team in #{DATA_FILE}" if truth_team.nil?
+
+      wins_by_date = truth_team['wins']
+      abort "#{truth_team['name']} has no recorded wins in #{DATA_FILE}" if wins_by_date.nil? || wins_by_date.empty?
+
+      team['wins'] = wins_by_date.values.max
     end
   end
 
   if write_file?
-    File.open(PICKS_FILE,"w") do |f|
-      f.write(player_picks.to_yaml)
-    end
+    File.write(PICKS_FILE, player_picks.to_yaml)
   else
     puts player_picks.to_yaml
   end
 end
 
-EMPTY_WEEK = {jeff: 0, greg: 0, tim: 0, zach: 0}
-
 def generate_summary_chart
   all_teams = get_teams
-  weeklySummary = {}
+  dates = all_teams.flat_map { |team| team['wins'].keys }.uniq.map { |date| Date.parse(date) }.sort
+
+  drafters = all_teams.map { |team| team['drafted_by'].to_s.downcase }.reject(&:empty?).uniq
+  unknown = drafters - players.map(&:to_s)
+  unless unknown.empty?
+    warn "Warning: #{unknown.join(', ')} drafted teams in nba.json but are missing from the " \
+         "chart legend in nba_summary.yml, so their wins are left out of the summary chart."
+  end
+
+  totals = dates.to_h { |date| [date, players.to_h { |player| [player, 0] }] }
 
   all_teams.each do |team|
-    next if team['drafted_by'].empty?
-    brother = team['drafted_by'].downcase
-    team['wins'].each do |date, wins|
-      weeklySummary[date.to_s] = EMPTY_WEEK.dup if weeklySummary[date].nil?
-      weeklySummary[date.to_s][brother.to_sym] = 0 if weeklySummary[date][brother.to_sym].nil?
-      weeklySummary[date.to_s][brother.to_sym] += wins
+    next if team['drafted_by'].to_s.empty?
+    player = team['drafted_by'].downcase.to_sym
+    next unless players.include?(player)
+
+    snapshots = team['wins'].map { |date, wins| [Date.parse(date), wins] }.sort_by(&:first)
+    dates.each do |date|
+      # Wins are cumulative, so a team missing a snapshot carries its latest total.
+      latest = snapshots.reverse_each.find { |snapshot_on, _| snapshot_on <= date }
+      totals[date][player] += latest.last unless latest.nil?
     end
   end
 
-  allSummaries = []
-  allSummaries << weeklySummary.map{ |summary| summary[1][:jeff] }.last(10)
-  allSummaries << weeklySummary.map{ |summary| summary[1][:greg] }.last(10)
-  allSummaries << weeklySummary.map{ |summary| summary[1][:tim] }.last(10)
-  allSummaries << weeklySummary.map{ |summary| summary[1][:zach] }.last(10)
-  puts allSummaries.to_s
-end
-
-if fetch_wins?
-=begin
-  request = HTTPI::Request.new
-  request.url = ''
-  # request.query = { Season: '2015-16',
-  #                   SeasonType: 'Regular%20Season'}
-  response = HTTPI.get(request)
-  nba_api_url = 'https://stats.nba.com/stats/commonallplayers?IsOnlyCurrentSeason=0&LeagueID=00&Season=1975-76'
-  nba_api_url = 'https://stats.nba.com/stats/commonplayerinfo?LeagueID=&PlayerID=77459'
-=end
-  all_teams = JSON.parse(File.read(DATA_FILE))
-
-  # For some reason, the NBA API doesn't return the correct data for the PlayIn tournament.
-  # ['Regular+Season', 'PlayIn'].each do |season_type|
-  ['Regular+Season'].each do |season_type|
-    nba_api_url = "https://stats.nba.com/stats/leaguestandingsv3?LeagueID=00&Season=2026-27&SeasonType=#{season_type}"
-    STATS_HEADERS = {
-        'Host' => 'stats.nba.com',
-        'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0',
-        'Accept' => 'application/json, text/plain, */*',
-        'Accept-Language' => 'en-US,en;q=0.5',
-        'Accept-Encoding' => 'json',
-        'x-nba-stats-origin' => 'stats',
-        'x-nba-stats-token' => 'true',
-        'Connection' => 'keep-alive',
-        'Referer' => 'https://stats.nba.com/',
-        'Pragma' => 'no-cache',
-        'Cache-Control' => 'no-cache',
-    }
-    response = Typhoeus.get(nba_api_url, headers: STATS_HEADERS, timeout: 5)
-    truth_teams = JSON.parse(response.body)
-    truth_teams = truth_teams['resultSets'].first['rowSet']
-
-    all_teams.each do |team|
-      truth_team = truth_teams.select{|t| t[3] == team['location'] }.first
-      binding.pry if truth_team.nil? || truth_team.empty?
-
-      # This is for the winner of the mid-season tournament championship, because it's not in the standings.
-      mid_season_tournament_win = 0 # Set to the NBA Cup winner once it's decided, e.g. team['name'] == 'Knicks' ? 1 : 0
-      team['wins'][Date.today.prev_day.to_s] = truth_team[13].to_i + mid_season_tournament_win.to_i
-    end
-  end
+  chart_dates = dates.last(CHART_POINTS)
+  chart = chart_config
+  chart['labels'] = chart_dates.map { |date| date.strftime('%-m.%-d') }
+  chart['data']   = players.map { |player| chart_dates.map { |date| totals[date][player] } }.to_s
 
   if write_file?
-    FileUtils.copy(DATA_FILE, "../_data/archive/nba_#{Date.today}.json")
-    File.open(DATA_FILE,"w") do |f|
-      f.write(all_teams.to_json)
-    end
+    File.write(SUMMARY_FILE, chart.to_yaml)
+  else
+    puts chart.to_yaml
   end
 end
 
+def fetch_standings
+  last_error = nil
+  FETCH_ATTEMPTS.times do |attempt|
+    sleep(10 * attempt) if attempt > 0
+    response = Typhoeus.get(STANDINGS_URL, followlocation: true, timeout: 30)
+    unless response.success?
+      last_error = response.timed_out? ? 'timed out' : "HTTP #{response.code}"
+      warn "ESPN standings request failed (#{last_error}), attempt #{attempt + 1} of #{FETCH_ATTEMPTS}"
+      next
+    end
+
+    begin
+      return JSON.parse(response.body)
+    rescue JSON::ParserError => e
+      last_error = "unparseable response (#{e.message})"
+      warn "ESPN standings request returned an #{last_error}, attempt #{attempt + 1} of #{FETCH_ATTEMPTS}"
+    end
+  end
+  abort "ESPN standings request failed after #{FETCH_ATTEMPTS} attempts: #{last_error}"
+end
+
+def fetch_all_wins
+  standings = fetch_standings
+  entries = (standings['children'] || []).flat_map { |conference| conference.dig('standings', 'entries') || [] }
+  abort 'ESPN standings returned no teams' if entries.empty?
+  puts "ESPN reports the #{standings.dig('children', 0, 'standings', 'seasonDisplayName') || standings.dig('season', 'displayName')} " \
+       "season; recording wins as of #{snapshot_date}."
+
+  all_teams = get_teams
+  fetched = {}
+  errors  = []
+
+  all_teams.each do |team|
+    entry = entries.find { |e| e['team']['location'] == team['location'] && e['team']['name'] == team['name'] }
+    if entry.nil?
+      errors << "#{team['location']} #{team['name']}: no matching ESPN team"
+      next
+    end
+
+    wins = entry['stats'].find { |stat| stat['name'] == 'wins' }&.dig('value')
+    if wins.nil?
+      errors << "#{entry['team']['displayName']}: no wins stat in standings"
+      next
+    end
+
+    cup_win = team['name'] == NBA_CUP_WINNER ? 1 : 0
+    fetched[team.object_id] = wins.to_i + cup_win
+    puts "#{entry['team']['displayName']} | #{fetched[team.object_id]}" unless write_file?
+  end
+
+  # Only commit a complete fetch, so a partial failure can never leave nba.json
+  # with some teams updated and others stale.
+  unless errors.empty?
+    abort "Aborting without writing #{DATA_FILE}; #{errors.size} of #{all_teams.size} teams failed:\n  " + errors.join("\n  ")
+  end
+
+  all_teams.each { |team| team['wins'][snapshot_date.to_s] = fetched[team.object_id] }
+
+  if write_file?
+    FileUtils.mkdir_p(ARCHIVE_DIR)
+    FileUtils.copy(DATA_FILE, File.join(ARCHIVE_DIR, "nba_#{Date.today}.json"))
+    File.write(DATA_FILE, all_teams.to_json)
+  else
+    puts all_teams.to_json
+  end
+end
+
+fetch_all_wins if fetch_wins?
 generate_team_table
 puts '---------------------------||-------------------------'
 generate_summary_chart
