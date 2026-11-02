@@ -2,10 +2,12 @@ name: Update NFL wins
 
 on:
   schedule:
-    # Tuesdays at 13:00 UTC (8am CDT / 7am CST), after Monday Night Football.
+    # Tuesdays at 13:37 UTC (8:37am CDT / 7:37am CST), after Monday Night
+    # Football. The odd minute avoids the top of the hour, when GitHub most
+    # often delays or drops scheduled runs.
     # fetch_nfl_wins.rb keys each snapshot to the previous day, so this must
     # run on a Tuesday. Limited to the September-January season.
-    - cron: '0 13 * 9-12,1 2'
+    - cron: '37 13 * 9-12,1 2'
   workflow_dispatch:
 
 permissions:

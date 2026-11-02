@@ -2,12 +2,14 @@ name: Update NBA wins
 
 on:
   schedule:
-    # Mondays at 8am Central. Cron runs in UTC, so both offsets are scheduled
-    # and the gate job below keeps whichever one is 8am in Chicago that day:
-    # 13:00 UTC during CDT, 14:00 UTC during CST. Limited to the
+    # Mondays at 8:37am Central. The odd minute avoids the top of the hour,
+    # when GitHub most often delays or drops scheduled runs. Cron runs in UTC,
+    # so both offsets are scheduled and the gate job below keeps whichever one
+    # is 8:37am in Chicago that day:
+    # 13:37 UTC during CDT, 14:37 UTC during CST. Limited to the
     # October-April regular season.
-    - cron: '0 13 * 10-12,1-4 1'
-    - cron: '0 14 * 10-12,1-4 1'
+    - cron: '37 13 * 10-12,1-4 1'
+    - cron: '37 14 * 10-12,1-4 1'
   workflow_dispatch:
 
 permissions:
@@ -30,8 +32,8 @@ jobs:
           offset=$(TZ=America/Chicago date +%z)
           case "${{ github.event_name }}:${{ github.event.schedule }}:$offset" in
             workflow_dispatch:*)                 run=true ;;
-            "schedule:0 13 * 10-12,1-4 1:-0500") run=true ;;
-            "schedule:0 14 * 10-12,1-4 1:-0600") run=true ;;
+            "schedule:37 13 * 10-12,1-4 1:-0500") run=true ;;
+            "schedule:37 14 * 10-12,1-4 1:-0600") run=true ;;
             *)                                   run=false ;;
           esac
           echo "Chicago UTC offset $offset; run=$run"
