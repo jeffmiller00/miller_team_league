@@ -7,14 +7,14 @@ labels:
 data: "[[0, 13, 22], [0, 10, 22], [0, 13, 28], [0, 7, 19]]"
 players:
 - name: Jeff
-  backgroundColor: rgb(134, 0, 56)
-  borderColor: rgb(134, 0, 56)
+  backgroundColor: rgb(0, 125, 195)
+  borderColor: rgb(0, 125, 195)
 - name: Greg
-  backgroundColor: rgb(254, 197, 36)
-  borderColor: rgb(254, 197, 36)
+  backgroundColor: rgb(245, 132, 38)
+  borderColor: rgb(245, 132, 38)
 - name: Tim
-  backgroundColor: rgb(0, 122, 51)
-  borderColor: rgb(0, 122, 51)
+  backgroundColor: rgb(237, 23, 76)
+  borderColor: rgb(237, 23, 76)
 - name: Zach
-  backgroundColor: rgb(0, 122, 193)
-  borderColor: rgb(0, 122, 193)
+  backgroundColor: rgb(6, 25, 34)
+  borderColor: rgb(6, 25, 34)
